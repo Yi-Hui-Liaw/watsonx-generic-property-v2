@@ -1,0 +1,6 @@
+elasticsearch.ssl.certificateAuthorities: "/usr/share/kibana/config/<your-certificate-file-name>"
+elasticsearch.username: "<username>"
+elasticsearch.password: "<password>"
+elasticsearch.hosts: ["https://<hostname:port>"]
+server.name: "kibana"
+server.host: "0.0.0.0"
