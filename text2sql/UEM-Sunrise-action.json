@@ -1,0 +1,685 @@
+{
+  "name": "uem-action",
+  "type": "action",
+  "valid": true,
+  "status": "Available",
+  "created": "2024-06-05T13:40:58.893Z",
+  "updated": "2024-06-05T16:23:29.403Z",
+  "language": "en",
+  "skill_id": "97408670-28f9-44f3-a10c-acf16c4ff965",
+  "workspace": {
+    "actions": [
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_835",
+            "handlers": [],
+            "resolver": {
+              "type": "invoke_another_action_and_end",
+              "invoke_action": {
+                "action": "fallback",
+                "policy": "default",
+                "parameters": null,
+                "result_variable": "step_835_result_1"
+              }
+            },
+            "variable": "step_835"
+          }
+        ],
+        "title": "No action matches",
+        "action": "anything_else",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "expression": "anything_else"
+        },
+        "variables": [
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_835",
+            "data_type": "any"
+          },
+          {
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_835_result_1",
+            "data_type": "any"
+          }
+        ],
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_868",
+            "handlers": [],
+            "resolver": {
+              "type": "callout",
+              "callout": {
+                "path": "/api/generate",
+                "type": "integration_interaction",
+                "method": "POST",
+                "internal": {
+                  "spec_hash_id": "ca272e034a79d227e64db24bd24b0be204c6e0b2dc7938b246e9615b42a8ecd8",
+                  "catalog_item_id": "3daf7429-ad77-4112-85ef-658052318aa0"
+                },
+                "request_mapping": {
+                  "body": [
+                    {
+                      "value": {
+                        "system_variable": "session_history"
+                      },
+                      "parameter": "history"
+                    },
+                    {
+                      "value": {
+                        "skill_variable": "CurrentPage"
+                      },
+                      "parameter": "current_page"
+                    }
+                  ]
+                },
+                "result_variable": "step_868_result_1"
+              }
+            },
+            "variable": "step_868",
+            "condition": {
+              "exists": {
+                "skill_variable": "CurrentPage"
+              }
+            },
+            "next_step": "step_430"
+          },
+          {
+            "step": "step_430",
+            "handlers": [],
+            "resolver": {
+              "type": "callout",
+              "callout": {
+                "path": "/api/generate",
+                "type": "integration_interaction",
+                "method": "POST",
+                "internal": {
+                  "spec_hash_id": "ca272e034a79d227e64db24bd24b0be204c6e0b2dc7938b246e9615b42a8ecd8",
+                  "catalog_item_id": "3daf7429-ad77-4112-85ef-658052318aa0"
+                },
+                "request_mapping": {
+                  "body": [
+                    {
+                      "value": {
+                        "system_variable": "session_history"
+                      },
+                      "parameter": "history"
+                    }
+                  ]
+                },
+                "result_variable": "step_430_result_1"
+              }
+            },
+            "variable": "step_430",
+            "condition": {
+              "not": {
+                "exists": {
+                  "skill_variable": "CurrentPage"
+                }
+              }
+            },
+            "next_step": "step_453"
+          },
+          {
+            "step": "step_453",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": ""
+                          },
+                          {
+                            "variable": "step_868_result_1",
+                            "variable_path": "body.generated_text"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "context": {
+              "variables": [
+                {
+                  "value": {
+                    "expression": "${step_868_result_1.body.custom_response}[\"images\"]"
+                  },
+                  "skill_variable": "images"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_453",
+            "condition": {
+              "eq": [
+                {
+                  "variable": "step_868_result_1",
+                  "variable_path": "success"
+                },
+                {
+                  "scalar": true
+                }
+              ]
+            },
+            "next_step": "step_229"
+          },
+          {
+            "step": "step_229",
+            "output": {
+              "generic": [
+                {
+                  "user_defined": {
+                    "images": "<? $images ?>"
+                  },
+                  "response_type": "user_defined"
+                }
+              ]
+            },
+            "context": {
+              "variables": []
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_229",
+            "condition": {
+              "eq": [
+                {
+                  "variable": "step_868_result_1",
+                  "variable_path": "success"
+                },
+                {
+                  "scalar": true
+                }
+              ]
+            },
+            "next_step": "step_616"
+          },
+          {
+            "step": "step_616",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": ""
+                          },
+                          {
+                            "variable": "step_430_result_1",
+                            "variable_path": "body.generated_text"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "context": {
+              "variables": [
+                {
+                  "value": {
+                    "expression": "${step_430_result_1.body.custom_response}[\"images\"]"
+                  },
+                  "skill_variable": "images"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_616",
+            "condition": {
+              "eq": [
+                {
+                  "variable": "step_430_result_1",
+                  "variable_path": "success"
+                },
+                {
+                  "scalar": true
+                }
+              ]
+            },
+            "next_step": "step_662"
+          },
+          {
+            "step": "step_662",
+            "output": {
+              "generic": [
+                {
+                  "user_defined": {
+                    "images": "<? $images ?>"
+                  },
+                  "response_type": "user_defined"
+                }
+              ]
+            },
+            "context": {
+              "variables": []
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_662",
+            "condition": {
+              "eq": [
+                {
+                  "variable": "step_430_result_1",
+                  "variable_path": "success"
+                },
+                {
+                  "scalar": true
+                }
+              ]
+            },
+            "next_step": "step_905"
+          },
+          {
+            "step": "step_905",
+            "output": {
+              "generic": []
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_905"
+          }
+        ],
+        "title": "Fallback",
+        "action": "fallback",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "fallback_connect_to_agent"
+        },
+        "variables": [
+          {
+            "title": "",
+            "privacy": {
+              "enabled": true
+            },
+            "variable": "step_229",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": true
+            },
+            "variable": "step_430",
+            "data_type": "any"
+          },
+          {
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_430_result_1",
+            "data_type": "any"
+          },
+          {
+            "title": "{variable}",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_453",
+            "data_type": "any"
+          },
+          {
+            "title": "{variable}",
+            "privacy": {
+              "enabled": true
+            },
+            "variable": "step_616",
+            "data_type": "any"
+          },
+          {
+            "title": "",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_662",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_868",
+            "data_type": "any"
+          },
+          {
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_868_result_1",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_905",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "run_always",
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "danger_word_detected",
+            "title": "Connect to agent",
+            "handlers": [],
+            "resolver": {
+              "type": "fallback"
+            },
+            "variable": "danger_word_detected_variable",
+            "condition": {
+              "entity": "danger_words"
+            },
+            "next_step": "profanity_detected"
+          },
+          {
+            "step": "profanity_detected",
+            "title": "Show warning",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Please use appropriate language when interacting with the assistant."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [
+              {
+                "type": "max_hits",
+                "handler": "max_hits_handler",
+                "resolver": {
+                  "type": "fallback"
+                }
+              }
+            ],
+            "max_hits": 2,
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "profanity_detected_variable",
+            "condition": {
+              "entity": "profane_words"
+            }
+          }
+        ],
+        "title": "Trigger word detected",
+        "action": "run_always",
+        "boosts": [],
+        "handlers": [],
+        "variables": [
+          {
+            "title": "Profanity detected",
+            "variable": "danger_word_detected_variable",
+            "data_type": "any"
+          },
+          {
+            "title": "Profane word detected",
+            "variable": "profanity_detected_variable",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "anything_else"
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_001",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text": "Welcome, how can I assist you?"
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_001"
+          }
+        ],
+        "title": "Greet customer",
+        "action": "welcome",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "expression": "welcome"
+        },
+        "variables": [
+          {
+            "variable": "step_001",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "fallback",
+        "disambiguation_opt_out": true
+      }
+    ],
+    "intents": [
+      {
+        "intent": "fallback_connect_to_agent",
+        "examples": [],
+        "description": "Please transfer me to an agent"
+      }
+    ],
+    "entities": [
+      {
+        "entity": "danger_words",
+        "values": [],
+        "fuzzy_match": false
+      },
+      {
+        "entity": "profane_words",
+        "values": [],
+        "fuzzy_match": false
+      },
+      {
+        "entity": "sys-yes-no",
+        "values": []
+      }
+    ],
+    "metadata": {
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      }
+    },
+    "variables": [
+      {
+        "title": "CurrentPage",
+        "privacy": {
+          "enabled": false
+        },
+        "variable": "CurrentPage",
+        "data_type": "string",
+        "description": ""
+      },
+      {
+        "title": "images",
+        "privacy": {
+          "enabled": false
+        },
+        "variable": "images",
+        "data_type": "any",
+        "description": ""
+      }
+    ],
+    "data_types": [],
+    "collections": [],
+    "counterexamples": [],
+    "system_settings": {
+      "variable": {
+        "format": {
+          "time": {
+            "pattern": "short"
+          },
+          "currency": {
+            "fraction_digits": 2
+          }
+        }
+      },
+      "off_topic": {
+        "enabled": true
+      },
+      "auto_learn": {
+        "apply": true
+      },
+      "topic_switch": {
+        "enabled": true,
+        "messages": {
+          "enable_confirmation": true,
+          "confirmation_failure": {
+            "generic": [
+              {
+                "values": [
+                  {
+                    "text_expression": {
+                      "concat": [
+                        {
+                          "scalar": "I'm sorry, I did not catch that, please confirm."
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "response_type": "text",
+                "selection_policy": "sequential"
+              }
+            ]
+          },
+          "confirmation_request": {
+            "generic": [
+              {
+                "values": [
+                  {
+                    "text_expression": {
+                      "concat": [
+                        {
+                          "scalar": "Do you want to continue with the previous topic: "
+                        },
+                        {
+                          "system_variable": "digressed_from"
+                        },
+                        {
+                          "scalar": "?"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "response_type": "text",
+                "selection_policy": "sequential"
+              },
+              {
+                "options": [
+                  {
+                    "label": "Yes",
+                    "value": {
+                      "input": {
+                        "text": "Yes"
+                      }
+                    }
+                  },
+                  {
+                    "label": "No",
+                    "value": {
+                      "input": {
+                        "text": "No"
+                      }
+                    }
+                  }
+                ],
+                "response_type": "option",
+                "repeat_on_reprompt": true
+              }
+            ]
+          }
+        },
+        "max_tries": 3
+      },
+      "generative_ai": {
+        "slot_filling": {
+          "enabled": false
+        }
+      },
+      "disambiguation": {
+        "prompt": "Did you mean:",
+        "enabled": true,
+        "randomize": true,
+        "max_suggestions": 5,
+        "suggestion_text_policy": "title",
+        "none_of_the_above_prompt": "None of the above",
+        "use_connect_to_support_prompt": "Connect to support",
+        "single_answer_clarification_prompt": "Something else"
+      },
+      "spelling_auto_correct": true
+    },
+    "learning_opt_out": false
+  },
+  "description": "created for assistant ed5b0ce8-f374-4313-b4f2-5c5f96f023ec",
+  "assistant_id": "66a1ff87-9dff-4934-ab6e-2e7ec1a5f0f0",
+  "workspace_id": "97408670-28f9-44f3-a10c-acf16c4ff965",
+  "dialog_settings": {},
+  "next_snapshot_version": "1",
+  "environment_id": "eb05a5c8-adf6-414c-9091-0d6933ab8760"
+}

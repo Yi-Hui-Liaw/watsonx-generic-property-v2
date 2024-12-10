@@ -1,0 +1,451 @@
+Project:The MINH
+Website Project name:The Minh
+FloorPlan:[3 Bedrooms, 3 Bathrooms, 2 Parking Lots]
+Type:Type A
+Size:1607
+Min Price:NA
+Max Price:NA
+Min Built-Up:1607
+Max Built-Up:3010
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:50480
+Location:Mont Kiara
+State:Kuala Lumpur
+Amenities:NA
+Features:
+	Resort style condominium with indochine influences
+	Beautifully designed swimming pool with water cascade
+	Private lift
+	Indoor scenic spa hut
+	EV charger ready via power point
+	Automated waste collection system
+	Multi-generational playground
+	Express ramp to multi-level parking
+	Certified by GreenRE
+Images:
+	
+	
+Project:The MINH
+Website Project name:The Minh
+FloorPlan:[3 Bedrooms, 3 Bathrooms, 2 Parking Lots]
+Type:Type A
+Size:1607
+Min Price:NA
+Max Price:NA
+Min Built-Up:1607
+Max Built-Up:3010
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:50480
+Location:Mont Kiara
+State:Kuala Lumpur
+Amenities:NA
+Features:
+	Resort style condominium with indochine influences
+	Beautifully designed swimming pool with water cascade
+	Private lift
+	Indoor scenic spa hut
+	EV charger ready via power point
+	Automated waste collection system
+	Multi-generational playground
+	Express ramp to multi-level parking
+	Certified by GreenRE
+Images:
+	
+	
+	
+Project:The MINH
+Website Project name:The Minh
+FloorPlan:[3 Bedrooms, 4 Bathrooms, 3 Parking Lots]
+Type:Type B
+Size:2076
+Min Price:NA
+Max Price:NA
+Min Built-Up:1607
+Max Built-Up:3010
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:50480
+Location:Mont Kiara
+State:Kuala Lumpur
+Amenities:NA
+Features:
+	Resort style condominium with indochine influences
+	Beautifully designed swimming pool with water cascade
+	Private lift
+	Indoor scenic spa hut
+	EV charger ready via power point
+	Automated waste collection system
+	Multi-generational playground
+	Express ramp to multi-level parking
+	Certified by GreenRE
+Images:
+	
+	
+	
+Project:The MINH
+Website Project name:The Minh
+FloorPlan:[3 Bedrooms, 4 Bathrooms, 3 Parking Lots]
+Type:Type C
+Size:2733
+Min Price:NA
+Max Price:NA
+Min Built-Up:1607
+Max Built-Up:3010
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:50480
+Location:Mont Kiara
+State:Kuala Lumpur
+Amenities:NA
+Features:
+	Resort style condominium with indochine influences
+	Beautifully designed swimming pool with water cascade
+	Private lift
+	Indoor scenic spa hut
+	EV charger ready via power point
+	Automated waste collection system
+	Multi-generational playground
+	Express ramp to multi-level parking
+	Certified by GreenRE
+Images:
+	
+	
+	
+Project:The MINH
+Website Project name:The Minh
+FloorPlan:[3 Bedrooms, 4 Bathrooms, 4 Parking Lots]
+Type:Type D
+Size:3010
+Min Price:NA
+Max Price:NA
+Min Built-Up:1607
+Max Built-Up:3010
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:50480
+Location:Mont Kiara
+State:Kuala Lumpur
+Amenities:NA
+Features:
+	Resort style condominium with indochine influences
+	Beautifully designed swimming pool with water cascade
+	Private lift
+	Indoor scenic spa hut
+	EV charger ready via power point
+	Automated waste collection system
+	Multi-generational playground
+	Express ramp to multi-level parking
+	Certified by GreenRE
+Images:
+	
+	
+Project:The Connaught One
+Website Project name:The Connaught One
+FloorPlan:[1 Bedroom, 1 Bathroom, Parking Lots]
+Type:Type A
+Size:452
+Min Price:335888
+Max Price:805888
+Min Built-Up:452
+Max Built-Up:1270
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:56100
+Location:Cheras
+State:Kuala Lumpur
+Amenities:
+	Pasar Malam Taman Connaught  1.5KM
+	Eko Cheras Mall   2.7KM
+	Yuan Fong Kopitiam   2.7KM
+	Alam Damai Recreational Park    4.8KM
+Features:
+	Right Next To MRT Station
+	Signature Adaptive Home
+	Unobstructed View
+	Parcel Room
+	Dedicated Urban Yard
+	Home-Work Zone
+Images:
+	
+	
+Project:The Connaught One
+Website Project name:The Connaught One
+FloorPlan:[2 Bedrooms, 1 Bathroom, Parking Lots]
+Type:Type B
+Size:66
+Min Price:335888
+Max Price:805888
+Min Built-Up:452
+Max Built-Up:1270
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:56100
+Location:Cheras
+State:Kuala Lumpur
+Amenities:
+	Pasar Malam Taman Connaught  1.5KM
+	Eko Cheras Mall   2.7KM
+	Yuan Fong Kopitiam   2.7KM
+	Alam Damai Recreational Park    4.8KM
+Features:
+	Right Next To MRT Station
+	Signature Adaptive Home
+	Unobstructed View
+	Parcel Room
+	Dedicated Urban Yard
+	Home-Work Zone
+Images:
+	
+	
+Project:The Connaught One
+Website Project name:The Connaught One
+FloorPlan:[3+1 Bedrooms, 2 Bathrooms, Parking Lots]
+Type:Type C
+Size:89
+Min Price:335888
+Max Price:805888
+Min Built-Up:452
+Max Built-Up:1270
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:56100
+Location:Cheras
+State:Kuala Lumpur
+Amenities:
+	Pasar Malam Taman Connaught  1.5KM
+	Eko Cheras Mall   2.7KM
+	Yuan Fong Kopitiam   2.7KM
+	Alam Damai Recreational Park    4.8KM
+Features:
+	Right Next To MRT Station
+	Signature Adaptive Home
+	Unobstructed View
+	Parcel Room
+	Dedicated Urban Yard
+	Home-Work Zone
+Images:
+	
+	
+Project:The Connaught One
+Website Project name:The Connaught One
+FloorPlan:[3 Bedrooms, 2 Bathrooms, Parking Lots]
+Type:Type D
+Size:93
+Min Price:335888
+Max Price:805888
+Min Built-Up:452
+Max Built-Up:1270
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:56100
+Location:Cheras
+State:Kuala Lumpur
+Amenities:
+	Pasar Malam Taman Connaught  1.5KM
+	Eko Cheras Mall   2.7KM
+	Yuan Fong Kopitiam   2.7KM
+	Alam Damai Recreational Park    4.8KM
+Features:
+	Right Next To MRT Station
+	Signature Adaptive Home
+	Unobstructed View
+	Parcel Room
+	Dedicated Urban Yard
+	Home-Work Zone
+Images:
+	
+	
+Project:The Connaught One
+Website Project name:The Connaught One
+FloorPlan:[4 Bedrooms, 3 Bathrooms, Parking Lots]
+Type:Type E
+Size:118
+Min Price:335888
+Max Price:805888
+Min Built-Up:452
+Max Built-Up:1270
+Tenure:Freehold
+Property Type:Condominium
+Region:Central
+Postcode:56100
+Location:Cheras
+State:Kuala Lumpur
+Amenities:
+	Pasar Malam Taman Connaught  1.5KM
+	Eko Cheras Mall   2.7KM
+	Yuan Fong Kopitiam   2.7KM
+	Alam Damai Recreational Park    4.8KM
+Features:
+	Right Next To MRT Station
+	Signature Adaptive Home
+	Unobstructed View
+	Parcel Room
+	Dedicated Urban Yard
+	Home-Work Zone
+Images:
+
+Project:Residensi ZIG
+Website Project name:Residensi ZIG
+FloorPlan:[1 Bedroom, 1 Bathroom, Parking Lot]
+Type:Type A
+Size:450
+Min Price:340888
+Max Price:874888
+Min Built-Up:452
+Max Built-Up:1195
+Tenure:Leasehold
+Property Type:Apartment
+Region:Central
+Postcode	52100
+Location:Kepong
+State:Kuala Lumpur
+Amenities:
+	Kepong Metropolitan Park 0.4KM
+	SMK Jinjang 1.1KM
+	MRT Kepong Baru Station 2.4KM
+	AEON Big Kepong 2.8KM
+	Selayang Hospital 4.6KM
+	Batu Caves 7.2Km
+	Mercure Hotel 7.2KM
+Features:
+	Move-in Ready ID Package
+	Bike-friendly Project
+	Adaptive And Compact Living
+	Multi-generation Interaction
+	Wellness Lifestyle
+Images:
+	
+Project:Residensi ZIG
+Website Project name:Residensi ZIG
+FloorPlan:[3 Bedrooms, 2 Bathrooms, Parking Lot]
+Type:Type B
+Size:898
+Min Price:340888
+Max Price:874888
+Min Built-Up:452
+Max Built-Up:1195
+Tenure:Leasehold
+Property Type:Apartment
+Region:Central
+Postcode	52100
+Location:Kepong
+State:Kuala Lumpur
+Amenities:
+	Kepong Metropolitan Park 0.4KM
+	SMK Jinjang 1.1KM
+	MRT Kepong Baru Station 2.4KM
+	AEON Big Kepong 2.8KM
+	Selayang Hospital 4.6KM
+	Batu Caves 7.2Km
+	Mercure Hotel 7.2KM
+Features:
+	Move-in Ready ID Package
+	Bike-friendly Project
+	Adaptive And Compact Living
+	Multi-generation Interaction
+	Wellness Lifestyle
+Images:
+	
+Project:Residensi ZIG
+Website Project name:Residensi ZIG
+FloorPlan:[3 Bedrooms, 2 Bathrooms, Parking Lot]
+Type:Type C
+Size:998
+Min Price:340888
+Max Price:874888
+Min Built-Up:452
+Max Built-Up:1195
+Tenure:Leasehold
+Property Type:Apartment
+Region:Central
+Postcode	52100
+Location:Kepong
+State:Kuala Lumpur
+Amenities:
+	Kepong Metropolitan Park 0.4KM
+	SMK Jinjang 1.1KM
+	MRT Kepong Baru Station 2.4KM
+	AEON Big Kepong 2.8KM
+	Selayang Hospital 4.6KM
+	Batu Caves 7.2Km
+	Mercure Hotel 7.2KM
+Features:
+	Move-in Ready ID Package
+	Bike-friendly Project
+	Adaptive And Compact Living
+	Multi-generation Interaction
+	Wellness Lifestyle
+Images:
+	
+Project:Residensi ZIG
+Website Project name:Residensi ZIG
+FloorPlan:[4 Bedrooms, 2 Bathrooms, Parking Lot]
+Type:Type D
+Size:1135
+Min Price:340888
+Max Price:874888
+Min Built-Up:452
+Max Built-Up:1195
+Tenure:Leasehold
+Property Type:Apartment
+Region:Central
+Postcode	52100
+Location:Kepong
+State:Kuala Lumpur
+Amenities:
+	Kepong Metropolitan Park 0.4KM
+	SMK Jinjang 1.1KM
+	MRT Kepong Baru Station 2.4KM
+	AEON Big Kepong 2.8KM
+	Selayang Hospital 4.6KM
+	Batu Caves 7.2Km
+	Mercure Hotel 7.2KM
+Features:
+	Move-in Ready ID Package
+	Bike-friendly Project
+	Adaptive And Compact Living
+	Multi-generation Interaction
+	Wellness Lifestyle
+Images:
+	
+Project:Residensi ZIG
+Website Project name:Residensi ZIG
+FloorPlan:[4 Bedrooms, 3 Bathrooms, 3 Parking Lots]
+Type:Type E
+Size:1198
+Min Price:340888
+Max Price:874888
+Min Built-Up:452
+Max Built-Up:1195
+Tenure:Leasehold
+Property Type:Apartment
+Region:Central
+Postcode	52100
+Location:Kepong
+State:Kuala Lumpur
+Amenities:
+	Kepong Metropolitan Park 0.4KM
+	SMK Jinjang 1.1KM
+	MRT Kepong Baru Station 2.4KM
+	AEON Big Kepong 2.8KM
+	Selayang Hospital 4.6KM
+	Batu Caves 7.2Km
+	Mercure Hotel 7.2KM
+Features:
+	Move-in Ready ID Package
+	Bike-friendly Project
+	Adaptive And Compact Living
+	Multi-generation Interaction
+	Wellness Lifestyle
+Images:

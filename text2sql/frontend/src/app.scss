@@ -1,0 +1,91 @@
+// $font-prefix: "@ibm/plex";
+// @use '@ibm/plex/scss/ibm-plex';
+
+@use '@carbon/styles/scss/type';
+
+@use 'styles/swiper.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix for sidebar dark mode. Svelte Carbon Components seems to not support this out of the box */
+
+html[theme='g100'] .bx--side-nav__navigation {
+	background: #1f1f1f;
+}
+
+html[theme='g100'] a.bx--side-nav__link[aria-current='page'],
+a.bx--side-nav__link--current {
+	background: #2d2d2d;
+}
+
+html[theme='g100'] .bx--side-nav__item:not(.bx--side-nav__item--active)>.bx--side-nav__link:hover {
+	background-color: #2d2d2d;
+	color: white;
+}
+
+html[theme='g100'] a.bx--side-nav__link>.bx--side-nav__link-text,
+a.bx--side-nav__link>.bx--side-nav__link-text:hover {
+	color: white !important;
+}
+
+html[theme='white'] a.bx--side-nav__link>.bx--side-nav__link-text,
+a.bx--side-nav__link>.bx--side-nav__link-text:hover {
+	color: #2d2d2d !important;
+}
+
+/*
+html[theme='g100'] .bx--side-nav__item:not(.bx--side-nav__item--active)>.bx--side-nav__link:hover>span{
+  color: #f4f4f4;
+} 
+*/
+
+html[theme='g100'] .bx--side-nav__icon>svg {
+	fill: #c6c6c6;
+}
+
+html[theme='g100'] .cds--chart-holder {
+	--cds-background: #1f1f1f;
+	--cds-text-primary: #f4f4f4;
+	--cds-text-secondary: #f4f4f4;
+	--cds-layer-02: #2d2d2d;
+	--cds-grid-bg: #1f1f1f;
+	--cds-layer-accent-01: #666161;
+	--cds-icon-primary: #f4f4f4;
+	--cds-layer-hover: #1f1f1f;
+	--cds-layer: #2d2d2d;
+}
+
+html[theme='g100'] .cds--cc--highlight rect.highlight-bar {
+	fill-opacity: 0.3;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.box {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.box .header {
+	flex: 0 1 auto;
+	/* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+*/
+}
+
+.box .content {
+	flex: 1 1 auto;
+}
+
+.box .footer {
+	flex: 0 1 40px;
+}

@@ -1,0 +1,164 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "watsonx.ai generation API endpoint",
+        "version": "0.1.0"
+    },
+    "paths": {
+        "/api/hello": {
+            "get": {
+                "summary": "Hello",
+                "operationId": "hello_api_hello_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/upload": {
+            "post": {
+                "summary": "Upload",
+                "operationId": "upload_api_upload_post",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Body_upload_api_upload_post"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/database": {
+            "get": {
+                "summary": "Database",
+                "operationId": "database_api_database_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/generate": {
+            "post": {
+                "summary": "Generate",
+                "operationId": "generate_api_generate_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/GenerateRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GenerateResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Body_upload_api_upload_post": {
+                "properties": {
+                    "file": {
+                        "type": "string",
+                        "format": "binary",
+                        "title": "File"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "file"
+                ],
+                "title": "Body_upload_api_upload_post"
+            },
+            "GenerateRequest": {
+                "properties": {
+                    "k_docs": {
+                        "type": "integer",
+                        "title": "K Docs",
+                        "default": 3
+                    },
+                    "model_name": {
+                        "type": "string",
+                        "title": "Model Name",
+                        "default": "meta-llama/llama-2-70b-chat"
+                    },
+                    "current_page": {
+                        "type": "string",
+                        "title": "Current Page"
+                    },
+                    "history": {
+                        "items": {
+                            "type": "object"
+                        },
+                        "type": "array",
+                        "title": "History"
+                    }
+                },
+                "type": "object",
+                "title": "GenerateRequest"
+            },
+            "GenerateResponse": {
+                "properties": {
+                    "generated_text": {
+                        "type": "string",
+                        "title": "Generated Text"
+                    },
+                    "custom_response": {
+                        "type": "object",
+                        "title": "Custom Response"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "generated_text",
+                    "custom_response"
+                ],
+                "title": "GenerateResponse"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "https://watsonx-uem-v2.1ht92vojjrrk.us-south.codeengine.appdomain.cloud",
+            "description": "watsonx.ai endpoint"
+        }
+    ]
+}

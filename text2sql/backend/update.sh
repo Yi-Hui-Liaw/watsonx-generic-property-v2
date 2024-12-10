@@ -1,0 +1,1 @@
+ibmcloud ce application update --rebuild --name watsonx-uem --build-source . --env-from-secret env-9-u
