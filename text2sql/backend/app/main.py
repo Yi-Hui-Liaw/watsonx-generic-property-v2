@@ -16,7 +16,7 @@ security = HTTPBasic()
 async def auth(request: Request):
     credentials = await security(request)
     correct_username = secrets.compare_digest(credentials.username, "admin")
-    correct_password = secrets.compare_digest(credentials.password, "watsonx.samsung")
+    correct_password = secrets.compare_digest(credentials.password, "watsonx")
     if not (correct_username and correct_password):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -53,4 +53,4 @@ app.include_router(base.router)
 app.include_router(generative.router)
 
 # app.mount("/", AuthStaticFiles(directory="static", html=True), name="static")
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+# app.mount("/", StaticFiles(directory="static", html=True), name="static")

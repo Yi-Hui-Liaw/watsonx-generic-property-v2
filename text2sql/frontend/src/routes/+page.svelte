@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Column, ClickableTile, Grid, Row, Tag } from 'carbon-components-svelte';
 	import { USE_CASES } from '$lib/data/use_cases';
-	import uem_sunrise_logo from '$lib/assets/img/uem-sunrise-logo.webp';
+	import sh_logo from '$lib/assets/img/main-logo.png';
 
 	import { currentPage } from '$lib/store';
 	$currentPage = null;
@@ -14,13 +14,11 @@
 				<Row class="h-full">
 					<Column class="prose lg:prose-xl flex flex-col justify-between h-full">
 						<div class="pt-4">
-							<div class="watsonx my-4">Building Communities of the Future</div>
-							<img src={uem_sunrise_logo} alt="uem-sunrise-logo" class="w-40" />
+							<div class="watsonx my-4">A future home filled with endless possibilities</div>
+							<img src={sh_logo} alt="sh-logo" class="w-40" />
 							<p>
-								UEM Sunrise brings together the talented and skilled, the imaginative and the
-								courageous. We create sustainable environments loved by homeowners, acclaimed by
-								investors and recognised by the industry. We believe in thinking big and acting
-								quickly to unlock potential; to thrive in a changing world.
+								Discover your dream living space in the heart of comfort and convenience. Whether you're looking for a cozy retreat or a spacious family home, 
+								Sweet Home offers a selection of beautifully designed properties tailored to fit your lifestyle. Explore our listings and find the perfect place to call home today!
 							</p>
 						</div>
 						<div class="pb-8 ibm-ce">Developed by IBM Client Engineering Malaysia</div>
@@ -38,7 +36,7 @@
 									<img
 										src={x.img}
 										alt=""
-										class="object-cover h-48 w-full rounded-lg shadow-lg mb-4"
+										class="object-cover h-68 w-full rounded-lg shadow-lg mb-4"
 									/>
 									<div class="flex flex-col prose prose-stone">
 										<div class="flex items-center">

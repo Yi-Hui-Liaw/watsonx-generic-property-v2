@@ -29,12 +29,12 @@
 	<div class="header">
 		<Header company="IBM" href="/">
 			<svelte:fragment slot="platform">
-				<div>watson<span style="color: #0f62fe;">x</span> Demo</div>
+				<div>watson<span style="color: #0f62fe;">x</span> Property Demo</div>
 			</svelte:fragment>
 			<HeaderNav>
-				<HeaderNavItem href="/the-connaught-one" text="The Connaught One" />
-				<HeaderNavItem href="/the-minh" text="The MINH" />
-				<HeaderNavItem href="/residensi-zig" text="Residensi ZIG" />
+				<HeaderNavItem href="/the-nexus-one" text="Nexus one" />
+				<HeaderNavItem href="/the-lumenh" text="Lumenh" />
+				<HeaderNavItem href="/abc-residence" text="ABC Residence" />
 			</HeaderNav>
 			<HeaderUtilities>
 				<HeaderNav>

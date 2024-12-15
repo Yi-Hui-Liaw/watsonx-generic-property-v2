@@ -22,7 +22,7 @@
 	$: data = [];
 
 	onMount(async () => {
-		const response = await fetch('/api/database');
+		const response = await fetch('http://localhost:8080/api/database');
 		data = await response.json();
 		console.log(data);
 	});
@@ -40,7 +40,7 @@
 			const formData = new FormData();
 			// formData.append('uid', uuidv4());
 			formData.append('file', e.detail[0]);
-			const response = await fetch('/api/upload', {
+			const response = await fetch('http://localhost:8080/api/upload', {
 				method: 'POST',
 				body: formData
 			});

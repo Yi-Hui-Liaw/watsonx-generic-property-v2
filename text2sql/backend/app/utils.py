@@ -17,7 +17,7 @@ class GenerateResponse(BaseModel):
 
 class GenerateRequest(BaseModel):
     k_docs: int = 3
-    model_name: str = "meta-llama/llama-2-70b-chat"
+    model_name: str = "meta-llama/llama-3-70b-chat"
     current_page: str = None
     history: List[Mapping[str, Any]] = None
 
