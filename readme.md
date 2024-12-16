@@ -7,7 +7,7 @@ The use cases included as part of this demo:
 - RAG pattern
 - Text2SQL
 
-# How-to
+# How-to-run-this-demo
 The following are the steps for you to get this demo up and running. We assume you already have an environment reserved. If not you can proceed to reserving an env in [TechZone](https://techzone.ibm.com/collection/technology-patterns/journey-ai-assistants) with ES, Wx.Ai and Wx Assistant as part of the component
 
 # Project IBM Cloud Configuration
@@ -68,9 +68,24 @@ Click on preview and test whether your assistant able to answer based on provide
 
 # Deployment to Code Engine
 
-## Step 2 - Configure Code Engine (CE)
+## Step 1 - Build your image
+Run the following command to build and test your image locally.
 
-## Step 2 - Build your image
+```
+podman build -t gen-prop . --no-cache && \ 
+podman run --rm -p 8080:8080 -p 3000:3000 \
+-e IBM_API_KEY=<your-api-key> -e PROJECT_ID=<your-project-id> \
+gen-prop
+```
+
+## Step 2 - Configure Code Engine (CE)
+From the resource list select Code Engine. 
+![alt text](./images/rl-ce.png)
+  
+There should be a project already created for you, from there you can proceed to create app.
+![alt text](./images/rl-ce.png)
+
+
 
 ## Step 2 - Deploy your image to CE
 
