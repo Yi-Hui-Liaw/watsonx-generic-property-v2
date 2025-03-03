@@ -1,6 +1,0 @@
-elasticsearch.ssl.certificateAuthorities: "/Users/ammarsyatbi/repo/watsonx-generic-property/conversational-search/kibana/config/b179a2b4-b76a-11e9-b9ae-c61492e0d24a"
-elasticsearch.username: "ibm_cloud_9508f307_b5ae_4213_8c45_1c9a22128c13"
-elasticsearch.password: "4b1cb2f7699cb144cc84486dd77fe9ba173cc36210c55da309d6ed53e1a08ba0"
-elasticsearch.hosts: ["https://d9e6c938-f132-4ad0-8388-c0d3f76fe081.blijti4d0v0nkr55oei0.databases.appdomain.cloud:32493"]
-server.name: "kibana"
-server.host: "0.0.0.0"

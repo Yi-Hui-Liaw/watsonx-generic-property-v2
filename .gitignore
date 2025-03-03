@@ -132,7 +132,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# Commenting due to svelte
+# lib/
 lib64/
 parts/
 sdist/

@@ -1,0 +1,69 @@
+from pydantic import BaseModel
+from typing import Any, Mapping, List
+from crewai.flow import Flow, listen, start
+from src.property_agent.crews.manager_crew.manager_crew import ManagerCrew
+
+class CollectState(BaseModel):
+    route: str | None = None
+    current_page: str | None = ""
+    query: str | None = None
+    inputs: List[Mapping[str, Any]] | None = None
+    # inputs: str | None= ""
+
+class RouterFlow(Flow[CollectState]):
+    @start("start")
+    def start(self):
+        print("Starting the collector flow")
+        self.state.route = "start"
+        self.state.inputs = "\n".join(
+            [
+                f"user: {c['u']}" if 'u' in c else f"assistant: {c['a']}" for c in self.state.inputs
+            ]
+        )
+        print(self.state.inputs)
+
+    # router still broken atm
+    @listen(start)
+    def route_task(self):
+        #Routing aka planning task.
+        result = (
+            ManagerCrew().crew(mode='route').kickoff(inputs={"conversation": self.state.inputs})
+        )
+        result = str(result).strip()
+
+        
+        self.state.route = result
+        print(f"Route task determined - '{self.state.route}'")
+
+    @listen(route_task)
+    def book_route_task(self):
+        print(f"Update booking route - '{self.state.route}'")
+        if self.state.route == 'property_book':
+            return
+        
+        result = (
+            ManagerCrew().crew(mode='property_book').kickoff(inputs={"conversation": self.state.inputs})
+        )
+        self.state.route = result      
+
+    @listen(book_route_task)
+    def run_task(self):
+        print(f"Execute {self.state.route} task")
+        result = (
+                ManagerCrew()
+                .crew(mode=self.state.route)
+                .kickoff(
+                    inputs={
+                        "current_page": self.state.current_page,
+                        "conversation": self.state.inputs,
+                    }
+                )
+            )
+        self.state.query = str(result)
+
+    @listen(run_task)
+    def complete_task(self):
+        print("complete conversation")
+        if self.state.query:
+            return self.state.query
+        return """Sorry. We could not understand your query. Could please rephrase your question?"""

@@ -1,0 +1,95 @@
+route_task:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Based on the latest query by user, decide the right task to execute. The guidlines for tasks are listed as below:
+    property_facts - Return this when the user latest query related to property facts. For example query about freehold or leasehold.
+    property_database - Return this when the latest user query related to property stock units. For example "how units is still available?"
+    property_book - Return this when the latest user query related to booking a unit. Wether a query or the conversation is in the middle of collecting booking appointment information.
+  expected_output: >
+    Return in text without any quotes
+  agent: customer_service_agent
+
+rag_converse:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Context
+    ------------------
+    User is currently looking at page - {page_url}
+    Property information
+    ------------------
+    Based on the conversation, assist the user for any query given based on information extracted from tool. If the information does not exist in tool output simply let the user it does not exist in documents. You must not use your general knowledge for any property related query.
+
+  expected_output: >
+    A brief reply return in text without any quotes. Use the language that the user is using.
+  agent: customer_service_agent
+
+book_converse:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Your task is to ask user to collect name, phone number and property unit id from user. You must refer to the conversation to check which one is missing. Only request from user the missing information. Ask one question at a time.
+  expected_output: >
+    A brief reply return in text without any quotes. Use the language that the user is using.
+  agent: customer_service_agent
+
+book_route:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Your task is to check whther name, phone number and property unit id from user from conversation already provided by user. 
+  expected_output: >
+    Return either 'true' or 'false'.
+  agent: customer_service_agent
+
+search_property_facts:
+  description: >
+    Based on the latest query in provided conversation, use provided tool to do RAG search for relevant informations.
+    You must only return information from tool output.
+    Make sure the information is correct and only from the tool output. 
+    If the information requested does not exist return "Sorry, I couldn't find relevent information from provided documents.". 
+  expected_output: >
+    Return text only without any quotes.
+  agent: rag_agent
+
+search_property_database:
+  description: >
+    Based on the latest query in provided conversation, use provided tool to search for relevant informations.
+    You can do any necessary calculation requested by user. 
+    You must only return information from tool output.
+    Make sure the information is correct and only from the tool output. 
+    If the information requested does not exist return "Sorry, I couldn't find relevent information from provided documents.". 
+    Make sure the information is correct and only from the documents.
+  expected_output: >
+    Return text only without any quotes.
+  agent: csv_agent
+
+extract_property_book:
+  description: >
+    conversations\n
+    -------------\n
+    {conversation}
+    -------------\n
+    Your task is to extract name, phone number and property unit id from the conversation provided.
+  expected_output: >
+    Return in JSON string format with following keys ['name','phone_number','property_unit_id'].
+    If the information doesn't exist use empty string '' value as placeholder.
+  agent: customer_service_agent
+
+update_property_book:
+  description: >
+    Based on the latest query in provided conversation, your task is to update csv using csv update tool provided. 
+    You will need to pass the JSON string as input parameter.
+  expected_output: >
+    Return in text 'success' or 'fail' based on the result of using the tool.
+    Provide any information return by the tool function as well.
+  agent: csv_agent

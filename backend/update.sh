@@ -1,0 +1,1 @@
+ibmcloud ce application update --rebuild --name watsonx-property --build-source . --env-from-secret property-secrets

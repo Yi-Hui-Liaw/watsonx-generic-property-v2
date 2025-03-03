@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "watsonx.ai generation API endpoint",
+        "version": "0.1.0"
+    },
+    "paths": {
+        "/api/agent_flow": {
+            "post": {
+                "summary": "Flow",
+                "operationId": "flow_api_agent_flow_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Request"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Response"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "HTTPValidationError": {
+                "properties": {
+                    "detail": {
+                        "items": {
+                            "$ref": "#/components/schemas/ValidationError"
+                        },
+                        "type": "array",
+                        "title": "Detail"
+                    }
+                },
+                "type": "object",
+                "title": "HTTPValidationError"
+            },
+            "Request": {
+                "properties": {
+                    "history": {
+                        "items": {
+                            "type": "object"
+                        },
+                        "type": "array",
+                        "title": "History"
+                    }
+                },
+                "type": "object",
+                "title": "Request"
+            },
+            "Response": {
+                "properties": {
+                    "response": {
+                        "type": "string",
+                        "title": "Response"
+                    }
+                },
+                "type": "object",
+                "title": "Response"
+            },
+            "ValidationError": {
+                "properties": {
+                    "msg": {
+                        "type": "string",
+                        "title": "Message"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Error Type"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "loc",
+                    "msg",
+                    "type"
+                ],
+                "title": "ValidationError"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "https://healthcare-backend.1s0fuof1rcj2.us-south.codeengine.appdomain.cloud/",
+            "description": "watsonx.ai endpoint"
+        }
+    ]
+}
