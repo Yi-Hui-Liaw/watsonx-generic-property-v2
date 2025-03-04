@@ -1,8 +1,9 @@
-
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
-from src.healthcare.tools.custom_tool import UpdateCSV
-from crewai_tools import DirectorySearchTool #CSVSearchTool,TXTSearchTool,DirectoryReadTool
+from src.property_agent.tools.custom_tool import UpdateCSV, RunSQL
+from crewai_tools import (
+    RagTool,
+) 
 
 from dotenv import load_dotenv, find_dotenv
 import os
@@ -19,15 +20,16 @@ llm = LLM(
     apikey=os.getenv("WATSONX_API_KEY", None),
 )
 
+
 @CrewBase
 class ManagerCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
     csv_updater = UpdateCSV()
+    run_sql = RunSQL()
 
-    facts_tool= DirectorySearchTool(
-        csv="knowledge/rag",
-        description="Use this tool to extract propery facts from .txt files.",
+    facts_tool = RagTool(
+        description="Use this tool to extract facts related to the minh, zig or connaught property.",
         config=dict(
             llm=dict(
                 provider="ollama",  # or google, openai, anthropic, llama2, ...
@@ -47,11 +49,18 @@ class ManagerCrew:
                     # title="Embeddings",
                 ),
             ),
+            vectordb=dict(
+                provider="chroma",
+                config=dict(
+                    dir=f'rag-db'
+                )
+            )
         ),
+        # summarize=True,
     )
+    facts_tool.add(data_type="directory", source="knowledge/rag")
 
-    database_tool= DirectorySearchTool(
-        csv="knowledge/csv/DirectorySearchTool.csv",
+    csv_tool = RagTool(
         description="Use this tool to extract stocks or unit related information from .csv files",
         config=dict(
             llm=dict(
@@ -72,62 +81,89 @@ class ManagerCrew:
                     # title="Embeddings",
                 ),
             ),
+            vectordb=dict(
+                provider="chroma",
+                config=dict(
+                    dir=f'csv-db'
+                )
+            )
         ),
     )
+    csv_tool.add(data_type="directory", source="knowledge/csv")
 
     @agent
     def customer_service_agent(self) -> Agent:
-        return Agent(config=self.agents_config["customer_service_agent"], 
-                     llm=llm, 
-                     allow_delegation=False, 
-                     max_iter=2, 
-                     verbose=True)
+        return Agent(
+            config=self.agents_config["customer_service_agent"],
+            llm=llm,
+            allow_delegation=False,
+            max_iter=2,
+            verbose=True,
+        )
+
     @agent
     def booking_agent(self) -> Agent:
-        return Agent(config=self.agents_config["customer_service_agent"], 
-                     llm=llm, 
-                     allow_delegation=False, 
-                     max_iter=2, 
-                     verbose=True,
-                     tools=[self.csv_updater])
+        return Agent(
+            config=self.agents_config["customer_service_agent"],
+            llm=llm,
+            allow_delegation=False,
+            max_iter=2,
+            verbose=True,
+            tools=[self.csv_updater],
+        )
 
     @agent
     def csv_agent(self) -> Agent:
-        return Agent(config=self.agents_config["csv_agent"], 
-                     llm=llm, 
-                     allow_delegation=False, 
-                     max_iter=2, 
-                     verbose=True,
-                     tools=[self.database_tool])
+        return Agent(
+            config=self.agents_config["csv_agent"],
+            llm=llm,
+            allow_delegation=False,
+            max_iter=2,
+            verbose=True,
+            tools=[self.csv_tool],
+        )
     
     @agent
-    def rag_agent(self) -> Agent:
-        return Agent(config=self.agents_config["rag_agent"], 
-                     llm=llm, 
-                     allow_delegation=False, 
-                     max_iter=2, 
-                     verbose=True, 
-                     tools=[self.facts_tool])
+    def sql_agent(self) -> Agent:
+        return Agent(
+            config=self.agents_config["sql_agent"],
+            llm=llm,
+            allow_delegation=False,
+            max_iter=2,
+            verbose=True,
+            tools=[self.run_sql],
+        )
 
-########################### TASK ###########################
+    @agent
+    def rag_agent(self) -> Agent:
+        return Agent(
+            config=self.agents_config["rag_agent"],
+            llm=llm,
+            allow_delegation=False,
+            max_iter=2,
+            verbose=True,
+            tools=[self.facts_tool],
+        )
+
+    ########################### TASK ###########################
     @task
     def route_task(self) -> Task:
         return Task(
             config=self.tasks_config["route_task"],
         )
-    
-    @ConditionalTask
+
+    @task
     def book_route(self) -> Task:
         return Task(
             config=self.tasks_config["book_route"],
         )
-    
+
     @task
     def rag_converse(self) -> Task:
         return Task(
             config=self.tasks_config["rag_converse"],
         )
-    
+
     @task
     def book_converse(self) -> Task:
         return Task(
@@ -137,11 +173,15 @@ class ManagerCrew:
     @task
     def search_property_facts(self) -> Task:
         return Task(config=self.tasks_config["search_property_facts"])
-    
+
     @task
     def search_property_database(self) -> Task:
         return Task(config=self.tasks_config["search_property_database"])
     
+    @task
+    def transform_query_sql(self) -> Task:
+        return Task(config=self.tasks_config["transform_query_sql"])
+
     @task
     def extract_property_book(self) -> Task:
         return Task(config=self.tasks_config["extract_property_book"])
@@ -151,44 +191,44 @@ class ManagerCrew:
         return Task(config=self.tasks_config["update_property_book"])
 
     @crew
-    def crew(self, mode='route') -> Crew:
+    def crew(self, mode="route") -> Crew:
         """Creates the Healthhive crew"""
-        if mode == 'route':
+        if mode == "route":
             return Crew(
                 agents=[self.customer_service_agent()],
                 tasks=[self.route_task()],
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == 'property_facts':
+        elif mode == "property_facts":
             return Crew(
-                agents=[self.rag_agent(),self.customer_service_agent()],
+                agents=[self.rag_agent(), self.customer_service_agent()],
                 tasks=[self.search_property_facts(), self.rag_converse()],
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == 'property_database':
+        elif mode == "property_database":
             return Crew(
-                agents=[self.csv_agent(), self.customer_service_agent()],
-                tasks=[self.search_property_database(), self.rag_converse()],
+                agents=[self.sql_agent(), self.customer_service_agent()],
+                tasks=[self.transform_query_sql(), self.search_property_database(), self.rag_converse()],
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == 'property_book':
+        elif mode == "property_book":
             return Crew(
                 agents=[self.customer_service_agent()],
                 tasks=[self.book_route()],
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == 'property_book_converse':
+        elif mode == "property_book_converse":
             return Crew(
                 agents=[self.customer_service_agent()],
                 tasks=[self.book_converse()],
                 process=Process.sequential,
                 verbose=True,
-            )   
-        elif mode == 'property_book_update':
+            )
+        elif mode == "property_book_update":
             return Crew(
                 agents=[self.booking_agent()],
                 tasks=[self.extract_property_book(), self.update_property_book()],

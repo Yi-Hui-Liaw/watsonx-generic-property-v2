@@ -4,12 +4,14 @@ route_task:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query by user, decide the right task to execute. The guidlines for tasks are listed as below:
+    Based on the latest query by user, decide the right task to execute. 
+    The tasks are - ['property_facts','property_database', 'property_book']
+    The guidlines for tasks are listed as below:
     property_facts - Return this when the user latest query related to property facts. For example query about freehold or leasehold.
     property_database - Return this when the latest user query related to property stock units. For example "how units is still available?"
     property_book - Return this when the latest user query related to booking a unit. Wether a query or the conversation is in the middle of collecting booking appointment information.
   expected_output: >
-    Return in text without any quotes
+    Return either 'property_facts','property_database' or 'property_book' without any quotes.
   agent: customer_service_agent
 
 rag_converse:
@@ -53,25 +55,56 @@ book_route:
 
 search_property_facts:
   description: >
-    Based on the latest query in provided conversation, use provided tool to do RAG search for relevant informations.
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Based on the latest query in provided conversation, use provided tool to do search for relevant content in the text file.
     You must only return information from tool output.
-    Make sure the information is correct and only from the tool output. 
-    If the information requested does not exist return "Sorry, I couldn't find relevent information from provided documents.". 
+    Make sure the information is correct and only from the tool output. Return as much relevant information as possible.
+    If the information requested does not exist return "No relevant information found from search.". 
   expected_output: >
-    Return text only without any quotes.
+    Return the content in text not the file name.
   agent: rag_agent
+
+transform_query_sql:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Based on the latest query in provided conversation, transform the query into relevant SQL. Make the SQL query match the schema provided. Provided schema below is the database name and columns.
+    database schema:
+    ------------------
+    zig - ('property_name', 'layout', 'status', 'block', 'price')
+    connaught - ('property_name', 'layout', 'status', 'block', 'price')
+    minh - ('property_name', 'layout', 'status', 'block', 'price')
+    ------------------
+  expected_output: >
+    Return in text without any quotes.
+  agent: sql_agent
 
 search_property_database:
   description: >
-    Based on the latest query in provided conversation, use provided tool to search for relevant informations.
-    You can do any necessary calculation requested by user. 
-    You must only return information from tool output.
-    Make sure the information is correct and only from the tool output. 
-    If the information requested does not exist return "Sorry, I couldn't find relevent information from provided documents.". 
-    Make sure the information is correct and only from the documents.
+    Use the provided tool to run the SQL previously generated.
   expected_output: >
-    Return text only without any quotes.
+    Return in dataframe format.
+  agent: sql_agent
+
+search_property_csv:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Based on the latest query in provided conversation, use provided tool to search for relevant informations. Extract as much information as possible.
+    You must do any necessary calculation required to answer user's query. For example if user ask 'How many available units?' you can do counts on unit with available status.
+    Make sure the information is correct and only from the tool output. 
+    If the information requested does not exist return "No relevant information found from search.".
+  expected_output: >
+    Return in csv format.
   agent: csv_agent
+
 
 extract_property_book:
   description: >
@@ -87,6 +120,10 @@ extract_property_book:
 
 update_property_book:
   description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
     Based on the latest query in provided conversation, your task is to update csv using csv update tool provided. 
     You will need to pass the JSON string as input parameter.
   expected_output: >

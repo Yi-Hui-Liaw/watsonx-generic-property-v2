@@ -219,3 +219,7 @@ ENV/
 .command
 .env
 elasticsearch-openapi.json
+
+**/csv-db/*
+**/rag-db/*
+**/sql-db/*

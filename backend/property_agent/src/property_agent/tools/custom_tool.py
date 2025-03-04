@@ -1,5 +1,5 @@
 from typing import Type
-
+import sqlite3
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 from typing import List
@@ -7,10 +7,14 @@ import json
 import pandas as pd
 
 class Appointment(BaseModel):
-    """Input schema for MyCustomTool."""
+    """Input schema for UpdateCSV."""
 
     appointment: str = Field(..., description="JSON string of appointment information.")
 
+class Query(BaseModel):
+    """Input schema for RunSQL."""
+
+    sql_query: str = Field(..., description="SQL string following schema provided")
 
 class UpdateCSV(BaseTool):
     name: str = "csv_update"
@@ -40,5 +44,23 @@ class UpdateCSV(BaseTool):
             print(f"Appoinment's updated, appt row - {appt_df.shape[0]}")
 
             return "All csv has been updated."
+        except Exception as e:
+            return e
+        
+class RunSQL(BaseTool):
+    name: str = "run_sql"
+    description: str = (
+        "Use this tool to run SQL query to extract property information related to units."
+    )
+    args_schema: Type[BaseModel] = Query
+
+    def _run(self, sql_query: str) -> str:
+        # Implementation goes here
+        try:
+            print("Running sql query...")
+            con = sqlite3.connect("sql-db/property.db")
+            df = pd.read_sql(sql_query, con=con)
+
+            return df
         except Exception as e:
             return e

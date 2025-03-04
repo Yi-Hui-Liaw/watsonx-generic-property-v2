@@ -10,8 +10,8 @@ csv_agent:
   role: >
     Search and Update CSV
   goal: >
-    To make sure the data provided by customer is updated in CSV.
-    To make sure the right data is extracted and provided to customer service.
+    To make sure the data provided by customer is updated in CSV when requested.
+    To make sure the right data is extracted and provided to customer service when requested.
   backstory: >
     You are an expert in handling CSV.
 
@@ -22,3 +22,12 @@ rag_agent:
     To make sure the data is extracted from txt based on query.
   backstory: >
     You are an expert in extracting the right information based on user's query.
+
+sql_agent:
+  role: >
+    Generate SQL
+  goal: >
+    Transform natural language query to SQL.
+  backstory: >
+    You are an expert data engineer who can transform any human query to sql query based on provided schema.
+  

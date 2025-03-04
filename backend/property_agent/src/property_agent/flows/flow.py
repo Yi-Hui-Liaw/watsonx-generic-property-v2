@@ -5,22 +5,23 @@ from src.property_agent.crews.manager_crew.manager_crew import ManagerCrew
 
 class CollectState(BaseModel):
     route: str | None = None
-    current_page: str | None = ""
+    page_url: str | None = ""
     query: str | None = None
-    inputs: List[Mapping[str, Any]] | None = None
+    inputs: List[Mapping[str, Any]] | None = []
     # inputs: str | None= ""
 
 class RouterFlow(Flow[CollectState]):
-    @start("start")
+    @start()
     def start(self):
         print("Starting the collector flow")
         self.state.route = "start"
-        self.state.inputs = "\n".join(
+        input_str =  "\n".join(
             [
                 f"user: {c['u']}" if 'u' in c else f"assistant: {c['a']}" for c in self.state.inputs
             ]
         )
-        print(self.state.inputs)
+        self.state.inputs = input_str
+        print("History inputs: ",self.state.inputs)
 
     # router still broken atm
     @listen(start)
@@ -38,7 +39,7 @@ class RouterFlow(Flow[CollectState]):
     @listen(route_task)
     def book_route_task(self):
         print(f"Update booking route - '{self.state.route}'")
-        if self.state.route == 'property_book':
+        if self.state.route != 'property_book':
             return
         
         result = (
@@ -54,7 +55,7 @@ class RouterFlow(Flow[CollectState]):
                 .crew(mode=self.state.route)
                 .kickoff(
                     inputs={
-                        "current_page": self.state.current_page,
+                        "page_url": self.state.page_url,
                         "conversation": self.state.inputs,
                     }
                 )
