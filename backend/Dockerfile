@@ -7,7 +7,8 @@ COPY ./property_agent /code/property_agent
 COPY ./requirements.txt /code/property_agent/requirements.txt
 
 # RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
-RUN apt-get update && apt-get install -y curl && \
+RUN apt-get update && apt-get -y install --no-install-recommends \
+    curl sqlite3 libsqlite3-dev gcc && \
     curl -sSL https://ollama.com/install.sh | bash
 
 ENV OLLAMA_HOST=localhost:11434
