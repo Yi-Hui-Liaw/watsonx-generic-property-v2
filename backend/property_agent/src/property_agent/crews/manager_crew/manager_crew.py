@@ -25,7 +25,7 @@ llm = LLM(
 class ManagerCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
-    csv_updater = UpdateCSV()
+    update_csv = UpdateCSV()
     run_sql = RunSQL()
 
     facts_tool = RagTool(
@@ -101,16 +101,16 @@ class ManagerCrew:
             verbose=True,
         )
 
-    @agent
-    def booking_agent(self) -> Agent:
-        return Agent(
-            config=self.agents_config["customer_service_agent"],
-            llm=llm,
-            allow_delegation=False,
-            max_iter=2,
-            verbose=True,
-            tools=[self.csv_updater],
-        )
+    # @agent
+    # def booking_agent(self) -> Agent:
+    #     return Agent(
+    #         config=self.agents_config["csv_agent"],
+    #         llm=llm,
+    #         allow_delegation=False,
+    #         max_iter=2,
+    #         verbose=True,
+    #         tools=[self.update_csv],
+    #     )
 
     @agent
     def csv_agent(self) -> Agent:
@@ -120,7 +120,7 @@ class ManagerCrew:
             allow_delegation=False,
             max_iter=2,
             verbose=True,
-            tools=[self.csv_tool],
+            tools=[self.update_csv],
         )
     
     @agent
@@ -189,6 +189,10 @@ class ManagerCrew:
     @task
     def update_property_book(self) -> Task:
         return Task(config=self.tasks_config["update_property_book"])
+    
+    @task
+    def summarize_booking(self) -> Task:
+        return Task(config=self.tasks_config["summarize_booking"])
 
     @crew
     def crew(self, mode="route") -> Crew:
@@ -230,8 +234,8 @@ class ManagerCrew:
             )
         elif mode == "property_book_update":
             return Crew(
-                agents=[self.booking_agent()],
-                tasks=[self.extract_property_book(), self.update_property_book()],
+                agents=[self.customer_service_agent(), self.csv_agent()],
+                tasks=[self.extract_property_book(), self.update_property_book(), self.summarize_booking()],
                 process=Process.sequential,
                 verbose=True,
             )

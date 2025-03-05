@@ -27,7 +27,7 @@ def delete_tables(con, tables):
 def ingest():
     con = sqlite3.connect("sql-db/property.db")
     # Drop all tables
-    delete_all_tables(con)
+    # delete_all_tables(con)
 
     csv_dir = "knowledge/csv"
     filenames = os.listdir(csv_dir)
@@ -36,11 +36,12 @@ def ingest():
     for filename in filenames:
         print(f"Ingesting - {filename}")
         df = pd.read_csv(os.path.join(csv_dir, filename))
-        tablename = filename.replace(".csv","").lower()
+        tablename = filename.replace(".csv","").replace("-","_").lower()
         df.columns = [c.lower().strip().replace(" ","_") for c in df.columns]
         df.to_sql(name=tablename, con=con)
         print(f"{filename} ingestion completed")
-        print(f"{tablename} - {tuple(list(df.columns))}")
+        print(f"'{tablename}' - {tuple(list(df.columns))}")
+        print(f"Num of rows - {df.shape[0]}")
 
 if __name__ == '__main__':
     ingest()

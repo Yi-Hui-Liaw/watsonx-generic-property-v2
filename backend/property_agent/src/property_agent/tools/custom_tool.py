@@ -43,7 +43,7 @@ class UpdateCSV(BaseTool):
             appt_df.to_csv(appt_csv_path, index=False)
             print(f"Appoinment's updated, appt row - {appt_df.shape[0]}")
 
-            return "All csv has been updated."
+            return "Appointment csv has been updated."
         except Exception as e:
             return e
         

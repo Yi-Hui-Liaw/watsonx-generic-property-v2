@@ -24,19 +24,19 @@ async def read_appointment():
     df = pd.read_csv("knowledge/csv/appointment.csv")
     return df.to_html()
 
-@router.get("/csv/minh", response_class=HTMLResponse)
+@router.get("/csv/lumenh", response_class=HTMLResponse)
 async def read_minh():
-    df = pd.read_csv("knowledge/csv/minh.csv")
+    df = pd.read_csv("knowledge/csv/lumenh.csv")
     return df.to_html()
 
-@router.get("/csv/zig", response_class=HTMLResponse)
-async def read_zig():
-    df = pd.read_csv("knowledge/csv/zig.csv")
+@router.get("/csv/abc-residence", response_class=HTMLResponse)
+async def read_abc():
+    df = pd.read_csv("knowledge/csv/abc-residence.csv")
     return df.to_html()
 
-@router.get("/csv/connaught", response_class=HTMLResponse)
-async def read_connaught():
-    df = pd.read_csv("knowledge/csv/connaught.csv")
+@router.get("/csv/nexus-one", response_class=HTMLResponse)
+async def read_nexus():
+    df = pd.read_csv("knowledge/csv/nexus-one.csv")
     return df.to_html()
 
 @router.get("/csv/refresh")

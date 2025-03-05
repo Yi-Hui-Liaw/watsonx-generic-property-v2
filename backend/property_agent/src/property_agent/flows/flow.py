@@ -45,7 +45,9 @@ class RouterFlow(Flow[CollectState]):
         result = (
             ManagerCrew().crew(mode='property_book').kickoff(inputs={"conversation": self.state.inputs})
         )
-        self.state.route = result      
+        result = str(result).strip()
+        result = 'property_book_converse' if result == 'false' else 'property_book_update'
+        self.state.route = result 
 
     @listen(book_route_task)
     def run_task(self):

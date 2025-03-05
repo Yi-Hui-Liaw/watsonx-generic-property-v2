@@ -73,12 +73,11 @@ transform_query_sql:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query in provided conversation, transform the query into relevant SQL. Make the SQL query match the schema provided. Provided schema below is the database name and columns.
-    database schema:
+    Based on the latest query in provided conversation, transform the query into relevant SQL. Make the SQL query match the schema provided. Provided schema below is the database name and columns. Do not use run sql tool during this task.
     ------------------
-    zig - ('property_name', 'layout', 'status', 'block', 'price')
-    connaught - ('property_name', 'layout', 'status', 'block', 'price')
-    minh - ('property_name', 'layout', 'status', 'block', 'price')
+    abc_residence - ('property_name', 'layout', 'status', 'block', 'price')
+    nexus_one - ('property_name', 'layout', 'status', 'block', 'price')
+    lumenh - ('property_name', 'layout', 'status', 'block', 'price')
     ------------------
   expected_output: >
     Return in text without any quotes.
@@ -120,13 +119,17 @@ extract_property_book:
 
 update_property_book:
   description: >
-    conversation:
-    ------------------
-    {conversation}
-    ------------------
-    Based on the latest query in provided conversation, your task is to update csv using csv update tool provided. 
+    Your task is to update appointment csv using tool provided. 
     You will need to pass the JSON string as input parameter.
   expected_output: >
-    Return in text 'success' or 'fail' based on the result of using the tool.
+    Return in text 'success' or 'fail' based on the tool output.
     Provide any information return by the tool function as well.
   agent: csv_agent
+
+
+summarize_booking:
+  description: >
+    Based on the appointment infomration, summarize the appointment created for the user. Do not tell the user about function or csv file updated. Just let them know our property agent will contact them for meet up.
+  expected_output: >
+    Return in text only without any quotes.
+  agent: customer_service_agent
