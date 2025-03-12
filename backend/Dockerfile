@@ -4,6 +4,8 @@ WORKDIR /code/property_agent
 
 COPY ./property_agent /code/property_agent
 
+COPY ./ollama.sh /code/property_agent/ollama.sh
+
 COPY ./requirements.txt /code/property_agent/requirements.txt
 
 # RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
