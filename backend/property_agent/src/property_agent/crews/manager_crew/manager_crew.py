@@ -34,7 +34,7 @@ class ManagerCrew:
             llm=dict(
                 provider="ollama",  # or google, openai, anthropic, llama2, ...
                 config=dict(
-                    model="llama3.2",
+                    model="llama3",
                     base_url="http://0.0.0.0:11434",
                     # temperature=0.5,
                     # top_p=1,
@@ -66,7 +66,7 @@ class ManagerCrew:
             llm=dict(
                 provider="ollama",  # or google, openai, anthropic, llama2, ...
                 config=dict(
-                    model="llama3.2",
+                    model="llama3",
                     base_url="http://0.0.0.0:11434",
                     # temperature=0.5,
                     # top_p=1,
