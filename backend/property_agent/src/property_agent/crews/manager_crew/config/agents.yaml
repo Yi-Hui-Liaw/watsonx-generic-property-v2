@@ -27,7 +27,7 @@ sql_agent:
   role: >
     Generate SQL
   goal: >
-    Transform natural language query to SQL.
+    Transform natural language query to SQL. 
   backstory: >
     You are an expert data engineer who can transform any human query to sql query based on provided schema.
   

@@ -62,7 +62,7 @@ search_property_facts:
     Based on the latest query in provided conversation, use provided tool to do search for relevant content in the text file.
     You must only return information from tool output.
     Make sure the information is correct and only from the tool output. Return as much relevant information as possible.
-    If the information requested does not exist return "No relevant information found from search.". 
+    If the information requested does not exist, let the user know we couldnt find relevant information in the documents and remind them that we only handle property related to the lumenh, the nexus one and abc residence.
   expected_output: >
     Return the content in text not the file name.
   agent: rag_agent
@@ -73,7 +73,10 @@ transform_query_sql:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query in provided conversation, transform the query into relevant SQL. Make the SQL query match the schema provided. Provided schema below is the database name and columns. Do not use run sql tool during this task.
+    Based on the latest query in provided conversation, transform the query into relevant SQL. 
+    Make the SQL query match the schema provided.
+    Make sure to lowercase the query and columns value. For example "... LOWER(status) ..."
+    Provided schema below is the database name and columns. Do not use any tool during this task.
     ------------------
     abc_residence - ('property_name', 'layout', 'status', 'block', 'price')
     nexus_one - ('property_name', 'layout', 'status', 'block', 'price')

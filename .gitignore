@@ -222,4 +222,5 @@ elasticsearch-openapi.json
 
 **/csv-db/*
 **/rag-db/*
-**/sql-db/*
+**/deploy.sh
+**/update.sh
