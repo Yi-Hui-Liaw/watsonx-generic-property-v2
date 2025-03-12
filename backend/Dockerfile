@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN crewai install 
 
-CMD ["sh", "-c", "ollama serve & sleep 5 && ollama pull llama3 && uvicorn app.main:app --host 0.0.0.0 --port 8080"]
+CMD ["sh", "-c", "ollama serve & sleep 5 && uvicorn app.main:app --host 0.0.0.0 --port 8080 & ollama pull llama3"]
