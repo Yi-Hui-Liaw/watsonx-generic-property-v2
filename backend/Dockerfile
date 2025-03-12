@@ -13,9 +13,7 @@ RUN apt-get update && \
 
 ENV OLLAMA_HOST=0.0.0.0:11434
 
-RUN bash -c "sh ollama serve &> /dev/null"
-
-RUN ollama pull llama3
+RUN ollama serve & sleep 5 && ollama pull llama3 && exit 0
 
 RUN pip install --no-cache-dir -r requirements.txt && \
     crewai install
