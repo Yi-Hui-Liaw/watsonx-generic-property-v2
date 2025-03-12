@@ -15,12 +15,12 @@ RUN apt-get update && \
 
 ENV OLLAMA_HOST=0.0.0.0:11434
 
-RUN ollama serve > /dev/null
+RUN /bin/bash -c "ollama serve &"
 
 RUN pip install --no-cache-dir -r requirements.txt && \
     crewai install
 
-RUN ollama pull llama3
+# RUN ollama pull llama3
 
 # CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port 8080"]
 CMD ["uvicorn app.main:app --host 0.0.0.0 --port 8080"]
