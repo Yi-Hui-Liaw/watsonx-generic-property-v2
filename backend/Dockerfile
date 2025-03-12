@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl sqlite3 li
 RUN which ollama 
 
 # RUN systemctl enable ollama && systemctl start ollama
-RUN ollama serve & sleep 5 && ollama pull llama3
+RUN ollama serve & sleep 5 && ollama pull llama3.2
 
 RUN pip install --no-cache-dir -r requirements.txt
 
