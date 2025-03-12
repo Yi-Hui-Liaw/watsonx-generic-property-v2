@@ -11,16 +11,15 @@ COPY ./requirements.txt /code/property_agent/requirements.txt
 # RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl sqlite3 libsqlite3-dev gcc && \
-    curl -sSL https://ollama.com/install.sh | sh
+    curl -sSL https://ollama.com/install.sh | sh && \
+    ollama pull llama3
 
 ENV OLLAMA_HOST=0.0.0.0:11434
 
-RUN /bin/bash -c "ollama serve &"
+# RUN /bin/bash -c "ollama serve &> /dev/null"
 
 RUN pip install --no-cache-dir -r requirements.txt && \
     crewai install
-
-# RUN ollama pull llama3
 
 # CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port 8080"]
 CMD ["uvicorn app.main:app --host 0.0.0.0 --port 8080"]
