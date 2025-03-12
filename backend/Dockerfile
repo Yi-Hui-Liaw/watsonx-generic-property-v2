@@ -12,12 +12,14 @@ ENV OLLAMA_HOST=0.0.0.0:11434
 RUN apt-get update && apt-get install -y --no-install-recommends curl sqlite3 libsqlite3-dev gcc && \
     curl -sSL https://ollama.com/install.sh | bash
 
-RUN which ollama
+RUN which ollama 
+
+RUN ollama serve & sleep 5 && ollama pull llama3 
 
 # RUN systemctl enable ollama && systemctl start ollama
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 RUN crewai install 
 
-CMD ["sh", "-c", "ollama serve & sleep 5 && ollama pull llama3 && uvicorn app.main:app --host 0.0.0.0 --port 8080"]
+CMD ["sh", "-c", "ollama serve & sleep 5 && uvicorn app.main:app --host 0.0.0.0 --port 8080"]
