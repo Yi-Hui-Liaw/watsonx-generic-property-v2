@@ -59,9 +59,9 @@
 		};
 
 		(window as any).watsonAssistantChatOptions = {
-			integrationID: '6060f207-ddd7-4334-8b49-b4288eb6467c', // The ID of this integration.
+			integrationID: '701ee0c7-178c-4cd1-be97-b4985f9b21b1', // The ID of this integration.
 			region: 'us-south', // The region your integration is hosted in.
-			serviceInstanceID: 'e036d57b-8550-4359-8d2f-d146ddec30ea', // The ID of your service instance.
+			serviceInstanceID: '2b12c818-752c-4824-9327-6dd46a9c78b0', // The ID of your service instance.
 			onLoad: onLoad,
 			showRestartButton: true,
 			openChatByDefault: false,

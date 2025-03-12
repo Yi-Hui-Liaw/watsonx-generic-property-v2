@@ -95,7 +95,7 @@
     },
     "servers": [
         {
-            "url": "https://healthcare-backend.1s0fuof1rcj2.us-south.codeengine.appdomain.cloud/",
+            "url": "https://property-backend.1sx8hk38art9.us-south.codeengine.appdomain.cloud/",
             "description": "watsonx.ai endpoint"
         }
     ]
