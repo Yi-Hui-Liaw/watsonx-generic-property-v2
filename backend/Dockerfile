@@ -14,8 +14,6 @@ ENV OLLAMA_HOST=0.0.0.0:11434
 
 RUN which ollama 
 
-RUN systemctl restart ollama
-
 # RUN systemctl enable ollama && systemctl start ollama
 RUN ollama serve & sleep 5 && ollama pull llama3 \
     pip install --no-cache-dir -r requirements.txt
