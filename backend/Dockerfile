@@ -18,4 +18,6 @@ ENV OLLAMA_HOST=0.0.0.0:11434
 RUN pip install --no-cache-dir -r requirements.txt && \
     crewai install
 
+RUN chmod +x /code/property_agent/start.sh
+
 ENTRYPOINT ["/code/property_agent/start.sh"]
