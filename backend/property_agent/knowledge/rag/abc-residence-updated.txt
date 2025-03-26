@@ -104,82 +104,82 @@ Floor Plan Information:
    Price: RM 840,888
 
 2. Unit Type A1
-   Configuration: 1 Studio 1 Bathroom 42m² (450ft²)
+   Configuration: 1 Studio, 1 Bathroom 42m² (450ft²)
    Built-up size: 450ft²
    Carpark: 0
 
 3. Unit Type B
-   Configuration: 3 Bedrooms 2 Bathrooms 83m² (898ft²)
+   Configuration: 3 Bedrooms, 2 Bathrooms 83m² (898ft²)
    Built-up size: 898ft²
    Carpark: 0
    Price: RM 1,002,888
 
 4. Unit Type B1
-   Configuration: 3 Bedrooms 2 Bathrooms 83m² (898ft²)
+   Configuration: 3 Bedrooms, 2 Bathrooms 83m² (898ft²)
    Built-up size: 898ft²
    Carpark: 0
 
 5. Unit Type B2
-   Configuration: 3 Bedrooms 2 Bathrooms 83m² (898ft²) 
+   Configuration: 3 Bedrooms, 2 Bathrooms 83m² (898ft²) 
    Built-up size: 898ft²
    Terrace & Garden: 23m² (260ft²)
    Carpark: 0
 
 6. Unit Type C
-   Configuration: 3 Bedrooms 1 Study 2 Bathrooms 93m² (998ft²)
+   Configuration: 3 Bedrooms, 1 Study, 2 Bathrooms 93m² (998ft²)
    Built-up size: 998ft²
    Urban Yard: 1m² (12ft²)
    Carpark: 0
    Price: RM 1,056,888
 
 7. Unit Type C1
-   Configuration: 3 Bedrooms 1 Study 2 Bathrooms 96m² (1,028ft²)
+   Configuration: 3 Bedrooms, 1 Study, 2 Bathrooms 96m² (1,028ft²)
    Built-up size: 1,028ft²
    Urban Yard: 1m² (12ft²)
    Carpark: 0
 
 8. Unit Type C2
-   Configuration: 3 Bedrooms 1 Study 2 Bathrooms 91m² (980ft²)
+   Configuration: 3 Bedrooms, 1 Study, 2 Bathrooms 91m² (980ft²)
    Built-up size: 980ft²
    Terrace & Garden: 29m² (321ft²)
    Carpark: 0
 
 9. Unit Type D
-   Configuration: 4 Bedrooms 2 Bathrooms 105m² (1,135ft²)
+   Configuration: 4 Bedrooms, 2 Bathrooms 105m² (1,135ft²)
    Built-up size: 1,135ft²
    Urban Yard 1m² (13ft²)
    Carpark: 0
    Price: RM 1,233,888
 
 10. Unit Type D1
-    Configuration: 4 Bedrooms 2 Bathrooms 100m² (1,070ft²)
+    Configuration: 4 Bedrooms, 2 Bathrooms 100m² (1,070ft²)
     Built-up size: 1,070ft²
     Terrace & Garden: 14m² (154ft²) 
     Urban Yard: 1m² (13ft²)
     Carpark: 0
 
 11. Unit Type E
-    Configuration: 4 Bedrooms 3 Bathrooms (Dual-Key Enable Feature) 111m² (1,198ft²)
+    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 111m² (1,198ft²)
     Built-up size: 1,198ft²
     Urban Yard: 1m² (13ft²)
     Carpark: 3
     Price: RM 1,273,888
 
 12. Unit Type E1
-    Configuration: 4 Bedrooms 3 Bathrooms (Dual-Key Enable Feature) 111m² (1,198ft²)
+    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 111m² (1,198ft²)
     Built-up size: 1,198ft²
     Urban Yard: 1m² (13ft²)
     Carpark: 0
 
 13. Unit Type E2
-    Configuration: 4 Bedrooms 3 Bathrooms (Dual-Key Enable Feature) 106m² (1,135ft²)
+    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 106m² (1,135ft²)
     Built-up size: 1,135ft²
     Terrace & Garden: 33m² (360ft²)
     Urban Yard: 1m² (13ft²)
     Carpark: 0
 
 14. Unit Type E3
-    Configuration: 4 Bedrooms 3 Bathrooms (Dual-Key Enable Feature) 106m² (1,135ft²)
+    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 106m² (1,135ft²)
     Built-up size: 1,135ft²
     Terrace & Garden: 33m² (360ft²) 
     Urban Yard: 1m² (13ft²)

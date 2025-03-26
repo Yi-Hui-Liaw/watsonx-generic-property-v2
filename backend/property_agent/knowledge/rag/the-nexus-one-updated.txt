@@ -76,27 +76,27 @@ Condominium Details:
 
 Floor Plan Information:
 1. Unit Type A
-   Configuration: 1 Bedroom 1 Bathroom
+   Configuration: 1 Bedroom, 1 Bathroom
    Built-up size: 452ft²
    Carpark: 1
 
 2. Unit Type B
-   Configuration: 2 Bedrooms 1 Bathroom 
+   Configuration: 2 Bedrooms, 1 Bathroom 
    Built-up size: 708ft²
    Carpark: 1
 
 3. Unit Type C
-   Configuration: 3 Bedrooms 2 Bathrooms
+   Configuration: 3 Bedrooms, 2 Bathrooms
    Built-up size: 960ft²
    Carpark: 2
 
 4. Unit Type D
-   Configuration: 3 Bedrooms 2 Bathrooms
+   Configuration: 3 Bedrooms, 2 Bathrooms
    Built-up size: 1000ft²
    Carpark: 2
 
 5. Unit Type E
-   Configuration: 4 Bedrooms 3 Bathrooms
+   Configuration: 4 Bedrooms, 3 Bathrooms
    Built-up size: 1270ft²
    Carpark: 2
 

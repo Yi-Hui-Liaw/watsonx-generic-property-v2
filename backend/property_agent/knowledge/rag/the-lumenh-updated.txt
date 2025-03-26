@@ -109,25 +109,25 @@ Facilities & Amenities:
 
 Floor Plan Information:
 1. Unit Type A
-   Configuration: 3 Bedrooms 3 Bathrooms 
+   Configuration: 3 Bedrooms, 3 Bathrooms 
    Built-up size: 1,607ft²
    Carpark: 2
    Price: RM 599,800
 
 2. Unit Type B
-   Configuration: 3 Bedrooms 4 Bathrooms 
+   Configuration: 3 Bedrooms, 4 Bathrooms 
    Built-up size: 2,076ft²
    Carpark: 3
    Price: RM 774,800
 
 3. Unit Type C (with balcony)
-   Configuration: 3 Bedrooms 4 Bathrooms  
+   Configuration: 3 Bedrooms, 4 Bathrooms  
    Built-up size: 2,733ft²
    Carpark: 3
    Price: RM 893,800
 
 3. Unit Type D (with balcony)
-   Configuration: 3 Bedroom 4 Bathroom 
+   Configuration: 3 Bedrooms, 4 Bathroom 
    Built-up size: 3,010ft²
    Carpark: 4
    Price: RM 865,800
