@@ -1,0 +1,50 @@
+.homepage {
+    background-image: url('../assets/Main-home.png'); /* Set the path to your background image */
+    background-size: cover; /* Makes sure the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures the background covers the full height of the page */
+    color: white; /* Adjust text color for readability if necessary */
+    padding: 0; /* Remove default padding if any */
+  }
+  
+  .hero {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .hero input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .hero button {
+    background-color: #004488;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .property-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
