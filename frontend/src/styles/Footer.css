@@ -1,8 +1,66 @@
 .footer {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 15px;
+    background-color: #f8f8f8;
+    color: #555;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+    height: 250px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .footer-column {
+    width: 45%;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(152, 117, 48);
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; 
+  }
+  
+  .footer-icons {
+    display: flex;
+    align-items: center; /* Keeps the icons in a row */
+    gap: 18px; 
+  }
+  
+  .footer-icons a {
+    text-decoration: none;
+  }
+  
+  .social-icon {
+    width: 25px; 
+    height: 25px; 
+  }
+  
+  .footer-icons .fb-icon {
+    align-self: flex-start; /* Aligns the Facebook icon vertically */
+  }
+  
+  .footer-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    color: rgb(152, 117, 48);
   }
   

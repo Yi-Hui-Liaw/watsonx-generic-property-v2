@@ -39,7 +39,7 @@
   }
 
   .title:hover {
-    text-decoration: underline;
+    color: rgb(152, 117, 48);
   }
   
   nav {
@@ -85,6 +85,6 @@
   
   /* Optional hover effect for login and signup */
   .login:hover, .sign-up:hover {
-    text-decoration: underline;
+    color: rgb(152, 117, 48);
   }
   
