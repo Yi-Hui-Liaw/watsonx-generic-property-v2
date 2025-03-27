@@ -10,9 +10,9 @@ const Header = () => {
         <img src={logo} alt="Logo" className="logo-image" />
         <div className="logo">Sweet Home</div>
         <div className="titles">
-          <div className="title">About Us</div>
-          <div className="title">Contact</div>
-          <div className="title">Blog</div>
+          <div className="title-t">About Us</div>
+          <div className="title-t">Contact</div>
+          <div className="title-t">Blog</div>
         </div>
       </div>
       <nav className="login-signup-container">
