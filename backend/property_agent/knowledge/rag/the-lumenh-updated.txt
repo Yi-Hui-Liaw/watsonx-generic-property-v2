@@ -5,7 +5,7 @@ Sustainability and Certification: A true masterpiece of green architecture, The 
 Proximity: Situated adjacent to Mutiara Damansara, The Lumenh enjoys an elevated site with breathtaking views and a unique topography. The design naturally preserves the surrounding natural environment, offering residents a serene and picturesque setting.
 Design and Layout: The Lumenh features luxurious detached villas and twin villas designed to maximize natural light and ventilation, ensuring comfort and tranquility in every home. The development includes:
 80 units per acre to provide absolute privacy and comfort. Each unit has been thoughtfully designed to offer an unparalleled luxury living experience.
-Unit Types:
+Units Style:
     1. Type A & B: Bungalow-style designs
     2. Type C & D: Semi-D-style layouts.
 
@@ -19,16 +19,13 @@ Nearby Amenities:
 1.1 Garden International School 
 1.2 Mutiara Damansara International School
 1.3 French School Of Kuala Lumpur
-
 2. Medical 
 2.1 Global Doctors Hospital
 2.2 Damansara Medical Centre
-
 3. Sports & Leisure 
 3.1 Mutiara Damansara Equestrian Centre & Country Club
 3.2 Kuala Lumpur Golf & Country Club (KLGCC)
 3.3 National Tennis Centre
-
 4. Shopping
 4.1 163 Retail Park
 4.2 Plaza Mutiara Damansara
@@ -36,7 +33,6 @@ Nearby Amenities:
 4.4 Solaris Mutiara Damansara
 4.5 Hartamas Shopping Centre
 4.6 Publika Shopping Gallery
-
 5 Landmark
 5.1 Royal Palace
 5.2 MATRADE
@@ -107,30 +103,7 @@ Facilities & Amenities:
 36.	Kid's Pool
 37.	Poolside Cabana
 
-Floor Plan Information:
-1. Unit Type A
-   Configuration: 3 Bedrooms, 3 Bathrooms 
-   Built-up size: 1,607ft²
-   Carpark: 2
-   Price: RM 599,800
-
-2. Unit Type B
-   Configuration: 3 Bedrooms, 4 Bathrooms 
-   Built-up size: 2,076ft²
-   Carpark: 3
-   Price: RM 774,800
-
-3. Unit Type C (with balcony)
-   Configuration: 3 Bedrooms, 4 Bathrooms  
-   Built-up size: 2,733ft²
-   Carpark: 3
-   Price: RM 893,800
-
-3. Unit Type D (with balcony)
-   Configuration: 3 Bedrooms, 4 Bathroom 
-   Built-up size: 3,010ft²
-   Carpark: 4
-   Price: RM 865,800
+The available unit types in the project are as follows: Unit Type A features 3 bedrooms, 3 bathrooms, and 2 carparks, with a built-up size of 1,607ft², priced at RM 599,800. Unit Type B offers 3 bedrooms, 4 bathrooms, and 3 carparks, with a built-up size of 2,076ft², priced at RM 774,800. Unit Type C comes with 3 bedrooms, 4 bathrooms, and 3 carparks, and a balcony, with a built-up size of 2,733ft², priced at RM 893,800. Lastly, Unit Type D includes 3 bedrooms, 4 bathrooms, 4 carparks, and a balcony, with a built-up size of 3,010ft², priced at RM 865,800.
 
 Property Features:
 1. Resort Style Condominium With Indochine Influences

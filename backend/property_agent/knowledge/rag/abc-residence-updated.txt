@@ -81,109 +81,18 @@ Facilities Plan:
     - Herbs garden, Tea corner, Meditative deck
     - Wellness Corner
     - Lawn, Hammock corner, Yoga deck 1 & 2, Exercise station
-
 2. Central Park
     - Social Corner, Meandering walkway / 400m Jogging track, Meadow, Mini amphitheatre, Garden swings
-
 3. Splash Zone
     - 50m Lap Pool, Beach entry, Sun deck, Jacuzzi, Leisure deck, Kid’s pool, Aquaplay
-
 4. Kids Adventure Zone
     - Indoor & Outdoor playgrounds, Indoor games area
-
 5. Levels 35, 37, and 55 – Sky Pods and Decks
 6. Level 35 - Home Work Sky Pods: Content creator’s room, Gamer’s room, Music pod
 7. Level 37 - Home Work Sky Pods: Study & Discussion pods, Seminar room, Music pod, Recreation room
 8. Level 55 - Celebration & Sweat Out Sky Decks: BBQ deck, Co-living space, Pre-function area, Function hall, Gym room, Sport court, Yoga deck, Viewing deck
 
-Floor Plan Information:
-1. Unit Type A
-   Configuration: 1 Studio 1 Bathroom 42m² (450ft²)
-   Built-up size: 450ft²
-   Carpark: 0
-   Price: RM 840,888
-
-2. Unit Type A1
-   Configuration: 1 Studio, 1 Bathroom 42m² (450ft²)
-   Built-up size: 450ft²
-   Carpark: 0
-
-3. Unit Type B
-   Configuration: 3 Bedrooms, 2 Bathrooms 83m² (898ft²)
-   Built-up size: 898ft²
-   Carpark: 0
-   Price: RM 1,002,888
-
-4. Unit Type B1
-   Configuration: 3 Bedrooms, 2 Bathrooms 83m² (898ft²)
-   Built-up size: 898ft²
-   Carpark: 0
-
-5. Unit Type B2
-   Configuration: 3 Bedrooms, 2 Bathrooms 83m² (898ft²) 
-   Built-up size: 898ft²
-   Terrace & Garden: 23m² (260ft²)
-   Carpark: 0
-
-6. Unit Type C
-   Configuration: 3 Bedrooms, 1 Study, 2 Bathrooms 93m² (998ft²)
-   Built-up size: 998ft²
-   Urban Yard: 1m² (12ft²)
-   Carpark: 0
-   Price: RM 1,056,888
-
-7. Unit Type C1
-   Configuration: 3 Bedrooms, 1 Study, 2 Bathrooms 96m² (1,028ft²)
-   Built-up size: 1,028ft²
-   Urban Yard: 1m² (12ft²)
-   Carpark: 0
-
-8. Unit Type C2
-   Configuration: 3 Bedrooms, 1 Study, 2 Bathrooms 91m² (980ft²)
-   Built-up size: 980ft²
-   Terrace & Garden: 29m² (321ft²)
-   Carpark: 0
-
-9. Unit Type D
-   Configuration: 4 Bedrooms, 2 Bathrooms 105m² (1,135ft²)
-   Built-up size: 1,135ft²
-   Urban Yard 1m² (13ft²)
-   Carpark: 0
-   Price: RM 1,233,888
-
-10. Unit Type D1
-    Configuration: 4 Bedrooms, 2 Bathrooms 100m² (1,070ft²)
-    Built-up size: 1,070ft²
-    Terrace & Garden: 14m² (154ft²) 
-    Urban Yard: 1m² (13ft²)
-    Carpark: 0
-
-11. Unit Type E
-    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 111m² (1,198ft²)
-    Built-up size: 1,198ft²
-    Urban Yard: 1m² (13ft²)
-    Carpark: 3
-    Price: RM 1,273,888
-
-12. Unit Type E1
-    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 111m² (1,198ft²)
-    Built-up size: 1,198ft²
-    Urban Yard: 1m² (13ft²)
-    Carpark: 0
-
-13. Unit Type E2
-    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 106m² (1,135ft²)
-    Built-up size: 1,135ft²
-    Terrace & Garden: 33m² (360ft²)
-    Urban Yard: 1m² (13ft²)
-    Carpark: 0
-
-14. Unit Type E3
-    Configuration: 4 Bedrooms, 3 Bathrooms (Dual-Key Enable Feature) 106m² (1,135ft²)
-    Built-up size: 1,135ft²
-    Terrace & Garden: 33m² (360ft²) 
-    Urban Yard: 1m² (13ft²)
-    Carpark: 0
+The available unit types in the project are as follows: Unit Type A features 1 studio, 1 bathroom, and no carpark, with a built-up size of 450ft², priced at RM 840,888. Unit Type A1 offers the same configuration as Unit Type A, with 1 studio, 1 bathroom, and no carpark, also with a built-up size of 450ft². Unit Type B includes 3 bedrooms, 2 bathrooms, and no carpark, with a built-up size of 898ft², priced at RM 1,002,888. Unit Type B1 comes with the same configuration as Unit Type B, offering 3 bedrooms, 2 bathrooms, and no carpark, with a built-up size of 898ft². Unit Type B2 offers the same layout as Unit Type B, but with an added terrace and garden of 260ft², totaling a built-up size of 898ft². Unit Type C features 3 bedrooms, 1 study, 2 bathrooms, and no carpark, with a built-up size of 998ft², priced at RM 1,056,888. Unit Type C1 offers a similar layout as Unit Type C but with a slightly larger built-up size of 1,028ft². Unit Type C2 includes 3 bedrooms, 1 study, 2 bathrooms, and a terrace and garden of 321ft², with a built-up size of 980ft². Unit Type D provides 4 bedrooms, 2 bathrooms, and no carpark, with a built-up size of 1,135ft², priced at RM 1,233,888. Unit Type D1 features 4 bedrooms, 2 bathrooms, a terrace and garden of 154ft², and an urban yard, with a built-up size of 1,070ft². Unit Type E offers 4 bedrooms, 3 bathrooms, and 3 carparks, with a built-up size of 1,198ft², and is priced at RM 1,273,888. Unit Type E1 includes the same configuration as Unit Type E, but with no carparks and a built-up size of 1,198ft². Unit Type E2 comes with 4 bedrooms, 3 bathrooms, a terrace and garden of 360ft², an urban yard, and no carpark, with a built-up size of 1,135ft². Lastly, Unit Type E3 shares the same layout as Unit Type E2, featuring 4 bedrooms, 3 bathrooms, a terrace and garden of 360ft², and an urban yard, with a built-up size of 1,135ft².
 
 Property A Contact Information:
 1. Email: customercare@propa.com
