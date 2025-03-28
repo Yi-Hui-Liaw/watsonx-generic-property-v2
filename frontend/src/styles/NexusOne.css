@@ -1,9 +1,9 @@
 .nexus-container {
     display: flex;
-    width: 100vw; /* Full width */
-    height: calc(100vh - 20px); /* Adjust the height based on header & footer */
+    width: 100vw;
+    min-height: calc(100vh - 100px); /* Adjust based on header & footer height */
     background: #fff;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .nexus-image {
@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -80px !important;
 }
 
 .title {
