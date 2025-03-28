@@ -43,7 +43,7 @@ const HomePage = () => {
         
         {/* Search bar with icon */}
         <div className="search-bar">
-          <input type="text" placeholder="E.g. Luxury condo in the Valley" />
+          <input type="text" placeholder="E.g. Luxury condo in Kuala Lumpur" />
           <img src={searchIcon} alt="Search" className="search-icon-i" />
         </div>
       </div>
