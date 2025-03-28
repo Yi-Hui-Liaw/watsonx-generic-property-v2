@@ -10,7 +10,6 @@ Development Features:
     2. Units: 1,334 service apartment units
     3. Retail Spaces: 15 retail lots
     4. Modern Amenities: Stunning views and high-end features redefine urban living
-
 Showroom Information: 101-01-01, U13, Wisma ABC, Jalan Permaisuri, 56100 Cheras, Wilayah Persekutuan Kuala Lumpur, Malaysia
 
 Nearby Amenities:
@@ -74,31 +73,7 @@ Condominium Details:
 9. Expected Completion: 4Q2027
 10. Retail Lots: 15 
 
-Floor Plan Information:
-1. Unit Type A
-   Configuration: 1 Bedroom, 1 Bathroom
-   Built-up size: 452ft²
-   Carpark: 1
-
-2. Unit Type B
-   Configuration: 2 Bedrooms, 1 Bathroom 
-   Built-up size: 708ft²
-   Carpark: 1
-
-3. Unit Type C
-   Configuration: 3 Bedrooms, 2 Bathrooms
-   Built-up size: 960ft²
-   Carpark: 2
-
-4. Unit Type D
-   Configuration: 3 Bedrooms, 2 Bathrooms
-   Built-up size: 1000ft²
-   Carpark: 2
-
-5. Unit Type E
-   Configuration: 4 Bedrooms, 3 Bathrooms
-   Built-up size: 1270ft²
-   Carpark: 2
+The available unit types in the project are as follows: Unit Type A features 1 bedroom, 1 bathroom, and 1 carpark, with a built-up size of 452ft². Unit Type B offers 2 bedrooms, 1 bathroom, and 1 carpark, with a built-up size of 708ft². Unit Type C comes with 3 bedrooms, 2 bathrooms, and 2 carparks, with a built-up size of 960ft². Unit Type D includes 3 bedrooms, 2 bathrooms, and 2 carparks, with a built-up size of 1,000ft². Lastly, Unit Type E features 4 bedrooms, 3 bathrooms, and 2 carparks, with a built-up size of 1,270ft².
 
 Property Features:
 1. Right Next To MRT Station
