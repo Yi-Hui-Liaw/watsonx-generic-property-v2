@@ -16,11 +16,11 @@ const NexusOne = () => {
       {/* Right Content Section */}
       <div className="nexus-details">
         <h2 className="title">The Nexus One</h2>
-        <p className="subtitle">The Nexus One is now open for registration!</p>
+        <p className="subtitle">The Nexus One is <strong>now open</strong> for registration!</p>
         <p className="description">
           The pioneering project in Property A’s LUXURY Series, where practical living meets effortless convenience. 
           Nestled in Jalan 3/144A, Cheras, Kuala Lumpur, this innovative freehold development is poised to revolutionize 
-          urban dwelling. With a starting price of RM350K, don’t miss this opportunity to secure your dream home.
+          urban dwelling. <br></br>With a starting price of RM350K, don’t miss this opportunity to secure your dream home.
         </p>
 
         {/* Features Section */}

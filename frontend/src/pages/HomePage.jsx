@@ -10,7 +10,7 @@ const properties = [
     { 
       id: 1, 
       title: "The Nexus One", 
-      location: "Solera Heights", 
+      location: "Kuala Lumpur", 
       image: nexusOne, 
       link: "/nexus-one", 
       additionalInfo: "Revolutionary freehold Development. <br /><br />Prices from <strong>$300,000 </strong>" 
@@ -18,7 +18,7 @@ const properties = [
     { 
       id: 2, 
       title: "The Lumenh", 
-      location: "Rivendale Valley", 
+      location: "Mutiara Damansara", 
       image: lumenh, 
       link: "/lumenh", 
       additionalInfo: "Pioneering residence in the COLLECTIVE edition. <br /><br />Prices from <strong>$500,000 </strong>" 
@@ -26,7 +26,7 @@ const properties = [
     { 
       id: 3, 
       title: "ABC Residence", 
-      location: "Emberlake Territory", 
+      location: "Damansara Bay", 
       image: abc, 
       link: "/abc-residence", 
       additionalInfo: "Bold and distinct approach to luxury living. <br /><br />Prices from <strong>$800,000 </strong>" 
