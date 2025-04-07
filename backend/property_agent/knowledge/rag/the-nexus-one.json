@@ -45,7 +45,18 @@
             "Dedicated Urban Yard",
             "Signature Adaptive Home",
             "Parcel Room",
-            "Home-Work Zone"
+            "Home-Work Zone",
+            "5,850m² of Green Area",
+            "100m connected to MRT Station",
+            "Layouts up to 4 Bedrooms 1,270 sf",
+            "Last Freehold Land next to MRT station",
+            "Flexibility to break the party wall or make wall or make an opening between living room/ Bedrooms / Kitchen",
+            "Solar Panel",
+            "Rainwater harvesting system",
+            "Common EV charging station",
+            "Bicycle parking bay",
+            "Naturally ventilated carpark and corridors",
+            "High efficacy LED Light Fittings"
         ],
         "facilities_and_amenities": [
             "Adult Fitness Stations",
@@ -109,7 +120,8 @@
                     "carpark": 1,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "452 ft²",
                 "price": "RM 435,888"
@@ -123,7 +135,8 @@
                     "carpark": 1,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "708 ft²",
                 "price": "RM 522,888"
@@ -137,7 +150,8 @@
                     "carpark": 2,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "960 ft²",
                 "price": "RM 648,888"
@@ -151,7 +165,8 @@
                     "carpark": 2,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "1,000 ft²",
                 "price": "RM 674,888"
@@ -165,7 +180,8 @@
                     "carpark": 2,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "1,270 ft²",
                 "price": "RM 805,888"

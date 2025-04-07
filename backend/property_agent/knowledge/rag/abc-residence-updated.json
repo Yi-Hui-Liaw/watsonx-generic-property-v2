@@ -170,7 +170,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "450ft²",
                 "price": "RM 840,888"
@@ -184,7 +185,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "450ft²",
                 "price": "RM 840,888"
@@ -198,7 +200,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "898ft²",
                 "price": "RM 1,002,888"
@@ -212,7 +215,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "898ft²",
                 "price": "RM 1,002,888"
@@ -226,7 +230,8 @@
                     "carpark": 0,
                     "terrace_and_garden": "260ft²",
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "898ft²",
                 "price": "RM 1,002,888"
@@ -240,7 +245,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": "12ft²",
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "998ft²",
                 "price": "RM 1,056,888"
@@ -254,7 +260,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": "12ft²",
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "1,028ft²",
                 "price": "RM 1,056,888"
@@ -268,7 +275,8 @@
                     "carpark": 0,
                     "terrace_and_garden": "321ft²",
                     "urban_yard": null,
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "980ft²",
                 "price": "RM 1,056,888"
@@ -282,7 +290,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": "13ft²",
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "1,135ft²",
                 "price": "RM 1,233,888"
@@ -296,7 +305,8 @@
                     "carpark": 0,
                     "terrace_and_garden": "154ft²",
                     "urban_yard": "13ft²",
-                    "dual_key": false
+                    "dual_key": false,
+                    "balcony": false
                 },
                 "built_up_size": "1,070ft²",
                 "price": "RM 1,233,888"
@@ -310,7 +320,8 @@
                     "carpark": 3,
                     "terrace_and_garden": null,
                     "urban_yard": "13ft²",
-                    "dual_key": true
+                    "dual_key": true,
+                    "balcony": false
                 },
                 "built_up_size": "1,198ft²",
                 "price": "RM 1,273,888"
@@ -324,7 +335,8 @@
                     "carpark": 0,
                     "terrace_and_garden": null,
                     "urban_yard": "13ft²",
-                    "dual_key": true
+                    "dual_key": true,
+                    "balcony": false
                 },
                 "built_up_size": "1,198ft²",
                 "price": "RM 1,273,888"
@@ -338,7 +350,8 @@
                     "carpark": 0,
                     "terrace_and_garden": "360ft²",
                     "urban_yard": "13ft²",
-                    "dual_key": true
+                    "dual_key": true,
+                    "balcony": false
                 },
                 "built_up_size": "1,135ft²",
                 "price": "RM 1,273,888"
@@ -352,7 +365,8 @@
                     "carpark": 0,
                     "terrace_and_garden": "360ft²",
                     "urban_yard": "13ft²",
-                    "dual_key": true
+                    "dual_key": true,
+                    "balcony": false
                 },
                 "built_up_size": "1,135ft²",
                 "price": "RM 1,273,888"
