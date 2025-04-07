@@ -106,15 +106,18 @@
         "nearby_amenities": [
             {
                 "name": "Garden International School",
-                "category": "Education"
+                "category": "Education",
+                "distance": null
             },
             {
                 "name": "Mutiara Damansara International School",
-                "category": "Education"
+                "category": "Education",
+                "distance": null
             },
             {
                 "name": "French School Of Kuala Lumpur",
-                "category": "Education"
+                "category": "Education",
+                "distance": null
             },
             {
                 "name": "Global Doctors Hospital",
@@ -122,63 +125,78 @@
             },
             {
                 "name": "Damansara Medical Centre",
-                "category": "Medical"
+                "category": "Medical",
+                "distance": null
             },
             {
                 "name": "Mutiara Damansara Equestrian Centre & Country Club",
-                "category": "Sports & Leisure"
+                "category": "Sports & Leisure",
+                "distance": null
             },
             {
                 "name": "Kuala Lumpur Golf & Country Club (KLGCC)",
-                "category": "Sports & Leisure"
+                "category": "Sports & Leisure",
+                "distance": null
             },
             {
                 "name": "National Tennis Centre",
-                "category": "Sports & Leisure"
+                "category": "Sports & Leisure",
+                "distance": null
             },
             {
                 "name": "163 Retail Park",
-                "category": "Shopping"
+                "category": "Shopping",
+                "distance": null
             },
             {
                 "name": "Plaza Mutiara Damansara",
-                "category": "Shopping"
+                "category": "Shopping",
+                "distance": null
             },
             {
                 "name": "1 Mutiara Damansara",
-                "category": "Shopping"
+                "category": "Shopping",
+                "distance": null
             },
             {
                 "name": "Solaris Mutiara Damansara",
-                "category": "Shopping"
+                "category": "Shopping",
+                "distance": null
             },
             {
                 "name": "Hartamas Shopping Centre",
-                "category": "Shopping"
+                "category": "Shopping",
+                "distance": null
             },
             {
                 "name": "Publika Shopping Gallery",
-                "category": "Shopping"
+                "category": "Shopping",
+                "distance": null
             },
             {
                 "name": "Royal Palace",
-                "category": "Landmark"
+                "category": "Landmark",
+                "distance": null
             },
             {
                 "name": "MATRADE",
-                "category": "Landmark"
+                "category": "Landmark",
+                "distance": null
             },
             {
                 "name": "Sime Darby Convention Centre",
-                "category": "Landmark"
+                "category": "Landmark",
+                "distance": null
             },
             {
                 "name": "MITEC",
-                "category": "Landmark"
+                "category": "Landmark",
+                "distance": null
             },
             {
                 "name": "Parliament House",
-                "category": "Landmark"
+                "category": "Landmark",
+                "distance": null
             }
         ],
         "unit_types": [

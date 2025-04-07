@@ -133,30 +133,37 @@
         "nearby_amenities": [
             {
                 "name": "Mutiara Damansara Metropolitan Park",
+                "category": "Landmark",
                 "distance": "0.4 km"
             },
             {
                 "name": "SMK Jinjang",
+                "category": "Education",
                 "distance": "1.1 km"
             },
             {
                 "name": "MRT Mutiara Damansara Baru Station",
+                "category": "Station",
                 "distance": "2.4 km"
             },
             {
                 "name": "AEON Big Mutiara Damansara",
+                "category": "Shopping",
                 "distance": "2.8 km"
             },
             {
                 "name": "Selayang Hospital",
+                "category": "Medical",
                 "distance": "4.6 km"
             },
             {
                 "name": "Batu Caves",
+                "category": "Landmark",
                 "distance": "7.2 km"
             },
             {
                 "name": "Mercure Hotel",
+                "category": "Hotel",
                 "distance": "7.2 km"
             }
         ],

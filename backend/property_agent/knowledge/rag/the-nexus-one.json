@@ -95,18 +95,22 @@
         "nearby_amenities": [
             {
                 "name": "Pasar Malam Taman Damai",
+                "category": "Shopping",
                 "distance": "1.5 km"
             },
             {
                 "name": "Eko Cheras Mall",
+                "category": "Shopping",
                 "distance": "2.7 km"
             },
             {
                 "name": "Yuan Fong Kopitiam",
+                "category": "Restaurant",
                 "distance": "2.7 km"
             },
             {
                 "name": "Alam Damai Recreational Park",
+                "category": "Landmark",
                 "distance": "4.8 km"
             }
         ],
