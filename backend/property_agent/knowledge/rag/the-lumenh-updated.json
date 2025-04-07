@@ -1,0 +1,249 @@
+{
+    "project": {
+        "name": "The Lumenh",
+        "location": "The LUMENH, Jalan Damansara 13, Mutiara Damansara, Kuala Lumpur, 50380",
+        "concept": "The Lumenh is a luxury development that offers the perfect blend of high-end features and a hospitality-inspired environment. Designed to cater to the modern resident’s discerning tastes, it combines stunning aesthetics with functional design. The low-density development features detached and twin villas that maximize natural light and ventilation, ensuring comfort and tranquility. With 80 units per acre, The Lumenh guarantees absolute privacy and exclusivity. The development creates a truly resort-like living experience, making every moment feel like a vacation. In addition to its luxurious design, The Lumenh is committed to sustainability, having earned a Provisional Gold GreenRE Certification for its green architecture. This reflects the development's dedication to integrating environmentally friendly practices and creating a lasting, sustainable living environment.",
+        "proximity": "Situated adjacent to Mutiara Damansara, The Lumenh enjoys an elevated site with breathtaking views and a unique topography. The design naturally preserves the surrounding natural environment, offering residents a serene and picturesque setting.",
+        "target_audience": null,
+        "development_features": [
+            "Type A & B: Bungalow-style designs",
+            "Type C & D: Semi-D-style layouts"
+        ],
+        "showroom": {
+            "address": "7, Jalan Mutiara Damansara, 50480 Kuala Lumpur Wilayah Persekutuan Kuala Lumpur, Malaysia",
+            "operating_hours": {
+                "weekday": "10:00 AM - 5:00 PM",
+                "weekend_and_public_holiday": "10:00 AM - 5:00 PM"
+            },
+            "contact": "1234-567-891"
+        },
+        "property_offering_details": {
+            "property_type": "Condominium",
+            "land_title": "Commercial",
+            "status": "New Launch",
+            "completion_year": "2028",
+            "tenure": "Freehold",
+            "land_area": null,
+            "total_units": 496,
+            "total_blocks": 2,
+            "no_of_floors": null,
+            "rooms": "Up to 3 Bedrooms, 4 Bathrooms, 4 Parking Lots",
+            "built_up_size": "1,607ft² - 3,010ft²",
+            "price": "RM 599,800 - RM 865,800",
+            "psf_price_range": "RM 659 - RM 871",
+            "maintenance_fee": null,
+            "launch_price": "From RM 599,800 onwards and the development is due to be completed in 2028.",
+            "retail_lots": null,
+            "developer_info": {
+                "developer": "John Doe Sdn Bhd",
+                "developer_license_no": "123456",
+                "validity_period": "10/08/2022 - 09/08/2027",
+                "advertising_and_sales_permit_no": "30141-1/10-2025/0231(N)-(S)",
+                "advertising_and_sales_permit_validity": "13/10/2022 - 12/10/2025",
+                "approving_authority": "Dewan Bandaraya Kuala Lumpur",
+                "building_plan_reference_no": "XX XX XXX 0000 0000",
+                "expected_completion_date": "September 2027",
+                "land_encumbrances": "Public Bank Berhad",
+                "bumiputera_discount": "5%",
+                "art_renderings_disclaimer": "All art renderings and photographs contained in this brochure are artist's impression only. The developer reserves the right to modify any part or parts of the building prior to completion as directed or approved by the architects and/or the relevant authorities."
+            },
+            "total_no_of_units_by_block": {
+                "block_a": 245,
+                "block_b": 251
+            }
+        },
+        "property_features": [
+            "Resort Style Condominium With Indochine Influences",
+            "Indoor Scenic Spa Hut",
+            "Multi-generational Playground",
+            "Beautifully Designed Swimming Pool With Water Cascade",
+            "EV Charger Ready Via Power Point",
+            "Express Ramp To Multi-level Parking",
+            "Private Lift*",
+            "Automated Waste Collection System",
+            "Certified By GreenRE"
+        ],
+        "facilities_and_amenities": [
+            "Bicycle Station",
+            "Surau",
+            "Multipurpose Hall",
+            "Lounge",
+            "Management Office",
+            "Pre-Function",
+            "Lap Pool",
+            "Dining Terrace",
+            "Function Hall",
+            "French Garden with BBQ Area",
+            "Garden",
+            "Play Field",
+            "Trésor Lounge",
+            "Viewing Deck",
+            "Indoor Playground",
+            "Concierge",
+            "Lounge",
+            "Gymnasium",
+            "Yoga/Ballet Studio",
+            "Reading Room",
+            "French Garden",
+            "Sauna/ Halotherapy Room",
+            "Steam Room",
+            "Bamboo Garden",
+            "Jacuzzi",
+            "Dining Pavilion",
+            "Lap Pool",
+            "Garden Terrace",
+            "Multipurpose Hall Pavilion",
+            "Kickabout Lawn",
+            "Playground",
+            "Tennis Court",
+            "Outdoor Gym",
+            "Driver's Corner",
+            "Concierge",
+            "Kid's Pool",
+            "Poolside Cabana"
+        ],
+        "facilities_plan": null,
+        "nearby_amenities": [
+            {
+                "name": "Garden International School",
+                "category": "Education"
+            },
+            {
+                "name": "Mutiara Damansara International School",
+                "category": "Education"
+            },
+            {
+                "name": "French School Of Kuala Lumpur",
+                "category": "Education"
+            },
+            {
+                "name": "Global Doctors Hospital",
+                "category": "Medical"
+            },
+            {
+                "name": "Damansara Medical Centre",
+                "category": "Medical"
+            },
+            {
+                "name": "Mutiara Damansara Equestrian Centre & Country Club",
+                "category": "Sports & Leisure"
+            },
+            {
+                "name": "Kuala Lumpur Golf & Country Club (KLGCC)",
+                "category": "Sports & Leisure"
+            },
+            {
+                "name": "National Tennis Centre",
+                "category": "Sports & Leisure"
+            },
+            {
+                "name": "163 Retail Park",
+                "category": "Shopping"
+            },
+            {
+                "name": "Plaza Mutiara Damansara",
+                "category": "Shopping"
+            },
+            {
+                "name": "1 Mutiara Damansara",
+                "category": "Shopping"
+            },
+            {
+                "name": "Solaris Mutiara Damansara",
+                "category": "Shopping"
+            },
+            {
+                "name": "Hartamas Shopping Centre",
+                "category": "Shopping"
+            },
+            {
+                "name": "Publika Shopping Gallery",
+                "category": "Shopping"
+            },
+            {
+                "name": "Royal Palace",
+                "category": "Landmark"
+            },
+            {
+                "name": "MATRADE",
+                "category": "Landmark"
+            },
+            {
+                "name": "Sime Darby Convention Centre",
+                "category": "Landmark"
+            },
+            {
+                "name": "MITEC",
+                "category": "Landmark"
+            },
+            {
+                "name": "Parliament House",
+                "category": "Landmark"
+            }
+        ],
+        "unit_types": [
+            {
+                "type": "A",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 3,
+                    "carpark": 2,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false
+                },
+                "built_up_size": "1,607ft²",
+                "price": "RM 599,800"
+            },
+            {
+                "type": "B",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 4,
+                    "carpark": 3,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false
+                },
+                "built_up_size": "2,076ft²",
+                "price": "RM 774,800"
+            },
+            {
+                "type": "C",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 4,
+                    "carpark": 3,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false
+                },
+                "built_up_size": "2,733ft²",
+                "price": "RM 893,800"
+            },
+            {
+                "type": "D",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 4,
+                    "carpark": 4,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false
+                },
+                "built_up_size": "3,010ft²",
+                "price": "RM 865,800"
+            }
+        ],
+        "property_a_contact_information": {
+            "email": "customercare@propa.com",
+            "toll_free_line": "0000-00-0000",
+            "international_line": "000-0000-0000",
+            "address": "Property A Berhad, Level A2, Block B5, Mutiara Damansara, No.7 Jalan Melati 13, 50180 Kuala Lumpur, Malaysia"
+        }
+    }
+}
