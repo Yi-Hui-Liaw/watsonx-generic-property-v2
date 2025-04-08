@@ -1,3 +1,175 @@
+# route_task:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query by user, decide the right task to execute. 
+#     The tasks are - ['property_facts', 'property_database', 'property_recommender']
+#     The guidelines for tasks are listed as below:
+#     property_facts - Return this when the user's latest query is related to property facts. For example, query about freehold or leasehold.
+#     property_database - Return this when the latest user query is related to property stock units. For example, "how many units are still available?"
+#     property_recommender - Return this when the user's latest query is related to finding the right property. For example, "I am looking for a house for a family of 5."
+#   expected_output: >
+#     Return either 'property_facts', 'property_database', or 'property_recommender' without any quotes.
+#   agent: customer_service_agent
+
+# search_property_facts:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query in the provided conversation, use the provided tool to search for relevant property facts in the json file.
+#     The tool should return only factual information about the property, such as tenure (freehold/leasehold), development features, property type, or legal aspects (e.g., land title).
+#     If the requested information does not exist in the documents, inform the user that no relevant information could be found. 
+#     Additionally, remind the user that the system handles properties related to the Lumenh, the Nexus One, and ABC Residence.
+#   expected_output: >
+#     Return the relevant property facts in text format extracted from the JSON data.
+#   agent: json_agent
+
+# search_property_database:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query in the provided conversation, use the provided JSON data to search for relevant information regarding property availability, pricing, and units.
+#     The tool should return details about:
+#     - Available units and their configurations (e.g., 1-bedroom, 3-bedroom)
+#     - Pricing information
+#     - Availability of different unit types (e.g., type A, B, C)
+#     If the requested information is unavailable, let the user know that no relevant information could be found.
+#     Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
+#   expected_output: >
+#     Return the relevant property database information in text format extracted from the JSON data.
+#   agent: json_agent
+
+
+# search_property_recommender:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query in the provided conversation, use the provided JSON data to recommend properties that match the user's requirements.
+#     The system should look for properties that meet the user's needs, such as:
+#     - Number of bedrooms
+#     - Type of property (e.g., family-friendly, luxury, etc.)
+#     - Other preferences (e.g., parking, garden space, etc.)
+#     If no matching properties are found, inform the user that no relevant properties could be found.
+#     Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
+#   expected_output: >
+#     Return the relevant property recommendations in text format extracted from the JSON data.
+#   agent: json_agent
+
+
+# book_converse:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Your task is to ask user to collect name, phone number and property unit id from user. You must refer to the conversation to check which one is missing. Only request from user the missing information. Ask one question at a time.
+#   expected_output: >
+#     A brief reply return in text without any quotes. Use the language that the user is using.
+#   agent: customer_service_agent
+
+# book_route:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Your task is to check whther name, phone number and property unit id from user from conversation already provided by user. 
+#   expected_output: >
+#     Return either 'true' or 'false'.
+#   agent: customer_service_agent
+
+# search_property_facts:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query in provided conversation, use provided tool to do search for relevant content in the text file.
+#     You must only return information from tool output.
+#     Make sure the information is correct and only from the tool output. Return as much relevant information as possible.
+#     If the information requested does not exist, let the user know we couldnt find relevant information in the documents and remind them that we only handle property related to the lumenh, the nexus one and abc residence.
+#   expected_output: >
+#     Return the content in text not the file name.
+#   agent: rag_agent
+
+# transform_query_sql:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query in provided conversation, transform the query into relevant SQL. 
+#     Make the SQL query match the schema provided.
+#     Make sure to lowercase the query and columns value. For example "... LOWER(status) ..."
+#     Provided schema below is the database name and columns. Do not use any tool during this task.
+#     ------------------
+#     abc_residence - ('property_name', 'layout', 'status', 'block', 'price')
+#     nexus_one - ('property_name', 'layout', 'status', 'block', 'price')
+#     lumenh - ('property_name', 'layout', 'status', 'block', 'price')
+#     ------------------
+#   expected_output: >
+#     Return in text without any quotes.
+#   agent: sql_agent
+
+# search_property_database:
+#   description: >
+#     Use the provided tool to run the SQL previously generated.
+#   expected_output: >
+#     Return in dataframe format.
+#   agent: sql_agent
+
+# search_property_csv:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the latest query in provided conversation, use provided tool to search for relevant informations. Extract as much information as possible.
+#     You must do any necessary calculation required to answer user's query. For example if user ask 'How many available units?' you can do counts on unit with available status.
+#     Make sure the information is correct and only from the tool output. 
+#     If the information requested does not exist return "No relevant information found from search.".
+#   expected_output: >
+#     Return in csv format.
+#   agent: csv_agent
+
+
+# extract_property_book:
+#   description: >
+#     conversations\n
+#     -------------\n
+#     {conversation}
+#     -------------\n
+#     Your task is to extract name, phone number and property unit id from the conversation provided.
+#   expected_output: >
+#     Return in JSON string format with following keys ['name','phone_number','property_unit_id'].
+#     If the information doesn't exist use empty string '' value as placeholder.
+#   agent: customer_service_agent
+
+# update_property_book:
+#   description: >
+#     Your task is to update appointment csv using tool provided. 
+#     You will need to pass the JSON string as input parameter.
+#   expected_output: >
+#     Return in text 'success' or 'fail' based on the tool output.
+#     Provide any information return by the tool function as well.
+#   agent: csv_agent
+
+
+# summarize_booking:
+#   description: >
+#     Based on the appointment infomration, summarize the appointment created for the user. Do not tell the user about function or csv file updated. Just let them know our property agent will contact them for meet up.
+#   expected_output: >
+#     Return in text only without any quotes.
+#   agent: customer_service_agent
+
 route_task:
   description: >
     conversation:
@@ -5,52 +177,13 @@ route_task:
     {conversation}
     ------------------
     Based on the latest query by user, decide the right task to execute. 
-    The tasks are - ['property_facts','property_database', 'property_book']
-    The guidlines for tasks are listed as below:
-    property_facts - Return this when the user latest query related to property facts. For example query about freehold or leasehold.
-    property_database - Return this when the latest user query related to property stock units. For example "how units is still available?"
-    property_book - Return this when the latest user query related to booking a unit. Wether a query or the conversation is in the middle of collecting booking appointment information.
+    The tasks are - ['property_facts', 'property_database', 'property_recommender']
+    The guidelines for tasks are listed as below:
+    property_facts - Return this when the user's latest query is related to property facts. For example, query about freehold or leasehold.
+    property_database - Return this when the latest user query is related to property stock units. For example, "how many units are still available?"
+    property_recommender - Return this when the user's latest query is related to finding the right property. For example, "I am looking for a house for a family of 5."
   expected_output: >
-    Return either 'property_facts','property_database' or 'property_book' without any quotes.
-  agent: customer_service_agent
-
-rag_converse:
-  description: >
-    conversation:
-    ------------------
-    {conversation}
-    ------------------
-    Context
-    ------------------
-    User is currently looking at page - {page_url}
-    Property information
-    ------------------
-    Based on the conversation, assist the user for any query given based on information extracted from tool. If the information does not exist in tool output simply let the user it does not exist in documents. You must not use your general knowledge for any property related query.
-
-  expected_output: >
-    A brief reply return in text without any quotes. Use the language that the user is using.
-  agent: customer_service_agent
-
-book_converse:
-  description: >
-    conversation:
-    ------------------
-    {conversation}
-    ------------------
-    Your task is to ask user to collect name, phone number and property unit id from user. You must refer to the conversation to check which one is missing. Only request from user the missing information. Ask one question at a time.
-  expected_output: >
-    A brief reply return in text without any quotes. Use the language that the user is using.
-  agent: customer_service_agent
-
-book_route:
-  description: >
-    conversation:
-    ------------------
-    {conversation}
-    ------------------
-    Your task is to check whther name, phone number and property unit id from user from conversation already provided by user. 
-  expected_output: >
-    Return either 'true' or 'false'.
+    Return either 'property_facts', 'property_database', or 'property_recommender' without any quotes.
   agent: customer_service_agent
 
 search_property_facts:
@@ -59,80 +192,44 @@ search_property_facts:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query in provided conversation, use provided tool to do search for relevant content in the text file.
-    You must only return information from tool output.
-    Make sure the information is correct and only from the tool output. Return as much relevant information as possible.
-    If the information requested does not exist, let the user know we couldnt find relevant information in the documents and remind them that we only handle property related to the lumenh, the nexus one and abc residence.
+    Based on the latest query in the provided conversation, use the provided tool to search for relevant property facts in the json file.
+    The tool should return only factual information about the property, such as tenure (freehold/leasehold), development features, property type, or legal aspects (e.g., land title).
+    If the requested information does not exist in the documents, inform the user that no relevant information could be found. 
+    Additionally, remind the user that the system handles properties related to the Lumenh, the Nexus One, and ABC Residence.
   expected_output: >
-    Return the content in text not the file name.
-  agent: rag_agent
-
-transform_query_sql:
-  description: >
-    conversation:
-    ------------------
-    {conversation}
-    ------------------
-    Based on the latest query in provided conversation, transform the query into relevant SQL. 
-    Make the SQL query match the schema provided.
-    Make sure to lowercase the query and columns value. For example "... LOWER(status) ..."
-    Provided schema below is the database name and columns. Do not use any tool during this task.
-    ------------------
-    abc_residence - ('property_name', 'layout', 'status', 'block', 'price')
-    nexus_one - ('property_name', 'layout', 'status', 'block', 'price')
-    lumenh - ('property_name', 'layout', 'status', 'block', 'price')
-    ------------------
-  expected_output: >
-    Return in text without any quotes.
-  agent: sql_agent
+    Return the relevant property facts in text format extracted from the JSON data.
+  agent: search_agent
 
 search_property_database:
   description: >
-    Use the provided tool to run the SQL previously generated.
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Based on the latest query in the provided conversation, use the provided JSON data to search for relevant information regarding property availability, pricing, and units.
+    The tool should return details about:
+    - Available units and their configurations (e.g., 1-bedroom, 3-bedroom)
+    - Pricing information
+    - Availability of different unit types (e.g., type A, B, C)
+    If the requested information is unavailable, let the user know that no relevant information could be found.
+    Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
   expected_output: >
-    Return in dataframe format.
-  agent: sql_agent
-
-search_property_csv:
+    Return the relevant property database information in text format extracted from the JSON data.
+  agent: search_agent
+  
+search_property_recommender:
   description: >
     conversation:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query in provided conversation, use provided tool to search for relevant informations. Extract as much information as possible.
-    You must do any necessary calculation required to answer user's query. For example if user ask 'How many available units?' you can do counts on unit with available status.
-    Make sure the information is correct and only from the tool output. 
-    If the information requested does not exist return "No relevant information found from search.".
+    Based on the latest query in the provided conversation, use the provided JSON data to recommend properties that match the user's requirements.
+    The system should look for properties that meet the user's needs, such as:
+    - Number of bedrooms
+    - Type of property (e.g., family-friendly, luxury, etc.)
+    - Other preferences (e.g., parking, garden space, etc.)
+    If no matching properties are found, inform the user that no relevant properties could be found.
+    Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
   expected_output: >
-    Return in csv format.
-  agent: csv_agent
-
-
-extract_property_book:
-  description: >
-    conversations\n
-    -------------\n
-    {conversation}
-    -------------\n
-    Your task is to extract name, phone number and property unit id from the conversation provided.
-  expected_output: >
-    Return in JSON string format with following keys ['name','phone_number','property_unit_id'].
-    If the information doesn't exist use empty string '' value as placeholder.
-  agent: customer_service_agent
-
-update_property_book:
-  description: >
-    Your task is to update appointment csv using tool provided. 
-    You will need to pass the JSON string as input parameter.
-  expected_output: >
-    Return in text 'success' or 'fail' based on the tool output.
-    Provide any information return by the tool function as well.
-  agent: csv_agent
-
-
-summarize_booking:
-  description: >
-    Based on the appointment infomration, summarize the appointment created for the user. Do not tell the user about function or csv file updated. Just let them know our property agent will contact them for meet up.
-  expected_output: >
-    Return in text only without any quotes.
-  agent: customer_service_agent
+    Return the relevant property recommendations in text format extracted from the JSON data.
+  agent: recommend_agent
