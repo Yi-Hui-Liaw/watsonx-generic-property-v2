@@ -4,14 +4,19 @@ from typing import Type
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 from typing import List
+from crewai import LLM
 
 # class Appointment(BaseModel):
 #     """Input schema for UpdateCSV."""
 
 #     appointment: str = Field(..., description="JSON string of appointment information.")
 
+
 class Query(BaseModel):
-    requirements: str = Field(..., description="JSON string of user preferences like bedrooms, max_price")
+    requirements: str = Field(
+        ..., description="JSON string of user preferences like bedrooms, max_price"
+    )
+
 
 # class UpdateCSV(BaseTool):
 #     name: str = "csv_update"
@@ -29,12 +34,12 @@ class Query(BaseModel):
 #         print("Missing information - ",missing_keys)
 #         # Implementation goes here
 #         try:
-            
+
 #             #Update user csv
 #             appt_csv_path = "knowledge/csv/appointment.csv"
 #             appt_df = pd.read_csv(appt_csv_path)
 #             print(f"Updating patient, patient row - {appt_df.shape[0]}")
-            
+
 #             # columns - patient_id,patient_name,age,email,phone
 #             appt_df.loc[len(appt_df)] = [info['name'], info['phone_number'], info['property_unit_id']]
 #             appt_df.to_csv(appt_csv_path, index=False)
@@ -43,7 +48,7 @@ class Query(BaseModel):
 #             return "Appointment csv has been updated."
 #         except Exception as e:
 #             return e
-        
+
 # class RunSQL(BaseTool):
 #     name: str = "run_sql"
 #     description: str = (
@@ -62,52 +67,71 @@ class Query(BaseModel):
 #         except Exception as e:
 #             return e
 
+
 class RecommendProperty(BaseTool):
     name: str = "recommend_property"
-    description: str = (
-        "This tool recommends properties based on user preferences (e.g., number of bedrooms, price, size)."
-    )
-    args_schema: Type[BaseModel] = Query 
+    description: str = "This tool recommends properties based on user preferences (e.g., number of bedrooms, price, size)."
+    args_schema: Type[BaseModel] = Query
 
     def _run(self, requirements: str) -> str:
         preferences = json.loads(requirements)
-        property_data = self.load_multiple_property_data("knowledge/json")
-        matching_properties = self.filter_properties(preferences, property_data)
 
-        if matching_properties:
-            return json.dumps(matching_properties, indent=2)
-        else:
-            return "No matching properties found based on your preferences."
+        property_data = self.load_multiple_property_data("knowledge/json")
+
+        prompt = self.create_prompt(preferences, property_data)
+
+        recommendations = self.get_llm_response(prompt)
+
+        return recommendations
 
     def load_multiple_property_data(self, directory_path: str):
         all_property_data = []
-        
+
         for filename in os.listdir(directory_path):
             if filename.endswith(".json"):
                 with open(os.path.join(directory_path, filename), "r") as f:
                     property_data = json.load(f)
                     all_property_data.append(property_data)
-        print(all_property_data)
-        
+
         return all_property_data
 
-    def filter_properties(self, preferences, property_data):
-        matched_properties = []
+    def create_prompt(self, preferences, property_data):
+        prompt = f"""
+        I need your help to recommend properties based on the following user preferences and available properties:
         
-        for property_json in property_data:
-            for unit in property_json['project']['unit_types']:
-                if self.is_match(preferences, unit):
-                    matched_properties.append({
-                        'property_name': property_json['project']['name'],
-                        'unit': unit
-                    })
-
-        return matched_properties
-
-    def is_match(self, preferences, unit):
-        if 'bedrooms' in preferences and preferences['bedrooms'] > unit['configuration']['bedrooms']:
-            return False
-        if 'max_price' in preferences and float(preferences['max_price']) < float(unit['price'].replace("RM", "").replace(",", "")):
-            return False
+        User Preferences: 
+        - Bedrooms: {preferences.get("bedrooms", "N/A")}
+        - Max Price: {preferences.get("max_price", "N/A")}
         
-        return True
+        Available Properties:
+        {json.dumps(property_data, indent=2)}
+        
+        Please recommend properties that match the user's preferences.
+        """
+
+        return prompt
+
+
+    def get_llm_response(self, prompt: str) -> str:
+        parameters = {"decoding_method": "greedy", "max_new_tokens": 500}
+
+        llm = LLM(
+            model="watsonx/meta-llama/llama-3-3-70b-instruct",
+            base_url="https://jp-tok.ml.cloud.ibm.com",
+            params=parameters,
+            project_id=os.getenv("WATSONX_PROJECT_ID", None),
+            apikey=os.getenv("WATSONX_API_KEY", None),
+        )
+        # To be completed
+        # try:
+        #     response = 
+        #     if response and "choices" in response:
+        #         generated_text = response["choices"][0].get(
+        #             "text", "No recommendations found."
+        #         )
+        #         return generated_text
+        #     else:
+        #         return "Error: No response text available."
+
+        # except Exception as e:
+        #     return f"Error: {str(e)}"
