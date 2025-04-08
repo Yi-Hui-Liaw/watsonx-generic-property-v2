@@ -40,17 +40,7 @@ if __name__ == "__main__":
     #     },
     # ]
     inputs = [
-    {"u": "Hi, I'm looking for a property suitable for a family of 3 with maximum budget of Rm 700,000."},
-    # {"a": "Sure, can you tell me how many bedrooms you're looking for?"},
-    # {"u": "I need at least 3 bedrooms."},
-    # {"a": "What is your maximum budget?"},
-    # {"u": "My budget is RM 800,000."},
-    # {"a": "Do you have any preference for location?"},
-    # {"u": "I'm looking for something in the city center."},
-    # {"a": "Do you prefer furnished or unfurnished properties?"},
-    # {"u": "I prefer a fully furnished apartment."},
-    # {"a": "Do you need parking space?"}, 
-    # {"u": "Yes, I need parking space."},
+    {"u": "Hi, I'm looking for a property suitable for a family of 3 with maximum budget of RM 800,000."},
     {"a": "Let me find the best properties that fit your preferences."},
     ]
     q = ""

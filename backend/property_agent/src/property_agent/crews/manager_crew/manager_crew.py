@@ -4,7 +4,6 @@ from src.property_agent.tools.custom_tool import RecommendProperty
 from crewai_tools import (
     RagTool,
 )
-
 from dotenv import load_dotenv, find_dotenv
 import os
 
@@ -25,35 +24,35 @@ llm = LLM(
 class ManagerCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
-    #update_csv = UpdateCSV()
+    # update_csv = UpdateCSV()
     RunRecommender = RecommendProperty()
 
-    # facts_tool = RagTool(
-    #     description="Use this tool to extract facts related to the ABC Residence, Lumenh or The Nexus One property.",
-    #     config=dict(
-    #         llm=dict(
-    #             provider="ollama",  # or google, openai, anthropic, llama2, ...
-    #             config=dict(
-    #                 model="llama3",
-    #                 base_url="http://0.0.0.0:11434",
-    #                 # temperature=0.5,
-    #                 # top_p=1,
-    #                 # stream=true,
-    #             ),
-    #         ),
-    #         embedder=dict(
-    #             provider="ollama",  # or openai, ollama, ...
-    #             config=dict(
-    #                 model="mxbai-embed-large",
-    #                 # task_type="retrieval_document",
-    #                 # title="Embeddings",
-    #             ),
-    #         ),
-    #         vectordb=dict(provider="chroma", config=dict(dir=f"rag-db")),
-    #     ),
-    #     # summarize=True,
-    # )
-    # facts_tool.add(data_type="directory", source="knowledge/rag")
+    facts_tool = RagTool(
+        description="Use this tool to extract facts related to the ABC Residence, Lumenh or The Nexus One property from .json files.",
+        config=dict(
+            llm=dict(
+                provider="ollama",  # or google, openai, anthropic, llama2, ...
+                config=dict(
+                    model="llama3",
+                    base_url="http://0.0.0.0:11434",
+                    # temperature=0.5,
+                    # top_p=1,
+                    # stream=true,
+                ),
+            ),
+            embedder=dict(
+                provider="ollama",  # or openai, ollama, ...
+                config=dict(
+                    model="mxbai-embed-large",
+                    # task_type="retrieval_document",
+                    # title="Embeddings",
+                ),
+            ),
+            vectordb=dict(provider="chroma", config=dict(dir=f"rag-db")),
+        ),
+        # summarize=True,
+    )
+    facts_tool.add(data_type="directory", source="knowledge/rag")
 
     # csv_tool = RagTool(
     #     description="Use this tool to extract stocks or unit related information from .csv files",
@@ -143,9 +142,9 @@ class ManagerCrew:
             allow_delegation=False,
             max_iter=2,
             verbose=True,
-            #tools=[self.facts_tool],
+            tools=[self.facts_tool],
         )
-    
+
     @agent
     def recommend_agent(self) -> Agent:
         return Agent(
@@ -217,7 +216,7 @@ class ManagerCrew:
     @task
     def recommend_property(self) -> Task:
         return Task(config=self.tasks_config["recommend_property"])
-    
+
     @task
     def search_converse(self) -> Task:
         return Task(config=self.tasks_config["search_converse"])
@@ -235,7 +234,7 @@ class ManagerCrew:
         elif mode == "property_facts":
             return Crew(
                 agents=[self.search_agent(), self.customer_service_agent()],
-                tasks=[self.search_property_facts(), self.search_converse()],
+                tasks=[self.search_property_facts()],
                 process=Process.sequential,
                 verbose=True,
             )

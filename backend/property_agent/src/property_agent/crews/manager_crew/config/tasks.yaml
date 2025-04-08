@@ -146,7 +146,7 @@ route_task:
     Based on the latest query by user, decide the right task to execute. 
     The tasks are - ['property_facts', 'property_database', 'property_recommender']
     The guidelines for tasks are listed as below:
-    property_facts - Return this when the user's latest query is related to property facts. For example, query about freehold or leasehold.
+    property_facts - Return this when the user's latest query is related to property facts. For example, query about property features, location, address, contact.
     property_database - Return this when the latest user query is related to property stock units. For example, "how many units are still available?"
     property_recommender - Return this when the user's latest query is related to finding the right property. For example, "I am looking for a house for a family of 5."
   expected_output: >
