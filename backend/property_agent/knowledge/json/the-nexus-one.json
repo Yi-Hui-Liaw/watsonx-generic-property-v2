@@ -1,0 +1,197 @@
+{
+    "project": {
+        "name": "The Nexus One",
+        "location": "Jalan 3/144a, Cheras, Kuala Lumpur",
+        "concept": "Revolutionizing urban living by combining practical living with convenience.",
+        "proximity": "Strategically situated beside Taman Damai MRT Station. The development is also connected to highways such as Cheras-Kajang Expressway (CKE), the Sungai Besi-Ulu Kelang Expressway (SUKE), and Middle Ring Road 2 (MRR2) as well as Jalan Cheras.",
+        "target_audience": "Multi-generational families, professionals, young couples.",
+        "development_features": [
+            "Two 53-storey towers, Tower A and B",
+            "1,334 service apartment units",
+            "15 retail lots",
+            "Stunning views and high-end features redefine urban living"
+        ],
+        "showroom": {
+            "address": "101-01-01, U13, Wisma ABC, Jalan Permaisuri, 56100 Cheras, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+            "operating_hours": {
+                "weekday": "10:00 AM - 5:00 PM",
+                "weekend_and_public_holiday": "10:00 AM - 5:00 PM"
+            },
+            "contact": "1234-567-891"
+        },
+        "property_offering_details": {
+            "property_type": "Condominium",
+            "land_title": "Commercial",
+            "status": "New Launch",
+            "completion_year": "2027",
+            "tenure": "Freehold",
+            "land_area": null,
+            "total_units": 1220,
+            "total_blocks": 2,
+            "no_of_floors": 53,
+            "rooms": "Up to 4 Bedrooms, 3 Bathrooms, 2 Parking Lots",
+            "built_up_size": "437 ft² - 1,270 ft²",
+            "price": "RM 435,888 - RM 805,888",
+            "psf_price_range": "RM 293 - RM 642",
+            "maintenance_fee": null,
+            "launch_price": "From RM430,000 onwards and the development is due to be completed in 4Q2027.",
+            "retail_lots": 15,
+            "developer_info": null,
+            "total_no_of_units_by_block": null
+        },
+        "property_features": [
+            "Right Next To MRT Station",
+            "Unobstructed View",
+            "Dedicated Urban Yard",
+            "Signature Adaptive Home",
+            "Parcel Room",
+            "Home-Work Zone",
+            "5,850m² of Green Area",
+            "100m connected to MRT Station",
+            "Layouts up to 4 Bedrooms 1,270 sf",
+            "Last Freehold Land next to MRT station",
+            "Flexibility to break the party wall or make wall or make an opening between living room/ Bedrooms / Kitchen",
+            "Solar Panel",
+            "Rainwater harvesting system",
+            "Common EV charging station",
+            "Bicycle parking bay",
+            "Naturally ventilated carpark and corridors",
+            "High efficacy LED Light Fittings"
+        ],
+        "facilities_and_amenities": [
+            "Adult Fitness Stations",
+            "Aircon Facilities",
+            "Badminton hall",
+            "Basketball court",
+            "Basement car park",
+            "Car Park",
+            "Children's Playground",
+            "Community Garden",
+            "Drop Off Point",
+            "Elderly Wellness Stations",
+            "Perimeter Fencing",
+            "Fitness corner",
+            "Fun pool",
+            "Gymnasium room",
+            "Jacuzzi",
+            "Jogging track",
+            "Lap pool",
+            "Lift lobby",
+            "Lounge",
+            "Main entrance",
+            "Meeting room",
+            "Multi-Storey Car Park",
+            "Multi-purpose hall",
+            "Nursery",
+            "Picnic Area",
+            "Playground",
+            "Pantry",
+            "Reading Room",
+            "24 hours security",
+            "Surau",
+            "Wading pool"
+        ],
+        "facilities_plan": null,
+        "nearby_amenities": [
+            {
+                "name": "Pasar Malam Taman Damai",
+                "distance": "1.5 km"
+            },
+            {
+                "name": "Eko Cheras Mall",
+                "distance": "2.7 km"
+            },
+            {
+                "name": "Yuan Fong Kopitiam",
+                "distance": "2.7 km"
+            },
+            {
+                "name": "Alam Damai Recreational Park",
+                "distance": "4.8 km"
+            }
+        ],
+        "unit_types": [
+            {
+                "type": "A",
+                "configuration": {
+                    "bedrooms": 1,
+                    "study": 0,
+                    "bathrooms": 1,
+                    "carpark": 1,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "452 ft²",
+                "price": "RM 435,888"
+            },
+            {
+                "type": "B",
+                "configuration": {
+                    "bedrooms": 2,
+                    "study": 0,
+                    "bathrooms": 1,
+                    "carpark": 1,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "708 ft²",
+                "price": "RM 522,888"
+            },
+            {
+                "type": "C",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 2,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "960 ft²",
+                "price": "RM 648,888"
+            },
+            {
+                "type": "D",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 2,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "1,000 ft²",
+                "price": "RM 674,888"
+            },
+            {
+                "type": "E",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 3,
+                    "carpark": 2,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "1,270 ft²",
+                "price": "RM 805,888"
+            }
+        ],
+        "property_contact_information": {
+            "email": "customercare@propa.com",
+            "toll_free_line": "0000-00-0000",
+            "international_line": "000-0000-0000",
+            "address": "Property A Berhad, Level A2, Block B5, Mont Kiara, No.1 Jalan Melati 1, 50480 Kuala Lumpur, Malaysia"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/the-connaught-one/+page.svelte";

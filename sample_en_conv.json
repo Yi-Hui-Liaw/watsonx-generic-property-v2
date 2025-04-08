@@ -1,16 +1,24 @@
 {
     "history": [
         {
-            "u": "Can you tell me more about the minh?"
+            "u": "tell me more about abc residen"
+        },{
+            "a": ""
         },
         {
-            "a": "The Minh is a residence located in Mont'Kiara, Kuala Lumpur, with a total of 80 units per acre and six units per floor, offering a range of high-end features and amenities, including a bungalow-type design and Semi-D-type design, providing ultimate privacy and comfort for residents, with nearby amenities such as Garden International School, Mont' Kiara International School, and French School Of Kuala Lumpur, and a showroom located at 1, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, operating from 10am to 5pm on weekdays and weekends, and can be contacted at 1800-888-008."
+            "u": "where is it located"
         },
         {
-            "u": "Is the tenure freehold?"
+            "a": ""
         },
         {
-            "a":"The tenure of The Minh is Freehold."
+            "u": "is it freehold?"
+        },
+        {
+            "a":""
+        },
+        {
+            "u": "how many units still available?"
         }
     ]
 }

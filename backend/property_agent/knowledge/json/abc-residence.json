@@ -1,0 +1,382 @@
+{
+    "project": {
+        "name": "ABC-Residence",
+        "location": "Damansara Bay, Mutiara Damansara, Kuala Lumpur",
+        "concept": "Different and bold, this trendy high-rise development showcases flexible living features with exciting indoor and awesome outdoor living spaces. It is a design inspired by nature, aspires to connect to its surrounding blues and greens. A perfect tale about urbanity meets nature.",
+        "proximity": "7-minute walk to The Beat and Mutiara Damansara Metro Park lakeside.",
+        "target_audience": null,
+        "development_features": null,
+        "showroom": {
+            "address": "Mutiara Damansara Metro City, 54300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+            "operating_hours": {
+                "weekday": "9:30 AM - 5:30 PM",
+                "weekend_and_public_holiday": "10:00 AM - 5:00 PM"
+            },
+            "contact": "012-3456 879"
+        },
+        "property_offering_details": {
+            "property_type": "Condominium",
+            "land_title": "Commercial",
+            "status": "New Launch",
+            "completion_year": "2029",
+            "tenure": "Leasehold",
+            "land_area": "3.40 Acres",
+            "total_units": 1116,
+            "total_blocks": null,
+            "no_of_floors": null,
+            "rooms": "Up to 4 Bedrooms, 3 Bathrooms, 3 Parking Lots",
+            "built_up_size": "450ft² - 1,198ft²",
+            "price": "RM 820,888 - RM 1,274,888",
+            "psf_price_range": "RM 758 - RM 771",
+            "maintenance_fee": "RM 0.30 per ft²",
+            "launch_price": "From RM 820,888 onwards and the development is due to be completed in 2029.",
+            "retail_lots": null,
+            "developer_info": null,
+            "total_no_of_units_by_block": null
+        },
+        "property_features": [
+            "Move-in Ready ID Package",
+            "Adaptive And Compact Living",
+            "Wellness Lifestyle",
+            "Bike-friendly Project",
+            "Multi-generation Interaction"
+        ],
+        "facilities_and_amenities": [
+            "Aircon Facilities",
+            "Badminton hall",
+            "Barbeque Area",
+            "Basement car park",
+            "Car Park",
+            "Covered car park",
+            "Drop Off Point",
+            "Perimeter Fencing",
+            "Fun pool",
+            "Function room",
+            "Game room",
+            "Gymnasium room",
+            "Jacuzzi",
+            "Jogging track",
+            "Lap pool",
+            "Landscaped Garden",
+            "Lift lobby",
+            "Main entrance",
+            "Meeting room",
+            "Multi-Storey Car Park",
+            "Multi-purpose hall",
+            "Pool Deck",
+            "Playground",
+            "Recreation Room",
+            "24 hours security",
+            "Sky Lounge",
+            "Surau",
+            "Swimming pool",
+            "Table Tennis",
+            "Wading pool"
+        ],
+        "facilities_plan": {
+            "level_8": {
+                "recreation_podium": [
+                    "Herbs garden",
+                    "Tea corner",
+                    "Meditative deck",
+                    "Wellness Corner",
+                    "Lawn",
+                    "Hammock corner",
+                    "Yoga deck 1 & 2",
+                    "Exercise station"
+                ]
+            },
+            "central_park": [
+                "Social Corner",
+                "Meandering walkway / 400m Jogging track",
+                "Meadow",
+                "Mini amphitheatre",
+                "Garden swings"
+            ],
+            "splash_zone": [
+                "50m Lap Pool",
+                "Beach entry",
+                "Sun deck",
+                "Jacuzzi",
+                "Leisure deck",
+                "Kid’s pool",
+                "Aquaplay"
+            ],
+            "kids_adventure_zone": [
+                "Indoor & Outdoor playgrounds",
+                "Indoor games area"
+            ],
+            "sky_pods_and_decks": {
+                "level_35": [
+                    "Content creator’s room",
+                    "Gamer’s room",
+                    "Music pod"
+                ],
+                "level_37": [
+                    "Study & Discussion pods",
+                    "Seminar room",
+                    "Music pod",
+                    "Recreation room"
+                ],
+                "level_55": [
+                    "BBQ deck",
+                    "Co-living space",
+                    "Pre-function area",
+                    "Function hall",
+                    "Gym room",
+                    "Sport court",
+                    "Yoga deck",
+                    "Viewing deck"
+                ]
+            }
+        },
+        "nearby_amenities": [
+            {
+                "name": "Mutiara Damansara Metropolitan Park",
+                "distance": "0.4 km"
+            },
+            {
+                "name": "SMK Jinjang",
+                "distance": "1.1 km"
+            },
+            {
+                "name": "MRT Mutiara Damansara Baru Station",
+                "distance": "2.4 km"
+            },
+            {
+                "name": "AEON Big Mutiara Damansara",
+                "distance": "2.8 km"
+            },
+            {
+                "name": "Selayang Hospital",
+                "distance": "4.6 km"
+            },
+            {
+                "name": "Batu Caves",
+                "distance": "7.2 km"
+            },
+            {
+                "name": "Mercure Hotel",
+                "distance": "7.2 km"
+            }
+        ],
+        "unit_types": [
+            {
+                "type": "A",
+                "configuration": {
+                    "bedrooms": 1,
+                    "study": 0,
+                    "bathrooms": 1,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "450ft²",
+                "price": "RM 840,888"
+            },
+            {
+                "type": "A1",
+                "configuration": {
+                    "bedrooms": 1,
+                    "study": 0,
+                    "bathrooms": 1,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "450ft²",
+                "price": "RM 840,888"
+            },
+            {
+                "type": "B",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "898ft²",
+                "price": "RM 1,002,888"
+            },
+            {
+                "type": "B1",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "898ft²",
+                "price": "RM 1,002,888"
+            },
+            {
+                "type": "B2",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": "260ft²",
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "898ft²",
+                "price": "RM 1,002,888"
+            },
+            {
+                "type": "C",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 1,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": "12ft²",
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "998ft²",
+                "price": "RM 1,056,888"
+            },
+            {
+                "type": "C1",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 1,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": "12ft²",
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "1,028ft²",
+                "price": "RM 1,056,888"
+            },
+            {
+                "type": "C2",
+                "configuration": {
+                    "bedrooms": 3,
+                    "study": 1,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": "321ft²",
+                    "urban_yard": null,
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "980ft²",
+                "price": "RM 1,056,888"
+            },
+            {
+                "type": "D",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": "13ft²",
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "1,135ft²",
+                "price": "RM 1,233,888"
+            },
+            {
+                "type": "D1",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 2,
+                    "carpark": 0,
+                    "terrace_and_garden": "154ft²",
+                    "urban_yard": "13ft²",
+                    "dual_key": false,
+                    "balcony": false
+                },
+                "built_up_size": "1,070ft²",
+                "price": "RM 1,233,888"
+            },
+            {
+                "type": "E",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 3,
+                    "carpark": 3,
+                    "terrace_and_garden": null,
+                    "urban_yard": "13ft²",
+                    "dual_key": true,
+                    "balcony": false
+                },
+                "built_up_size": "1,198ft²",
+                "price": "RM 1,273,888"
+            },
+            {
+                "type": "E1",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 3,
+                    "carpark": 0,
+                    "terrace_and_garden": null,
+                    "urban_yard": "13ft²",
+                    "dual_key": true,
+                    "balcony": false
+                },
+                "built_up_size": "1,198ft²",
+                "price": "RM 1,273,888"
+            },
+            {
+                "type": "E2",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 3,
+                    "carpark": 0,
+                    "terrace_and_garden": "360ft²",
+                    "urban_yard": "13ft²",
+                    "dual_key": true,
+                    "balcony": false
+                },
+                "built_up_size": "1,135ft²",
+                "price": "RM 1,273,888"
+            },
+            {
+                "type": "E3",
+                "configuration": {
+                    "bedrooms": 4,
+                    "study": 0,
+                    "bathrooms": 3,
+                    "carpark": 0,
+                    "terrace_and_garden": "360ft²",
+                    "urban_yard": "13ft²",
+                    "dual_key": true,
+                    "balcony": false
+                },
+                "built_up_size": "1,135ft²",
+                "price": "RM 1,273,888"
+            }
+        ],
+        "property_contact_information": {
+            "email": "customercare@propa.com",
+            "toll_free_line": "0000-00-0000",
+            "international_line": "000-0000-0000",
+            "address": "Property A Berhad, Level A2, Block B5, Mont Damansara, No.1 Jalan Melati 1, 50480 Kuala Lumpur, Malaysia"
+        }
+    }
+}

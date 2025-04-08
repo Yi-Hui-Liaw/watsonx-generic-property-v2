@@ -1,0 +1,21 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/abc-residence": [
+		"src/routes/+layout.ts"
+	],
+	"/sample": [
+		"src/routes/+layout.ts"
+	],
+	"/settings": [
+		"src/routes/+layout.ts"
+	],
+	"/the-lumenh": [
+		"src/routes/+layout.ts"
+	],
+	"/the-nexus-one": [
+		"src/routes/+layout.ts"
+	]
+}
