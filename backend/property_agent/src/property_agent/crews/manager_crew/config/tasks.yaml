@@ -5,64 +5,31 @@
 #     {conversation}
 #     ------------------
 #     Based on the latest query by user, decide the right task to execute. 
-#     The tasks are - ['property_facts', 'property_database', 'property_recommender']
-#     The guidelines for tasks are listed as below:
-#     property_facts - Return this when the user's latest query is related to property facts. For example, query about freehold or leasehold.
-#     property_database - Return this when the latest user query is related to property stock units. For example, "how many units are still available?"
-#     property_recommender - Return this when the user's latest query is related to finding the right property. For example, "I am looking for a house for a family of 5."
+#     The tasks are - ['property_facts','property_database', 'property_book']
+#     The guidlines for tasks are listed as below:
+#     property_facts - Return this when the user latest query related to property facts. For example query about freehold or leasehold.
+#     property_database - Return this when the latest user query related to property stock units. For example "how units is still available?"
+#     property_book - Return this when the latest user query related to booking a unit. Wether a query or the conversation is in the middle of collecting booking appointment information.
 #   expected_output: >
-#     Return either 'property_facts', 'property_database', or 'property_recommender' without any quotes.
+#     Return either 'property_facts','property_database' or 'property_book' without any quotes.
 #   agent: customer_service_agent
 
-# search_property_facts:
+# rag_converse:
 #   description: >
 #     conversation:
 #     ------------------
 #     {conversation}
 #     ------------------
-#     Based on the latest query in the provided conversation, use the provided tool to search for relevant property facts in the json file.
-#     The tool should return only factual information about the property, such as tenure (freehold/leasehold), development features, property type, or legal aspects (e.g., land title).
-#     If the requested information does not exist in the documents, inform the user that no relevant information could be found. 
-#     Additionally, remind the user that the system handles properties related to the Lumenh, the Nexus One, and ABC Residence.
+#     Context
+#     ------------------
+#     User is currently looking at page - {page_url}
+#     Property information
+#     ------------------
+#     Based on the conversation, assist the user for any query given based on information extracted from tool. If the information does not exist in tool output simply let the user it does not exist in documents. You must not use your general knowledge for any property related query.
+
 #   expected_output: >
-#     Return the relevant property facts in text format extracted from the JSON data.
-#   agent: json_agent
-
-# search_property_database:
-#   description: >
-#     conversation:
-#     ------------------
-#     {conversation}
-#     ------------------
-#     Based on the latest query in the provided conversation, use the provided JSON data to search for relevant information regarding property availability, pricing, and units.
-#     The tool should return details about:
-#     - Available units and their configurations (e.g., 1-bedroom, 3-bedroom)
-#     - Pricing information
-#     - Availability of different unit types (e.g., type A, B, C)
-#     If the requested information is unavailable, let the user know that no relevant information could be found.
-#     Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
-#   expected_output: >
-#     Return the relevant property database information in text format extracted from the JSON data.
-#   agent: json_agent
-
-
-# search_property_recommender:
-#   description: >
-#     conversation:
-#     ------------------
-#     {conversation}
-#     ------------------
-#     Based on the latest query in the provided conversation, use the provided JSON data to recommend properties that match the user's requirements.
-#     The system should look for properties that meet the user's needs, such as:
-#     - Number of bedrooms
-#     - Type of property (e.g., family-friendly, luxury, etc.)
-#     - Other preferences (e.g., parking, garden space, etc.)
-#     If no matching properties are found, inform the user that no relevant properties could be found.
-#     Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
-#   expected_output: >
-#     Return the relevant property recommendations in text format extracted from the JSON data.
-#   agent: json_agent
-
+#     A brief reply return in text without any quotes. Use the language that the user is using.
+#   agent: customer_service_agent
 
 # book_converse:
 #   description: >
@@ -186,6 +153,22 @@ route_task:
     Return either 'property_facts', 'property_database', or 'property_recommender' without any quotes.
   agent: customer_service_agent
 
+search_converse:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Context
+    ------------------
+    User is currently looking at page - {page_url}
+    Property information
+    ------------------
+    Based on the conversation, assist the user for any query given based on information extracted from tool. If the information does not exist in tool output simply let the user it does not exist in documents. You must not use your general knowledge for any property related query.
+  expected_output: >
+    A brief reply return in text without any quotes. Use the language that the user is using.
+  agent: customer_service_agent
+
 search_property_facts:
   description: >
     conversation:
@@ -217,7 +200,7 @@ search_property_database:
     Return the relevant property database information in text format extracted from the JSON data.
   agent: search_agent
   
-search_property_recommender:
+recommend_property:
   description: >
     conversation:
     ------------------

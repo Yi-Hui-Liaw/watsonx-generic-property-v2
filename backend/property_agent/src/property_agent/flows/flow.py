@@ -8,12 +8,13 @@ class CollectState(BaseModel):
     page_url: str | None = ""
     query: str | None = None
     inputs: List[Mapping[str, Any]] | None = []
+    matching_properties: List[Mapping[str, Any]] | None = []
     # inputs: str | None= ""
 
 class RouterFlow(Flow[CollectState]):
     @start()
     def start(self):
-        print("Starting the collector flow")
+        print("Starting the property recommender flow")
         self.state.route = "start"
         input_str =  "\n".join(
             [
@@ -36,37 +37,49 @@ class RouterFlow(Flow[CollectState]):
         self.state.route = result
         print(f"Route task determined - '{self.state.route}'")
 
-    @listen(route_task)
-    def book_route_task(self):
-        print(f"Update booking route - '{self.state.route}'")
-        if self.state.route != 'property_book':
-            return
+    # @listen(route_task)
+    # def book_route_task(self):
+    #     print(f"Update booking route - '{self.state.route}'")
+    #     if self.state.route != 'property_book':
+    #         return
         
+    #     result = (
+    #         ManagerCrew().crew(mode='property_book').kickoff(inputs={"conversation": self.state.inputs})
+    #     )
+    #     result = str(result).strip()
+    #     result = 'property_book_converse' if result == 'false' else 'property_book_update'
+    #     self.state.route = result 
+
+    @listen(route_task)
+    def recommend_property_task(self):
+        print(f"Update property recommendation task - '{self.state.route}'")
+        if self.state.route != 'property_recommender':
+            return
+
         result = (
-            ManagerCrew().crew(mode='property_book').kickoff(inputs={"conversation": self.state.inputs})
+            ManagerCrew().crew(mode='property_recommender').kickoff(inputs={"conversation": self.state.inputs})
         )
         result = str(result).strip()
-        result = 'property_book_converse' if result == 'false' else 'property_book_update'
-        self.state.route = result 
+        self.state.matching_properties = result
 
-    @listen(book_route_task)
-    def run_task(self):
-        print(f"Execute {self.state.route} task")
-        result = (
-                ManagerCrew()
-                .crew(mode=self.state.route)
-                .kickoff(
-                    inputs={
-                        "page_url": self.state.page_url,
-                        "conversation": self.state.inputs,
-                    }
-                )
-            )
-        self.state.query = str(result)
+    # @listen(book_route_task)
+    # def run_task(self):
+    #     print(f"Execute {self.state.route} task")
+    #     result = (
+    #             ManagerCrew()
+    #             .crew(mode=self.state.route)
+    #             .kickoff(
+    #                 inputs={
+    #                     "page_url": self.state.page_url,
+    #                     "conversation": self.state.inputs,
+    #                 }
+    #             )
+    #         )
+    #     self.state.query = str(result)
 
-    @listen(run_task)
+    @listen(recommend_property_task)
     def complete_task(self):
         print("complete conversation")
-        if self.state.query:
-            return self.state.query
+        if self.state.matching_properties:
+            return self.state.matching_properties
         return """Sorry. We could not understand your query. Could please rephrase your question?"""
