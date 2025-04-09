@@ -138,9 +138,9 @@ class ManagerCrew:
     def converse(self) -> Task:
         return Task(config=self.tasks_config["converse"])
     
-    @task
-    def retrieve_data(self) -> Task:
-        return Task(config=self.tasks_config["retrieve_data"])
+    # @task
+    # def retrieve_data(self) -> Task:
+    #     return Task(config=self.tasks_config["retrieve_data"])
     
     @task
     def match_data_field(self) -> Task:
@@ -185,7 +185,7 @@ class ManagerCrew:
         elif mode == "retrieve_data":
             return Crew(
                 agents=[self.search_agent()],
-                tasks=[self.match_data_field(), self.retrieve_data()],
+                tasks=[self.match_data_field()],
                 process=Process.sequential,
                 verbose=True,
             )

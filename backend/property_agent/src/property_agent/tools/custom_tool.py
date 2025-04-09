@@ -52,6 +52,19 @@ class DataFields(BaseModel):
 #             return "Appointment csv has been updated."
 #         except Exception as e:
 #             return e
+def load_properties(data_fields):
+    prop_dir = "./knowledge/json"
+    files = os.listdir(prop_dir)
+    match_prop = []
+    for f in files:
+        print(f"loading {f}")
+        with open(os.path.join(prop_dir, f), 'r') as jf:
+            properties = json.load(jf)
+            temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
+            match_prop.append(temp_prop)
+            print(f"Match properties - {len(match_prop)}") 
+    return properties
+
 
 class RetrievePropertyData(BaseTool):
     name: str = "retrieve property data"
@@ -60,30 +73,17 @@ class RetrievePropertyData(BaseTool):
     )
     args_schema: Type[BaseModel] = DataFields
 
-    def load_properties(self):
-        prop_dir = "./knowledge/json"
-        files = os.listdir(prop_dir)
-        properties = []
-        for f in files:
-            print(f"loading {f}")
-            with open(os.path.join(prop_dir, f), 'r') as jf:
-                prop_json = json.load(jf)
-                properties.append(prop_json)
-        return properties
+
 
     def _run(self, data_fields: list[str]) -> List[dict]:
         print(f"Exracting {len(data_fields)} data fields")
         print(data_fields)
         # Implementation goes here
         data_fields = data_fields + ['name','concept'] # name and concept is a must for model to make a better decision
-        match_prop = []
+        
         try:
-            properties = self.load_properties()
-            for prop in properties:
-                temp_prop = {k:v for k,v in prop['project'].items() if k in data_fields}
-                match_prop.append(temp_prop)
-            print(f"Match properties - {len(match_prop)}")
-            return match_prop
+            properties = load_properties(data_fields)
+            return properties
         except Exception as e:
             return e
 

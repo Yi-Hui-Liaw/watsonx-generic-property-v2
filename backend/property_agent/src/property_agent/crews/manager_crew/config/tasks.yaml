@@ -226,12 +226,12 @@ match_data_field:
     Return in list based on the provided data. For example ['name','location']
   agent: search_agent
 
-retrieve_data:
-  description: >
-    based on identified data fields in previous task, use the provided retrieve data tool to get matching properties.
-  expected_output: >
-    Return the tool output which is a list[dict] format.
-  agent: search_agent
+# retrieve_data:
+#   description: >
+#     based on identified data fields in previous task, use the provided retrieve data tool to get matching properties.
+#   expected_output: >
+#     Return the tool output which is a list[dict] format.
+#   agent: search_agent
 
 recommend_property:
   description: >
