@@ -63,7 +63,7 @@ def load_properties(data_fields):
             temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
             match_prop.append(temp_prop)
             print(f"Match properties - {len(match_prop)}") 
-    return properties
+    return match_prop
 
 
 class RetrievePropertyData(BaseTool):

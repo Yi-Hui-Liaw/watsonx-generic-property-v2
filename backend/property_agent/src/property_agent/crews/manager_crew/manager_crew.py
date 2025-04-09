@@ -98,7 +98,6 @@ class ManagerCrew:
             allow_delegation=False,
             max_iter=2,
             verbose=True,
-            tools=[self.RetrievePropertyTool],
         )
 
     @agent
