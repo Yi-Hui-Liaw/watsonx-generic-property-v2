@@ -73,7 +73,7 @@ class RouterFlow(Flow[CollectState]):
             ManagerCrew().crew(mode='converse').kickoff(inputs={
                 "conversation": self.state.inputs,
                 "information": recommendation.raw,
-                "context": "the information provided is the recommended property. You are generating a reply for the user."
+                "context": "the information provided is the recommended properties. You are generating a reply to recommend to the user. You must not suggest or offer any service. You are merely recommending the right property."
                 })
         )
         result = str(result.raw).strip()
