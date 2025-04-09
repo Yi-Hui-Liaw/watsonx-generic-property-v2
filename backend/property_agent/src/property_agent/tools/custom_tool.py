@@ -53,6 +53,7 @@ class DataFields(BaseModel):
 #         except Exception as e:
 #             return e
 def load_properties(data_fields):
+    data_fields = data_fields + ['project_name','concept']
     prop_dir = "./knowledge/json"
     files = os.listdir(prop_dir)
     match_prop = []
@@ -62,7 +63,7 @@ def load_properties(data_fields):
             properties = json.load(jf)
             temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
             match_prop.append(temp_prop)
-            print(f"Match properties - {len(match_prop)}") 
+    print(f"Match properties - {len(match_prop)}") 
     return match_prop
 
 
@@ -79,7 +80,7 @@ class RetrievePropertyData(BaseTool):
         print(f"Exracting {len(data_fields)} data fields")
         print(data_fields)
         # Implementation goes here
-        data_fields = data_fields + ['name','concept'] # name and concept is a must for model to make a better decision
+        data_fields = data_fields + ['project_name','concept'] # name and concept is a must for model to make a better decision
         
         try:
             properties = load_properties(data_fields)

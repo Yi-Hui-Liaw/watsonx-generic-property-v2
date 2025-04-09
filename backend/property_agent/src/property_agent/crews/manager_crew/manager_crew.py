@@ -86,7 +86,7 @@ class ManagerCrew:
             config=self.agents_config["customer_service_agent"],
             llm=llm,
             allow_delegation=False,
-            max_iter=2,
+            max_iter=1,
             verbose=True,
         )
 
@@ -96,7 +96,7 @@ class ManagerCrew:
             config=self.agents_config["search_agent"],
             llm=llm,
             allow_delegation=False,
-            max_iter=2,
+            max_iter=1,
             verbose=True,
         )
 

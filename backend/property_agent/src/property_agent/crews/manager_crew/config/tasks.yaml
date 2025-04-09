@@ -219,11 +219,11 @@ match_data_field:
       'facilities_plan', 
       'nearby_amenities', 
       'unit_types', 
-      'property_a_contact_information'
+      'property_contact_information'
     ]
-    You may identify more than one.
+    You may identify more than one. Include 'unit_types' only when you really need detail information of configurations, price and built up size for recommendation.
   expected_output: >
-    Return in list based on the provided data. For example ['name','location']
+    Return only data fields based on the provided data in list format without any extra text or explaination. For example ['project_name','location']
   agent: search_agent
 
 # retrieve_data:
@@ -235,14 +235,19 @@ match_data_field:
 
 recommend_property:
   description: >
-    properties:
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    property:
     ------------------
     {properties}
     ------------------
-    Based on the latest query in the provided conversation and properties data, recommend the best properties. You may recommend more than one. Make sure to prioritise user's needs.
-    If no matching properties are found return empty list.
+    Based on the latest query in the provided conversation and property data, your task is to choose the best property based on user query's in the conversation. 
+    Do not mention about data that is not provided. If asked, let user you do not posses the information.
   expected_output: >
-    Return recommended properties in list[dict] format.
+    Return in list dictionary format with 2 keys 'property_name' and 'text'. 'property_name' key is the project name and 'text' key is your reason why you recommend it and how it's related to user's requirement.
+
   agent: recommend_agent
 
 converse:
@@ -260,7 +265,7 @@ converse:
     ------------------
     {conversation}
     ------------------
-    your task is to generate a friendly reply to the conversation based on provided information and context.
+    your task is to generate a friendly reply to the conversation based on provided information and context. Make sure to include currency when mentioning price.
   expected_output: >
     A brief reply return in text without any quotes. Use the language that the user is using.
   agent: customer_service_agent

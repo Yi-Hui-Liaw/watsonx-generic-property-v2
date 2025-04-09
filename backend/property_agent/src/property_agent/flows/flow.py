@@ -3,7 +3,7 @@ from typing import Any, Mapping, List
 from crewai.flow import Flow, listen, start
 from src.property_agent.crews.manager_crew.manager_crew import ManagerCrew
 from tools.custom_tool import load_properties
-import ast
+import ast, json
 
 class CollectState(BaseModel):
     route: str | None = None
@@ -62,10 +62,11 @@ class RouterFlow(Flow[CollectState]):
             ManagerCrew().crew(mode='retrieve_data').kickoff(inputs={"conversation": self.state.inputs})
         )
         print(f"Extracted data field - {data_fields.raw}")
-        property_data = load_properties(ast.literal_eval(data_fields.raw))
+        property_data = json.dumps(load_properties(ast.literal_eval(data_fields.raw)), indent=4)
 
         recommendation = (
             ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
+                "conversation": self.state.inputs,
                 "properties": property_data
                 })
         )
@@ -74,7 +75,7 @@ class RouterFlow(Flow[CollectState]):
             ManagerCrew().crew(mode='converse').kickoff(inputs={
                 "conversation": self.state.inputs,
                 "information": recommendation.raw,
-                "context": "the information provided is the recommended properties. You are generating a reply to recommend to the user. You must not suggest or offer any service. You are merely recommending the right property."
+                "context": "the information provided is the recommended properties. You are generating a reply to recommend to the user. You must not suggest or offer any service. You are merely recommending the right property. Make sure to mention the name of the recommended properties."
                 })
         )
         result = str(result.raw).strip()
