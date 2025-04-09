@@ -199,20 +199,68 @@ search_property_database:
   expected_output: >
     Return the relevant property database information in text format extracted from the JSON data.
   agent: search_agent
-  
-recommend_property:
+
+match_data_field:
   description: >
     conversation:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query in the provided conversation, use the provided JSON data to recommend properties that match the user's requirements.
-    The system should look for properties that meet the user's needs, such as:
-    - Number of bedrooms
-    - Type of property (e.g., family-friendly, luxury, etc.)
-    - Other preferences (e.g., parking, garden space, etc.)
-    If no matching properties are found, inform the user that no relevant properties could be found.
-    Additionally, remind the user that we only handle properties related to the Lumenh, the Nexus One, and ABC Residence.
+    Based on the latest query in the provided conversation, your task is to identify what data are required to provide recommendation. The list of data fields available is as follow:
+    [ 
+      'location', 
+      'proximity', 
+      'target_audience', 
+      'development_features', 
+      'showroom', 
+      'property_offering_details', 
+      'property_features', 
+      'facilities_and_amenities', 
+      'facilities_plan', 
+      'nearby_amenities', 
+      'unit_types', 
+      'property_a_contact_information'
+    ]
+    You may identify more than one.
   expected_output: >
-    Return the relevant property recommendations in text format extracted from the JSON data.
+    Return in list based on the provided data. For example ['name','location']
+  agent: search_agent
+
+retrieve_data:
+  description: >
+    based on identified data fields in previous task, use the provided retrieve data tool to get matching properties.
+  expected_output: >
+    Return the tool output which is a list[dict] format.
+  agent: search_agent
+
+recommend_property:
+  description: >
+    properties:
+    ------------------
+    {properties}
+    ------------------
+    Based on the latest query in the provided conversation and properties data, recommend the best properties. You may recommend more than one. Make sure to prioritise user's needs.
+    If no matching properties are found return empty list.
+  expected_output: >
+    Return recommended properties in list[dict] format.
   agent: recommend_agent
+
+converse:
+  description: >
+    information:
+    ------------------
+    {information}
+    ------------------
+    Context
+    ------------------
+    {context}
+    Property information
+    ------------------
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    your task is to generate a friendly reply to the conversation based on provided information and context.
+  expected_output: >
+    A brief reply return in text without any quotes. Use the language that the user is using.
+  agent: customer_service_agent

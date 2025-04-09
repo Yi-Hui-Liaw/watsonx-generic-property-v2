@@ -2,13 +2,14 @@ from pydantic import BaseModel
 from typing import Any, Mapping, List
 from crewai.flow import Flow, listen, start
 from src.property_agent.crews.manager_crew.manager_crew import ManagerCrew
+import json
 
 class CollectState(BaseModel):
     route: str | None = None
     page_url: str | None = ""
     query: str | None = None
     inputs: List[Mapping[str, Any]] | None = []
-    matching_properties: List[Mapping[str, Any]] | None = []
+    # matching_properties: List[Mapping[str, Any]] | None = []
     # inputs: str | None= ""
 
 class RouterFlow(Flow[CollectState]):
@@ -56,11 +57,27 @@ class RouterFlow(Flow[CollectState]):
         if self.state.route != 'property_recommender':
             return
 
-        result = (
-            ManagerCrew().crew(mode='property_recommender').kickoff(inputs={"conversation": self.state.inputs})
+        property_data = (
+            ManagerCrew().crew(mode='retrieve_data').kickoff(inputs={"conversation": self.state.inputs})
         )
-        result = str(result).strip()
-        self.state.matching_properties = result
+
+        print(f"Extracted data type - {type(property_data.raw)}")
+
+        recommendation = (
+            ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
+                "properties": property_data.raw
+                })
+        )
+
+        result = (
+            ManagerCrew().crew(mode='converse').kickoff(inputs={
+                "conversation": self.state.inputs,
+                "information": recommendation.raw,
+                "context": "the information provided is the recommended property. You are generating a reply for the user."
+                })
+        )
+        result = str(result.raw).strip()
+        return result
 
     # @listen(book_route_task)
     # def run_task(self):
@@ -77,9 +94,9 @@ class RouterFlow(Flow[CollectState]):
     #         )
     #     self.state.query = str(result)
 
-    @listen(recommend_property_task)
-    def complete_task(self):
-        print("complete conversation")
-        if self.state.matching_properties:
-            return self.state.matching_properties
-        return """Sorry. We could not understand your query. Could please rephrase your question?"""
+    # @listen(recommend_property_task)
+    # def complete_task(self):
+    #     print("complete conversation")
+    #     if self.state.matching_properties:
+    #         return self.state.matching_properties
+    #     return """Sorry. We could not understand your query. Could please rephrase your question?"""

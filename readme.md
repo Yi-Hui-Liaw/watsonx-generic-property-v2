@@ -40,7 +40,7 @@ podman run --name property_agent_fe --rm -p 8080:8080 property_agent_fe
 
 #### Back End
   
-From root go to backend property_agent dir
+From root go to backend/property_agent dir
 ```
 cd back-end/property_agent
 ```

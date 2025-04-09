@@ -17,6 +17,10 @@ class Query(BaseModel):
         ..., description="JSON string of user preferences like bedrooms, max_price"
     )
 
+class DataFields(BaseModel):
+    data_fields: List[str] = Field(
+        ..., description="list of data fields in string required for recommendations."
+    )
 
 # class UpdateCSV(BaseTool):
 #     name: str = "csv_update"
@@ -49,24 +53,39 @@ class Query(BaseModel):
 #         except Exception as e:
 #             return e
 
-# class RunSQL(BaseTool):
-#     name: str = "run_sql"
-#     description: str = (
-#         "Use this tool to run SQL query to extract property information related to units."
-#     )
-#     args_schema: Type[BaseModel] = Query
+class RetrievePropertyData(BaseTool):
+    name: str = "retrieve property data"
+    description: str = (
+        "Use this tool to retrieve property data using data fields."
+    )
+    args_schema: Type[BaseModel] = DataFields
 
-#     def _run(self, sql_query: str) -> str:
-#         # Implementation goes here
-#         try:
-#             print("Running sql query...")
-#             con = sqlite3.connect("sql-db/property.db")
-#             df = pd.read_sql(sql_query, con=con)
+    def load_properties(self):
+        prop_dir = "./knowledge/json"
+        files = os.listdir(prop_dir)
+        properties = []
+        for f in files:
+            print(f"loading {f}")
+            with open(os.path.join(prop_dir, f), 'r') as jf:
+                prop_json = json.load(jf)
+                properties.append(prop_json)
+        return properties
 
-#             return df
-#         except Exception as e:
-#             return e
-
+    def _run(self, data_fields: list[str]) -> List[dict]:
+        print(f"Exracting {len(data_fields)} data fields")
+        print(data_fields)
+        # Implementation goes here
+        data_fields = data_fields + ['name','concept'] # name and concept is a must for model to make a better decision
+        match_prop = []
+        try:
+            properties = self.load_properties()
+            for prop in properties:
+                temp_prop = {k:v for k,v in prop['project'].items() if k in data_fields}
+                match_prop.append(temp_prop)
+            print(f"Match properties - {len(match_prop)}")
+            return match_prop
+        except Exception as e:
+            return e
 
 class RecommendProperty(BaseTool):
     name: str = "recommend_property"

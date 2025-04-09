@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
-from src.property_agent.tools.custom_tool import RecommendProperty
+from src.property_agent.tools.custom_tool import RetrievePropertyData
 from crewai_tools import (
     RagTool,
 )
@@ -25,7 +25,7 @@ class ManagerCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
     # update_csv = UpdateCSV()
-    RunRecommender = RecommendProperty()
+    RetrievePropertyTool = RetrievePropertyData()
 
     facts_tool = RagTool(
         description="Use this tool to extract facts related to the ABC Residence, Lumenh or The Nexus One property from .json files.",
@@ -90,50 +90,6 @@ class ManagerCrew:
             verbose=True,
         )
 
-    # @agent
-    # def booking_agent(self) -> Agent:
-    #     return Agent(
-    #         config=self.agents_config["csv_agent"],
-    #         llm=llm,
-    #         allow_delegation=False,
-    #         max_iter=2,
-    #         verbose=True,
-    #         tools=[self.update_csv],
-    #     )
-
-    # @agent
-    # def csv_agent(self) -> Agent:
-    #     return Agent(
-    #         config=self.agents_config["csv_agent"],
-    #         llm=llm,
-    #         allow_delegation=False,
-    #         max_iter=2,
-    #         verbose=True,
-    #         tools=[self.update_csv],
-    #     )
-
-    # @agent
-    # def sql_agent(self) -> Agent:
-    #     return Agent(
-    #         config=self.agents_config["sql_agent"],
-    #         llm=llm,
-    #         allow_delegation=False,
-    #         max_iter=2,
-    #         verbose=True,
-    #         tools=[self.run_sql],
-    #     )
-
-    # @agent
-    # def rag_agent(self) -> Agent:
-    #     return Agent(
-    #         config=self.agents_config["rag_agent"],
-    #         llm=llm,
-    #         allow_delegation=False,
-    #         max_iter=2,
-    #         verbose=True,
-    #         tools=[self.facts_tool],
-    #     )
-
     @agent
     def search_agent(self) -> Agent:
         return Agent(
@@ -142,7 +98,7 @@ class ManagerCrew:
             allow_delegation=False,
             max_iter=2,
             verbose=True,
-            tools=[self.facts_tool],
+            tools=[self.RetrievePropertyTool],
         )
 
     @agent
@@ -153,7 +109,6 @@ class ManagerCrew:
             allow_delegation=False,
             max_iter=2,
             verbose=True,
-            tools=[self.RunRecommender],
         )
 
     ########################### TASK ###########################
@@ -162,48 +117,6 @@ class ManagerCrew:
         return Task(
             config=self.tasks_config["route_task"],
         )
-
-    # @task
-    # def book_route(self) -> Task:
-    #     return Task(
-    #         config=self.tasks_config["book_route"],
-    #     )
-
-    # @task
-    # def rag_converse(self) -> Task:
-    #     return Task(
-    #         config=self.tasks_config["rag_converse"],
-    #     )
-
-    # @task
-    # def book_converse(self) -> Task:
-    #     return Task(
-    #         config=self.tasks_config["book_converse"],
-    #     )
-
-    # @task
-    # def search_property_facts(self) -> Task:
-    #     return Task(config=self.tasks_config["search_property_facts"])
-
-    # @task
-    # def search_property_database(self) -> Task:
-    #     return Task(config=self.tasks_config["search_property_database"])
-
-    # @task
-    # def transform_query_sql(self) -> Task:
-    #     return Task(config=self.tasks_config["transform_query_sql"])
-
-    # @task
-    # def extract_property_book(self) -> Task:
-    #     return Task(config=self.tasks_config["extract_property_book"])
-
-    # @task
-    # def update_property_book(self) -> Task:
-    #     return Task(config=self.tasks_config["update_property_book"])
-
-    # @task
-    # def summarize_booking(self) -> Task:
-    #     return Task(config=self.tasks_config["summarize_booking"])
 
     @task
     def search_property_facts(self) -> Task:
@@ -220,6 +133,20 @@ class ManagerCrew:
     @task
     def search_converse(self) -> Task:
         return Task(config=self.tasks_config["search_converse"])
+    
+    @task
+    def converse(self) -> Task:
+        return Task(config=self.tasks_config["converse"])
+    
+    @task
+    def retrieve_data(self) -> Task:
+        return Task(config=self.tasks_config["retrieve_data"])
+    
+    @task
+    def match_data_field(self) -> Task:
+        return Task(config=self.tasks_config["match_data_field"])
+    
+    ########################### CREW ###########################
 
     @crew
     def crew(self, mode="route") -> Crew:
@@ -231,14 +158,14 @@ class ManagerCrew:
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == "property_facts":
+        elif mode == "facts":
             return Crew(
                 agents=[self.search_agent(), self.customer_service_agent()],
                 tasks=[self.search_property_facts()],
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == "property_database":
+        elif mode == "search_database":
             return Crew(
                 agents=[self.sql_agent(), self.customer_service_agent()],
                 tasks=[
@@ -248,28 +175,24 @@ class ManagerCrew:
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == "property_recommender":
+        elif mode == "recommend_property":
             return Crew(
-                agents=[self.customer_service_agent()],
+                agents=[self.recommend_agent(),],
                 tasks=[self.recommend_property()],
                 process=Process.sequential,
                 verbose=True,
             )
-        # elif mode == "property_book_converse":
-        #     return Crew(
-        #         agents=[self.customer_service_agent()],
-        #         tasks=[self.book_converse()],
-        #         process=Process.sequential,
-        #         verbose=True,
-        #     )
-        # elif mode == "property_book_update":
-        #     return Crew(
-        #         agents=[self.customer_service_agent(), self.csv_agent()],
-        #         tasks=[
-        #             self.extract_property_book(),
-        #             self.update_property_book(),
-        #             self.summarize_booking(),
-        #         ],
-        #         process=Process.sequential,
-        #         verbose=True,
-        #     )
+        elif mode == "retrieve_data":
+            return Crew(
+                agents=[self.search_agent()],
+                tasks=[self.match_data_field(), self.retrieve_data()],
+                process=Process.sequential,
+                verbose=True,
+            )
+        elif mode == "converse":
+            return Crew(
+                agents=[ self.customer_service_agent()],
+                tasks=[self.converse()],
+                process=Process.sequential,
+                verbose=True,
+            )
