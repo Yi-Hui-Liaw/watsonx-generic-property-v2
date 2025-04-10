@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Any, Mapping, List
 from crewai.flow import Flow, listen, start
 from src.property_agent.crews.manager_crew.manager_crew import ManagerCrew
-from tools.custom_tool import load_properties
+from src.property_agent.tools.custom_tool import load_properties
 import ast, json
 
 class CollectState(BaseModel):
