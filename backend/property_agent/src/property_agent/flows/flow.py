@@ -62,7 +62,7 @@ class RouterFlow(Flow[CollectState]):
             ManagerCrew().crew(mode='retrieve_data').kickoff(inputs={"conversation": self.state.inputs})
         )
         print(f"Extracted data field - {data_fields.raw}")
-        property_data = json.dumps(load_properties(ast.literal_eval(data_fields.raw)), indent=4)
+        property_data = load_properties(ast.literal_eval(data_fields.raw))
 
         recommendation = (
             ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
