@@ -148,7 +148,6 @@ async def run_advanced_crawler():
                 print(f"  → Found project: {url}")
                 all_project_urls.append(url)
 
-    # ✅ Done
     print(all_project_urls)
     print(f"\nTotal projects found: {len(all_project_urls)}")
     driver.quit()
@@ -193,7 +192,7 @@ async def run_advanced_crawler():
     results = []
     async with AsyncWebCrawler() as crawler:
         for url in all_project_urls:
-            print(f"\n🚀 Crawling: {url}")
+            print(f"\n Crawling: {url}")
             async for result in await crawler.arun(url, config=config):
                 results.append(result)
                 score = result.metadata.get("score", 0)
