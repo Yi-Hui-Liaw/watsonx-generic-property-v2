@@ -85,22 +85,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import time
 
-async def run_advanced_crawler():
-    # Create a sophisticated filter chain
-    filter_chain = FilterChain([
-        # URL patterns to include
-        URLPatternFilter(patterns=["*property/region*"]),
-
-        # Content type filtering
-        ContentTypeFilter(allowed_types=["text/html"])
-    ])
-
-    # Create a relevance scorer
-    keyword_scorer = KeywordRelevanceScorer(
-        keywords=["sqft", "project", "development"],
-        weight=0.7
-    )   
-
+async def run_advanced_crawler(): 
     options = Options()
     options.add_argument("--start-maximized")
     options.add_argument("--headless=new") 
@@ -152,31 +137,49 @@ async def run_advanced_crawler():
     print(f"\nTotal projects found: {len(all_project_urls)}")
     driver.quit()
 
-
-    # js_code = ["""
+    # js_code = """
     #             (() => {
-    #             const propertyTab = Array.from(document.querySelectorAll('a.nav-link')).find(link => link.textContent.includes('Property'));
-                    
-    #             if (propertyTab) {
-    #                 propertyTab.click();
-                    
-    #                 setTimeout(() => {
-    #                 const regionLinks = document.querySelectorAll('.headerRegionLink');
-                    
-    #                 regionLinks.forEach((link, index) => {
     #                     setTimeout(() => {
-    #                     link.click();
-    #                     }, index * 500);
-    #                 });
-    #                 }, 1000);
-    #             }
-    #             })();
-    # """]
+    #                         const propertyTab = Array.from(document.querySelectorAll('p.text-pink.gaTracking'))
+    #                             .find(link => link.textContent.includes('Load All Projects'));
+
+    #                         if (propertyTab) {
+    #                             propertyTab.click();
+    #                         }
+    #                     }, 2000);
+    #                 })();
+    # """
+    wait_for="""
+            (() => {
+                const propertyTab = Array.from(document.querySelectorAll('p.text-pink.gaTracking')).find(link => link.textContent.includes('Load All Projects'));
+                if (propertyTab) {
+                    propertyTab.click();
+                }
+                return true;
+            })();
+        """
+    
+    # Create a sophisticated filter chain
+    filter_chain = FilterChain([
+        # URL patterns to include
+        URLPatternFilter(patterns=["*property/region*"]),
+
+        URLPatternFilter(patterns=["*#*"], reverse=True),
+
+        # Content type filtering
+        ContentTypeFilter(allowed_types=["text/html"])
+    ])
+
+    # Create a relevance scorer
+    keyword_scorer = KeywordRelevanceScorer(
+        keywords=["sqft", "project", "development"],
+        weight=1.0
+    )  
 
     # Set up the configuration
     config = CrawlerRunConfig(
         deep_crawl_strategy=BestFirstCrawlingStrategy(
-            max_depth=2,
+            max_depth=1,
             include_external=False,
             filter_chain=filter_chain,
             url_scorer=keyword_scorer
@@ -184,19 +187,20 @@ async def run_advanced_crawler():
         scraping_strategy=LXMLWebScrapingStrategy(),
         stream=True,
         verbose=True,
-        #js_code=js_code
-        #wait_for=js_code
+        #js_code=js_code,
+        wait_for=wait_for,
+        page_timeout=60000
     )
 
     # Execute the crawl
     results = []
     async with AsyncWebCrawler() as crawler:
         for url in all_project_urls:
-            print(f"\n Crawling: {url}")
             async for result in await crawler.arun(url, config=config):
-                results.append(result)
                 score = result.metadata.get("score", 0)
                 depth = result.metadata.get("depth", 0)
+                if depth != 0:
+                    results.append(result)
                 print(f"Depth: {depth} | Score: {score:.2f} | {result.url}")
 
     # Analyze the results
