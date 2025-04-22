@@ -31,12 +31,10 @@ def get_project_links(url):
     options.add_argument("window-size=1920,1080")
 
     driver = webdriver.Chrome(options=options)
-    wait = WebDriverWait(driver, 15)
-
     driver.get(url)
 
     # Locate the "Property" menu link more reliably
-    property_menu = wait.until(EC.presence_of_element_located(
+    property_menu = WebDriverWait(driver, 15).until(EC.presence_of_element_located(
         (By.XPATH, "//a[contains(., 'Property') and contains(@class, 'dropdown-toggle')]")
     ))
 
@@ -142,23 +140,26 @@ async def crawl(url="https://www.uemsunrise.com"):
                 scan_full_page=True,
                 # js_code=js_commands,
                 # js_only=True,
-                wait_for="""var loadMoreFn = function(){
+                wait_for="""js:() => (()=>{
+                var loadMoreFn = function(){
                 const lmButton = document.querySelector("#loadMore");
-                if(lmButton){
-                    if(document.querySelectorAll('#loadMore')[0].style.display != 'none'){
-                        lmButton.click();
-                        setTimeout(loadMoreFn, 1000);
-                    }
-                    else{
+                    if(lmButton){
+                        if(document.querySelectorAll('#loadMore')[0].style.display != 'none'){
+                            lmButton.click();
+                            setTimeout(loadMoreFn, 1000);
+                        }
+                        else{
+                        return true;
+                        }
+                    }   
                     return true;
-                    }
-                }   
-                return true;
-            }
-            loadMoreFn();
-            ;""",
+                }
+                loadMoreFn();
+                })();
+                """,
                 # session_id='session',
                 check_robots_txt=True,
+                page_timeout=60000,
             )
             print(f"\n🚀 Crawling: {url}")
             async for result in await crawler.arun(url, config=config):
