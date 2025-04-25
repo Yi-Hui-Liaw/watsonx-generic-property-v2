@@ -1,0 +1,80 @@
+{
+  "property_name": "Senadi Hills Phase 1B",
+  "location": "Senadi Hills",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Purteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Spoiled with dreamy views from elevated grounds, Senadi Hills is a private residential enclave that welcomes elders and the less-abled with wheelchair-friendly spaces. Beautiful manicured gardens and parks enrich Senadi Hills with natural touches of nature and greenery.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Children’s Playground",
+    "2.5km Jogging Circuit",
+    "Outdoor Gym",
+    "Mini Tai Chi Area",
+    "Wheelchair Friendly Suite"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Golf Club",
+      "distance": "3.4 KM"
+    },
+    {
+      "name": "University",
+      "distance": "4.8 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "5.8 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "6.7 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "7.7 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "8.5 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Phase 1B Corner",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2314 sqft",
+      "price": "RM 770,950"
+    },
+    {
+      "type": "Phase 1B End",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2314 sqft",
+      "price": "RM 716,550"
+    },
+    {
+      "type": "Phase 1B Intermediate",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2185 sqft",
+      "price": "RM 659,600"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 2185 sqft - 2314 sqft",
+    "price": "RM 659,600 - RM 922,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/senadi-hills-1b"
+}

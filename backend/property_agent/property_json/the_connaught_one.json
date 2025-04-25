@@ -1,0 +1,87 @@
+{
+  "property_name": "The Connaught One",
+  "location": "The Taman Connaught One UEM Sunrise Now Open For Registeration",
+  "showroom": {
+    "address": "191-01-01, 1st Floor, Wisma CKE, Jln Lanchang, 56100 Cheras Wilayah Persekutuan Kuala Lumpur, Malaysia"
+  },
+  "description": "The Connaught One is now open for booking! Introducing The Connaught One, an exciting new freehold Transit-Oriented Development designed for maximum convenience. With its location right next to Taman Connaught MRT Station, everything is easily within reach. Units are flexibly sized between 42m 2 to 118m 2 (452ft 2 to 1,270ft 2 ) with up to 4 bedrooms, perfect for young couples and growing families. With a price starting from only RM380k*, register now to secure your unit. Check out 360 Aerial View here",
+  "status": "New Launch",
+  "tenure": "Freehold",
+  "property_type": "Service Apartment",
+  "features": [
+    "Right Next To MRT Station",
+    "Unobstructed View",
+    "Dedicated Urban Yard",
+    "Signature Adaptive Home",
+    "Parcel Room",
+    "Home-Work Zone"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Pasar Malam Taman Connaught",
+      "distance": "1.5 KM"
+    },
+    {
+      "name": "Eko Cheras Mall",
+      "distance": "2.7 KM"
+    },
+    {
+      "name": "Yuan Fong Kopitiam",
+      "distance": "2.7 KM"
+    },
+    {
+      "name": "Alam Damai Recreational Park",
+      "distance": "4.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "500 sqft",
+      "price": "RM 350,900"
+    },
+    {
+      "type": "B",
+      "bedrooms": "2",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "708 sqft",
+      "price": "RM 467,900"
+    },
+    {
+      "type": "C",
+      "bedrooms": "3+1",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "960 sqft",
+      "price": "RM 605,900"
+    },
+    {
+      "type": "D",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1000 sqft",
+      "price": "RM 626,900"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1270 sqft",
+      "price": "RM 787,900"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 42 sqm - 118 sqm",
+    "price": "RM 350,900 - RM 820,900"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/the-connaught-one"
+}

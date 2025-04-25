@@ -1,0 +1,48 @@
+{
+  "property_name": "Residensi 22",
+  "location": "Residensi 22 - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Residensi22 offers large sky suites permeated with sunlight and communal spaces immersed in nature, right in Mont’Kiara. A variety of layouts, ranging from 1,878 to 2,043 sqft., will suit a range of personal preferences, and with only four units to a floor, a life of privacy and exclusivity is found here.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Highspeed Broadband",
+    "Gated And Guarded Card Access System With AV Intercoms, CCTVs And Security Guard Patrols",
+    "Stunning Sky Decks With Lounges And Entertainment Areas",
+    "Function Galleries – Small To Big Events",
+    "Sporting Facilities",
+    "Landscaped Lushness",
+    "Infinity Pools"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "School",
+      "distance": "0.95 KM"
+    },
+    {
+      "name": "Hypermarket",
+      "distance": "1.3 KM"
+    },
+    {
+      "name": "Resort",
+      "distance": "3.8 KM"
+    },
+    {
+      "name": "National Science Centre",
+      "distance": "4.3 KM"
+    }
+  ],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 1878 sqft - 2043 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/residensi-22"
+}

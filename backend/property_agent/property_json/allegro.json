@@ -1,0 +1,47 @@
+{
+  "property_name": "Allegro",
+  "location": "Allegro - Symphony Hills",
+  "showroom": {
+    "address": "Persiaran Simfoni, Cyber 9 63000 Cyberjaya Selangor, Malaysia"
+  },
+  "description": "New launch in Symphony Hills, Cyberjaya. Symphony Hills, an exclusive residential enclave in Cyberjaya will be introducing its Twin Villas early this year. These limited series of 68 semi-detached residences are designed in various sizes and layout configurations to purposefully fit your lifestyle - the largest being the exclusive Grand Twin Villas of which there are only four.",
+  "status": "Coming Soon",
+  "tenure": "Freehold",
+  "property_type": "Semi-Detached",
+  "features": [],
+  "nearby_amenities": [
+    {
+      "name": "Tamarind Square",
+      "distance": "0.55 KM"
+    },
+    {
+      "name": "King Henry VII College",
+      "distance": "0.75 KM"
+    },
+    {
+      "name": "Multimedia University",
+      "distance": "1.2 KM"
+    },
+    {
+      "name": "DPULZE Shopping Centre",
+      "distance": "2.3 KM"
+    },
+    {
+      "name": "Cyberjaya Lake Garden",
+      "distance": "2.5 KM"
+    },
+    {
+      "name": "Cyberjaya Hospital",
+      "distance": "2.5 KM"
+    }
+  ],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 2866 sqft - 5114 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/allegro"
+}

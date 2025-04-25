@@ -1,0 +1,65 @@
+{
+  "property_name": "Residensi Solaris Parq",
+  "location": "Residensi Solaris Parq - Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "There is a palpable feel to Solaris Parq, the next lifestyle horizon from the creator of Publika. Built on one of the last prime spots next to Publika, limitless living is reimagined with endless lifestyle choices within an urban park living concept.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Furnished With Kitchen Cabinets And Appliances",
+    "Protected By A 4-tier Security System",
+    "Digital Lockset Main Entrance Doors",
+    "Rejuvenating Lounges And Sky Jacuzzi With KL Skyline View",
+    "Lifestyle Facilities At The Podium Including 50m Olympic-length Pool, Rain Spa And More.",
+    "GreenRE Bronze Certified",
+    "Next To 2 Acres Urban Park With Proposed 1km Bicycle Lane",
+    "Living Next To A New Retail Mall Featuring First Cinema In Mont’Kiara And Dutamas."
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "721 sqft",
+      "price": "RM 902,310"
+    },
+    {
+      "type": "B",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1080 sqft",
+      "price": "RM 1,315,560"
+    },
+    {
+      "type": "C",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1022 sqft",
+      "price": "RM 1,266,160"
+    },
+    {
+      "type": "D",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1423 sqft",
+      "price": "RM 1,690,810"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "2",
+    "parking_lots": "2",
+    "built_up_size": "From 721 sqft - 1423 sqft",
+    "price": "RM 948,800 - RM 1,779,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/residensi-solaris-parq"
+}

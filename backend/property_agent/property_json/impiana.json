@@ -1,0 +1,105 @@
+{
+  "property_name": "Impiana",
+  "location": "Impiana - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "With a range of layouts, from duplexes to penthouses, and spaces from 1,615 to 5,638 sq. ft., Impiana is a dream for big and bigger families. From the condominium units, stunning views of the gardens of East Ledang further enhance the resort setting. If even more space is required for entertaining, two Sky Lounges are available for residents, as well as other facilities that include an Olympic-size pool.",
+  "status": "Selling Fast",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Olympic-size Pool",
+    "Natural Setting",
+    "Lush Landscape",
+    "Panoramic View",
+    "Private Sky Garden",
+    "Full Length Window"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Legoland®",
+      "distance": "2.5 KM"
+    },
+    {
+      "name": "University",
+      "distance": "2.8 KM"
+    },
+    {
+      "name": "Private Hospital",
+      "distance": "3.3 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "5.8 KM"
+    },
+    {
+      "name": "Marlborough College Malaysia",
+      "distance": "7 KM"
+    },
+    {
+      "name": "Raffles American School",
+      "distance": "7 KM"
+    },
+    {
+      "name": "CIQ Sultan Abu Bakar",
+      "distance": "9 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "9.6 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Penthouse 1",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "5094 sqft",
+      "price": "RM 2,520,888"
+    },
+    {
+      "type": "Penthouse 2",
+      "bedrooms": "4",
+      "bathrooms": "5",
+      "parking_lots": "3",
+      "built_up_size": "5094 sqft",
+      "price": "RM 2,520,888"
+    },
+    {
+      "type": "Penthouse 3",
+      "bedrooms": "4",
+      "bathrooms": "6",
+      "parking_lots": "3",
+      "built_up_size": "2118 sqft",
+      "price": "RM 2,307,888"
+    },
+    {
+      "type": "Penthouse 4",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "2436 sqft",
+      "price": "RM 1,867,888"
+    },
+    {
+      "type": "Penthouse 5",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "2743 sqft",
+      "price": "RM 2,998,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "6",
+    "parking_lots": "3",
+    "built_up_size": "From 1165 sqft - 5638 sqft",
+    "price": "From RM 1,867,888"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/impiana"
+}

@@ -1,0 +1,65 @@
+{
+  "property_name": "Dahlia",
+  "location": "Dahlia - Serene Heights, Greater KL",
+  "showroom": {
+    "address": "Serene Heights Sales Gallery Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Reminiscent of kampung living, Dahlia homes are designed to provide you a modern home with a hint of traditional elements. Coupled with spaciousness and well-designed layouts, for a truly comfortable home you’ll enjoy.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Parkland Themed Playzones",
+    "Hopscotch Valley",
+    "Gasing Land",
+    "Congkak Place",
+    "Takraw Park",
+    "Recreational Park",
+    "Wellness Garden",
+    "Leisure Garden"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1943 sqft",
+      "price": "RM 585,800"
+    },
+    {
+      "type": "A2",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2461 sqft",
+      "price": "RM 679,800"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1952 sqft",
+      "price": "RM 592,800"
+    },
+    {
+      "type": "B2",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2471 sqft",
+      "price": "RM 701,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 1943 sqft - 2471 sqft",
+    "price": "RM 585,800 - RM 1,000,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/dahlia"
+}

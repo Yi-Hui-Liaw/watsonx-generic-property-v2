@@ -1,0 +1,29 @@
+{
+  "property_name": "Arcoris SOHO",
+  "location": "Arcoris SoHo - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Arcoris SoHo offers Studio, 1- and 2-bedroom units, spread across 25 uniquely designed floors, taking into consideration the occupants’ individuality. Private gardens are attached to select units. Outside the private units are spaces designed to be conducive for work, networking or pure relaxation.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Multi-tier Security",
+    "24-hour CCTV Surveillance",
+    "Broadband Ready",
+    "Feng Shui Compliance",
+    "Innovative Meeting Pods"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "2",
+    "bathrooms": "2",
+    "parking_lots": "N/A",
+    "built_up_size": "From 496 sqft - 1039 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/arcoris-soho"
+}

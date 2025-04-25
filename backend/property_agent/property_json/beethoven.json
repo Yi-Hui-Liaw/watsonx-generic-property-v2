@@ -1,0 +1,44 @@
+{
+  "property_name": "Beethoven",
+  "location": "Beethoven",
+  "showroom": {
+    "address": "Symphony Hills Sales Gallery Persiaran Simfoni, Cyber 9, 63000 Cyberjaya, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Beethoven is located in one of Symphony Hills’ precincts, where at least 35 percent of the area is dedicated to greenery. Here is Malaysia’s first “connected intelligent community”—which boasts smart home automation and web control, and utilities and facilities integration—all built on a high-speed fibre optic infrastructure. A large resort-style clubhouse, and nearby international education institutions, health centres and leisure facilities fulfill all requirements of a contemporary family.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Semi-Detached",
+  "features": [
+    "Smart Home Automation And Web Control",
+    "Utilities And Facilities Integration",
+    "High-speed Fibre Optic Infrastructure"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "5+1",
+      "bathrooms": "6",
+      "parking_lots": "2",
+      "built_up_size": "5661 sqft",
+      "price": "RM 3,000,000"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4+1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "4620 sqft",
+      "price": "RM 2,500,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5+1",
+    "bathrooms": "6",
+    "parking_lots": "2",
+    "built_up_size": "From 4620 sqft - 5661 sqft",
+    "price": "RM 2,500,000 - RM 3,000,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/beethoven"
+}

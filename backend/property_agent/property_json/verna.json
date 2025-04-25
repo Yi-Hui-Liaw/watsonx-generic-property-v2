@@ -1,0 +1,50 @@
+{
+  "property_name": "Verna",
+  "location": "Verna - Serene Heights, Greater KL",
+  "showroom": {
+    "address": "Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9:30am - 5:30pm Weekends & Public Holidays: 10am - 5pm"
+  },
+  "description": "With the Modern Retro Concept, Verna offers a limited number of units with lot size of 20’ x 70’ and built up from 1,814 sqft – 1,939 sqft. Discover new lifestyle horizons at Verna, where refreshing green views captivate the cosiness of homes.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Refreshing Green Views"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A/A-M",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1814 sqft",
+      "price": "RM 652,800"
+    },
+    {
+      "type": "C/C-M",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1939 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "E/E-M",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1911 sqft",
+      "price": "N/A"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 1814 sqft - 1939 sqft",
+    "price": "RM 652,800 - RM 1,036,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/verna"
+}

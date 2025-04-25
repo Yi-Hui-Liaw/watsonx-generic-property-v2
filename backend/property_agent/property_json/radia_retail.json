@@ -1,0 +1,113 @@
+{
+  "property_name": "Radia Retail",
+  "location": "Radia Retail - Bukit Jelutong, Greater KL",
+  "showroom": {
+    "address": "A-09-08, Radia Office Block A, Persiaran Arked Bukit Jelutong, Seksyen U8, 40150 Shah Alam Selangor, Malaysia",
+    "operating_hours": "By appointment only Call/WhatsApp: +6019 2535 883 (Shamsul)"
+  },
+  "description": "Radia offers a collection of spaces designed to house retail businesses of all types and sizes. From artisanal startups to established brands, there is a suitable space here for any retail offering.",
+  "status": "Available Now",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [
+    "17 Feet Wide Pedestrian Walkway",
+    "Flexible Spaces For Aspiring Entrepreneurs To Established Retailers",
+    "Vibrant Retail Outlets Set Amidst A Lush Landscape"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Golf Club",
+      "distance": "0.22 KM"
+    },
+    {
+      "name": "Toll",
+      "distance": "3.5 KM"
+    },
+    {
+      "name": "Aeon Mall Shah Alam",
+      "distance": "6 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Phase 1 & 2 Upper Ground 1 Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 1 & 2 Upper Ground Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 2 & 3 Ground Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 2 & 3 Upper Ground 1 Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 2 & 3 Upper Ground Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 3 & 4 Ground Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 3 & 4 Upper Ground 1 Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Phase 3 & 4 Upper Ground Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Podium - Phase 1 & 2 Ground Level",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 695 sqft - 2799 sqft",
+    "price": "RM 605,000 - RM 4,152,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/radia-retail"
+}

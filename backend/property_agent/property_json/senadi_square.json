@@ -1,0 +1,74 @@
+{
+  "property_name": "Senadi Square",
+  "location": "Senadi Square - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Located within a catchment of established neighbourhoods and commercial centres, Senadi Square captures the footfall and traffic of a population of an estimated 419,000 people. This commercial and retail cluster of 20 shop offices fronts high transit traffic, giving its businesses a profitable edge.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [],
+  "nearby_amenities": [
+    {
+      "name": "Golf Club",
+      "distance": "3.4 KM"
+    },
+    {
+      "name": "University",
+      "distance": "4.8 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "5.8 KM"
+    },
+    {
+      "name": "Legoland",
+      "distance": "6.7 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "7.7 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "8.5 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Block 1",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "2918 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Block 2",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "2918 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Block 3",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "2918 sqft",
+      "price": "N/A"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 2918 sqft - 5595 sqft",
+    "price": "From RM 856,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/senadi-square"
+}

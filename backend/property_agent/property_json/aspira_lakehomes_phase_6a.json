@@ -1,0 +1,175 @@
+{
+  "property_name": "Aspira Lakehomes Phase 6A",
+  "location": "Aspira Lakehomes Phase 6A - Gerbang Nusajaya",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Welcome to Aspira LakeHomes, Gerbang Nusajaya. Where modern aspirations meet natural tranquillity.",
+  "status": "Bumi Lots Only",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Gymnasium & Sauna",
+    "Multipurpose Hall With 2 Badminton Courts",
+    "Surau",
+    "Tennis Court"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Tadika Al Ummah, Aspira Square",
+      "distance": "0.3 KM"
+    },
+    {
+      "name": "Senibong Golf Club",
+      "distance": "2.5 KM"
+    },
+    {
+      "name": "SK Ladang Pendas",
+      "distance": "3.3 KM"
+    },
+    {
+      "name": "SMK Gelang Patah",
+      "distance": "3.8 KM"
+    },
+    {
+      "name": "Bale Equestrian & Club House",
+      "distance": "4.0 KM"
+    },
+    {
+      "name": "Sekolah Agama Gelang Patah",
+      "distance": "4.0 KM"
+    },
+    {
+      "name": "Gelang Patah Town",
+      "distance": "4.4 KM"
+    },
+    {
+      "name": "68’ Avenue",
+      "distance": "4.6 KM"
+    },
+    {
+      "name": "Educity",
+      "distance": "6.0 KM"
+    },
+    {
+      "name": "SJK(T) Gelang Patah",
+      "distance": "6.0 KM"
+    },
+    {
+      "name": "Stadium & Sports Complex",
+      "distance": "6.2 KM"
+    },
+    {
+      "name": "Raffles American School",
+      "distance": "7.5 KM"
+    },
+    {
+      "name": "Forest City Golf Resort",
+      "distance": "7.8 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "8.2 KM"
+    },
+    {
+      "name": "Gleneagles Hospital Medini",
+      "distance": "8.3 KM"
+    },
+    {
+      "name": "Mall of Medini",
+      "distance": "9.0 KM"
+    },
+    {
+      "name": "JDT Stadium",
+      "distance": "9.4 KM"
+    },
+    {
+      "name": "X Park Sunway Iskandar",
+      "distance": "10.0 KM"
+    },
+    {
+      "name": "Invictus International School, Horizon Hills",
+      "distance": "10.5 KM"
+    },
+    {
+      "name": "Marlborough College Malaysia",
+      "distance": "11.1 KM"
+    },
+    {
+      "name": "Horizon Hills Golf & Country Club",
+      "distance": "11.7 KM"
+    },
+    {
+      "name": "NSK Trade City",
+      "distance": "11.7 KM"
+    },
+    {
+      "name": "Kensington Green Specialist",
+      "distance": "12.0 KM"
+    },
+    {
+      "name": "Columbia Asia Hospital",
+      "distance": "13.6 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "B1 End",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2149 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "B1 Intermediate",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2072 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "B2 End",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2303 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "B2 Intermediate",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2263 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "C1 Corner",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2179 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "C2 Corner",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2684 sqft",
+      "price": "RM 0"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 2072 sqft",
+    "price": "From RM 712,300"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/aspira-lakehomes-phase-6a"
+}

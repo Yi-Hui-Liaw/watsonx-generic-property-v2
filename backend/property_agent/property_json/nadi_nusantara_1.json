@@ -1,0 +1,59 @@
+{
+  "property_name": "Nadi Nusantara 1",
+  "location": "Nadi Nusantara 1",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "The latest affordable Johor homes in Senadi Hills, Iskandar Puteri. Nadi Nusantara 1 is designed especially for family comfort as well as encouraging a community lifestyle.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Community Hall",
+    "Surau",
+    "Kindergarten",
+    "Playground"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Legoland®",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "Secondary School",
+      "distance": "3.0 KM"
+    },
+    {
+      "name": "Primary School",
+      "distance": "5.1 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "5.8 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "7.7 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "1400 sqft",
+      "price": "RM 300,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "2",
+    "parking_lots": "1",
+    "built_up_size": "From 1400 sqft",
+    "price": "From RM 300,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/nadi-nusantara-1"
+}

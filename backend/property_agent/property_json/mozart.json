@@ -1,0 +1,49 @@
+{
+  "property_name": "Mozart",
+  "location": "Mozart - Symphony Hills, Cyberjaya",
+  "showroom": {
+    "address": "Persiaran Simfoni, Cyber 9 63000 Cyberjaya Selangor, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm Weekends and Public Holidays: 10.00am to 5.00pm",
+    "hotline": "+60 16-2999 333"
+  },
+  "description": "Mozart in Symphony Hills are 3-storey super link homes in a freehold boutique development by UEM Sunrise Berhad. Mozart is located in the center of Cyberjaya where the residents can easily find a variety of amenities, connectivity & accessibilities. Limited units left, book yours now!",
+  "status": "Selling Fast",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "5",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "3338 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "A2",
+      "bedrooms": "5",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "3450 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "3193 sqft",
+      "price": "RM 0"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 3193 sqft - 3450 sqft",
+    "price": "From RM 1,600,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/mozart"
+}

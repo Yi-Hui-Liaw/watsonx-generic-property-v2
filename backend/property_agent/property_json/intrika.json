@@ -1,0 +1,48 @@
+{
+  "property_name": "Intrika",
+  "location": "Intrika - Serene Heights, Selangor",
+  "showroom": {
+    "address": "Persiaran Serene Serene Heights 43500 Semenyih Selangor, Malaysia",
+    "operating_hours": "Weekdays: 9:30am - 5:30pm Weekends & Public Holidays: 10am - 5pm"
+  },
+  "description": "UEM Sunrise is happy to introduce our latest product in Serene Heights- Intrika! Intrika is a freehold double storey terrace and offers 2 type of lot size of 20’x70’ & 22’x95’. Wake up to simplicity and come home to serenity. Come home to happiness, register now!",
+  "status": "Limited Unit",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "4+1",
+      "parking_lots": "2",
+      "built_up_size": "2322 sqft",
+      "price": "RM 886,800"
+    },
+    {
+      "type": "B1",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1914 sqft",
+      "price": "RM 701,800"
+    },
+    {
+      "type": "B2",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1927 sqft",
+      "price": "RM 714,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4+1",
+    "parking_lots": "2",
+    "built_up_size": "From 1914 sqft - 2442 sqft",
+    "price": "From RM 701,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/intrika"
+}

@@ -1,0 +1,88 @@
+{
+  "property_name": "Allevia",
+  "location": "Allevia - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 10am to 5pm Weekends and Public Holidays: 10am to 5pm"
+  },
+  "description": "In a world where everything is made public, it is great to be able to retreat to Allevia, the latest development by UEM Sunrise. Allevia promises a new elevated living experience for the privileged to play in.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Condominium",
+  "features": [
+    "Private Lounge",
+    "Rooftop Gym",
+    "7th Floor Podium",
+    "Exclusive Access Via Jalan Kiara 4",
+    "Certified By GreenRE",
+    "Sky Cycling Studio"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "School",
+      "distance": "0.24 KM"
+    },
+    {
+      "name": "Club House",
+      "distance": "4.5 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "3 + 1",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1703 sqft",
+      "price": "RM 1,543,800"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3+1",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1757 sqft",
+      "price": "RM 1,538,800"
+    },
+    {
+      "type": "C1",
+      "bedrooms": "3+1",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "1971 sqft",
+      "price": "RM 1,742,800"
+    },
+    {
+      "type": "C2",
+      "bedrooms": "3 + 1",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "1971 sqft",
+      "price": "RM 1,731,800"
+    },
+    {
+      "type": "D",
+      "bedrooms": "4+1",
+      "bathrooms": "5",
+      "parking_lots": "3",
+      "built_up_size": "2345 sqft",
+      "price": "RM 2,090,800"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4+2",
+      "bathrooms": "5",
+      "parking_lots": "4",
+      "built_up_size": "2634 sqft",
+      "price": "RM 2,332,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4+2",
+    "bathrooms": "5",
+    "parking_lots": "4",
+    "built_up_size": "From 1703 sqft - 2634 sqft",
+    "price": "RM 1,538,800 - RM 2,461,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/allevia"
+}

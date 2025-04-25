@@ -1,0 +1,68 @@
+{
+  "property_name": "Begonia Forest Heights",
+  "location": "Begonia Forest Height - Seremban Link Houses",
+  "showroom": {
+    "address": "Forest Heights Property Gallery 23 & 24-G, Jalan Forest Heights 8, Taman Tan Chee Hoe, 70450 Seremban, Negeri Sembilan",
+    "operating_hours": "Weekdays: 9am - 6am Saturday: 9am - 5pm Sunday: 10am - 5pm",
+    "hotline": "06-761 8133"
+  },
+  "description": "Begonia is a low-density landed development comprises of only 11 units per acre, built on a freehold land for an outright ownership. It promises less congestion, neighborhood traffic, noise and a degree of privacy that isn't always available in densely populated urban areas. It features double storey premier-link homes and three storey super-link homes with up to 3,722 sqft of spacious built-up area.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Panoramic Cityscape Views",
+    "Modern And Elegant Landmark Signage",
+    "Fully Utilised Layout",
+    "Gated Community",
+    "Guards On Scheduled Patrol",
+    "Cableless Connectivity",
+    "Underground Light Cables",
+    "LED Street Lights",
+    "Closed Drainage System"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "School",
+      "distance": "0.85 KM"
+    },
+    {
+      "name": "Hypermarket",
+      "distance": "2.7 KM"
+    },
+    {
+      "name": "Petrol Station",
+      "distance": "4.2 KM"
+    },
+    {
+      "name": "Train Station",
+      "distance": "4.7 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "B2",
+      "bedrooms": "5",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2933 sqft",
+      "price": "RM 825,000"
+    },
+    {
+      "type": "C1",
+      "bedrooms": "7",
+      "bathrooms": "6",
+      "parking_lots": "4",
+      "built_up_size": "3722 sqft",
+      "price": "RM 927,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "7",
+    "bathrooms": "6",
+    "parking_lots": "4",
+    "built_up_size": "From 2933 sqft - 3722 sqft",
+    "price": "RM 825,000 - RM 927,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/malaysia-vision-valley/project/begonia-forest-heights"
+}

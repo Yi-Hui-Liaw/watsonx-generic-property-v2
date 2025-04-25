@@ -1,0 +1,112 @@
+{
+  "property_name": "Verdi Eco-dominium",
+  "location": "Verdi Eco-dominiums - Cyberjaya, Greater KL",
+  "showroom": {
+    "address": "Symphony Hills Sales Gallery Persiaran Simfoni, Cyber 9, 63000 Cyberjaya, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Verdi eco-dominiums offer an array of smart qualities, scrupulously designed to elevate lifestyles; offering comfort and convenience amidst lushness, incorporating security and broadband connectivity with green building features.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "6-acre Landscaped Area And Facilities",
+    "Forest Garden",
+    "Home Automation Controls",
+    "Integrated Community Communications",
+    "Wide Frontage Layouts",
+    "GBI Certified"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "School",
+      "distance": "0.6 KM"
+    },
+    {
+      "name": "University",
+      "distance": "1.3 KM"
+    },
+    {
+      "name": "Lake",
+      "distance": "2.7 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "2.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Block 1 - A",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "700 sqft",
+      "price": "RM 620,000"
+    },
+    {
+      "type": "Block 1 - B",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "958 sqft",
+      "price": "RM 760,000"
+    },
+    {
+      "type": "Block 1 - C",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1389 sqft",
+      "price": "RM 1,140,000"
+    },
+    {
+      "type": "Block 1 - D",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1442 sqft",
+      "price": "RM 1,190,000"
+    },
+    {
+      "type": "Block 2 - A",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "700 sqft",
+      "price": "RM 620,000"
+    },
+    {
+      "type": "Block 2 - B2",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "990 sqft",
+      "price": "RM 810,000"
+    },
+    {
+      "type": "Block 2 - D",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1442 sqft",
+      "price": "RM 1,210,000"
+    },
+    {
+      "type": "Block 2 - D1",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1453 sqft",
+      "price": "RM 1,300,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 700 sqft - 1442 sqft",
+    "price": "RM 620,000 - RM 1,300,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/verdi-eco-dominium"
+}

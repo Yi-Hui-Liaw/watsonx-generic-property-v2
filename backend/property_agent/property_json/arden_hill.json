@@ -1,0 +1,101 @@
+{
+  "property_name": "Arden Hill",
+  "location": "Arden Hill - Forest Heights, Seremban",
+  "showroom": {
+    "address": "23 & 24-1, Jalan Forest Heights 8, Seremban Forest Heights, 70450 Seremban",
+    "operating_hours": "Weekdays: 9am - 6pm Saturday: 9am - 5pm Sunday: 10am - 5pm",
+    "hotline": "013-221 1633"
+  },
+  "description": "In the heart of Seremban lies a town of ever-expanding opportunities, where vast landscapes lead to the rolling hills, amongst them the majestic Gunung Angsi. A horizon to be hold, standing the passage of time. A view that awaits your everyday, from the comfort of home at Arden Hill.",
+  "status": "Bumi Lots Only",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "3-acres Arden Park With 5-Star Facilities & Amenities",
+    "3-Tier Security System In A Guarded Neighborhood",
+    "Guards On Schedule Patrol",
+    "LED Street Lights",
+    "Cablesless Connectivity",
+    "Recycle Compartment In The Refuse Chamber As One Of The Sustainability Effort",
+    "Easy Access And Close Proximity To Community Forest Park",
+    "Elevated Residence At Up To 364 Ft Above Sea Level",
+    "Healthy Lifestyle With Jogging & Cycling Track",
+    "Free Industrial Zone Township Development"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "McDonald",
+      "distance": "1 KM"
+    },
+    {
+      "name": "SMK Forest Heights",
+      "distance": "1 KM"
+    },
+    {
+      "name": "SJKC Forest Heights",
+      "distance": "1 KM"
+    },
+    {
+      "name": "Majlis Bandaraya Seremban (MBS)",
+      "distance": "1 KM"
+    },
+    {
+      "name": "KTM Senawang",
+      "distance": "2 KM"
+    },
+    {
+      "name": "Caltex",
+      "distance": "2 KM"
+    },
+    {
+      "name": "Petronas",
+      "distance": "2 KM"
+    },
+    {
+      "name": "Econsave",
+      "distance": "2 KM"
+    },
+    {
+      "name": "Mydin",
+      "distance": "2 KM"
+    },
+    {
+      "name": "Giant Shopping Centre",
+      "distance": "2 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1823 sqft",
+      "price": "RM 585,000"
+    },
+    {
+      "type": "C",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1963 sqft",
+      "price": "RM 627,000"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2450 sqft",
+      "price": "RM 928,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 1823 sqft - 2450 sqft",
+    "price": "RM 585,000 - RM 928,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/malaysia-vision-valley/project/arden-hill"
+}

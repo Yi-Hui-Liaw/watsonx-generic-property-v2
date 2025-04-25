@@ -1,0 +1,55 @@
+{
+  "property_name": "Nusa Idaman Business Centre",
+  "location": "Nusa Idaman Business Center - Iskandar Puteri",
+  "showroom": {
+    "address": "Lot 1, No.1 Jalan Laksamana 1, Puteri Harbour, 79250 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.00pm Weekends and Public Holidays: 9.30am to 5.00pm"
+  },
+  "description": "Spacious 3-storey shop offices, ranging from 6,204 to 9,492 sq. ft., are located on freehold land in the charming suburb of Nusa Idaman. Businesses here benefit from a captive market within the Nusa Idaman community, as well as the adjacent bustling Bukit Indah township.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [
+    "Suitable For All Businesses",
+    "Spacious Layout",
+    "High Visibility",
+    "Ready Market",
+    "Modern Design",
+    "Fronting Main Road"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Hospital",
+      "distance": "1 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "3.4 KM"
+    },
+    {
+      "name": "Golf Club",
+      "distance": "6.8 KM"
+    },
+    {
+      "name": "University",
+      "distance": "8.5 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "10.5 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "12.1 KM"
+    }
+  ],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 6204 sqft - 9492 sqft",
+    "price": "RM 1,458,417 - RM 2,621,176"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/nusa-idaman-business-centre"
+}

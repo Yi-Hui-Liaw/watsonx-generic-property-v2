@@ -1,0 +1,104 @@
+{
+  "property_name": "OSKAR Residence",
+  "location": "OSKAR Residence Forest Height",
+  "showroom": {
+    "address": "23 & 24-G, Jalan Forest Heights 8, Seremban Forest Heights, 70450 Seremban Negeri Sembilan, Malaysia",
+    "operating_hours": "Weekdays: 9am - 6pm Saturday: 9am - 5pm Sunday: 10am - 5pm",
+    "hotline": "012-852 8133"
+  },
+  "description": "Strategically located in the heart of Seremban, welcome to excellent hilltop living in the boutique township of Forest Heights featuring a much-anticipated high elevation 2-storey terrace house. Spread across 28.3 acres of prime land, featuring low-density living surrounded by verdant greenery. Exclusively yours to own, register for freehold project double storey terrace house now!",
+  "status": "New Launch",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Hilltop Living Elevated Residence At Up To 346 Ft Above Sea Level",
+    "Easy Access And Close Proximity To Community Forest Park",
+    "Low-Density Residence: Offering Privacy, Green Spaces, And A Relaxing Ambiance",
+    "3-Tier Security System For A Guarded Neighborhood",
+    "Healthy Lifestyle With Jogging & Cycling Track",
+    "Free Industrial Zone Township Development",
+    "Free Industrial Zone Township Development",
+    "Complementing Life With Conveniences All Around",
+    "Complementing Life With Conveniences All Around"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "McDonalds",
+      "distance": "1.0 KM"
+    },
+    {
+      "name": "Kolej Tingkatan 6 Forest Heights",
+      "distance": "1.0 KM"
+    },
+    {
+      "name": "SJKC Forest Heights",
+      "distance": "1.0 KM"
+    },
+    {
+      "name": "Majlis Bandaraya Seremban (MBS)",
+      "distance": "1.0 KM"
+    },
+    {
+      "name": "Forest Park",
+      "distance": "1.0 KM"
+    },
+    {
+      "name": "Sekolah Rendah Integrasi Teras Islam (SRITI)",
+      "distance": "1.9 KM"
+    },
+    {
+      "name": "Econsave",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "KTM Senawang",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "Mydin Mall",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "Giant Shopping Centre",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "Muhammad Al-Fateh Mosque",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "Petronas/Caltex",
+      "distance": "2.0 KM"
+    },
+    {
+      "name": "UTC Ampangan",
+      "distance": "3.7 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "D",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1595 sqft",
+      "price": "RM 586,000"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1741 sqft",
+      "price": "RM 636,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 1595 sqft - 1860 sqft",
+    "price": "RM 586,000 - RM 984,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/malaysia-vision-valley/project/oskar-residence"
+}

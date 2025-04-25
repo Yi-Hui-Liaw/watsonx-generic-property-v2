@@ -1,0 +1,93 @@
+{
+  "property_name": "Astrea",
+  "location": "Astrea - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 10am to 5pm Weekends and Public Holidays: 10am to 5pm"
+  },
+  "description": "Astrea is a cosy place you can proudly call home. Take pleasure in an ambience that can truly inspire its inhabitants to slow down and be mindful about the little things around that will bring happiness.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Optimal North-south Orientation",
+    "Move-in Convenience",
+    "Urban Living"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Hypermarket",
+      "distance": "0.23 KM"
+    },
+    {
+      "name": "School",
+      "distance": "0.85 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "1.1 KM"
+    },
+    {
+      "name": "Resort",
+      "distance": "4.2 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A/A1 - 3 bedrooms + 1 Utility",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1364 sqft",
+      "price": "RM 1,200,800"
+    },
+    {
+      "type": "B - 3 bedrooms + 1 Utility",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1656 sqft",
+      "price": "RM 1,458,800"
+    },
+    {
+      "type": "B1 - 3 bedrooms + 1 Utility",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1685 sqft",
+      "price": "RM 1,514,800"
+    },
+    {
+      "type": "C - 3 bedrooms + 1 Utility",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "1828 sqft",
+      "price": "RM 1,609,800"
+    },
+    {
+      "type": "D - 3 bedrooms + 1 Utility",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "1859 sqft",
+      "price": "RM 1,589,800"
+    },
+    {
+      "type": "E - 4 bedrooms + 1 Utility",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "3",
+      "built_up_size": "1840 sqft",
+      "price": "RM 1,554,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "3",
+    "built_up_size": "From 1364 sqft - 1859 sqft",
+    "price": "RM 1,200,800 - RM 1,675,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/astrea"
+}

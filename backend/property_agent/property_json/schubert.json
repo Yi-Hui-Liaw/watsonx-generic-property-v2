@@ -1,0 +1,43 @@
+{
+  "property_name": "Schubert",
+  "location": "Schubert  - Cyberjaya, Greater KL",
+  "showroom": {
+    "address": "Symphony Hills Sales Gallery Persiaran Simfoni, Cyber 9, 63000 Cyberjaya, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Schubert comprises 152 homes in Symphony Hills, a precinct with over a third of its area covered in green landscapes. Manicured parks serve as shared backyards, accessible from each home’s deck area. Inside the home, an airy courtyard complements the tropical climate and further invites nature in. Schubert is located next to an impressive clubhouse, which offers a full range of leisure and sports facilities.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Resort Style Clubhouse",
+    "Equipped With Smart Technology"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "1",
+      "bedrooms": "4+1",
+      "bathrooms": "5",
+      "parking_lots": "1",
+      "built_up_size": "3132 sqft",
+      "price": "RM 1,800,000"
+    },
+    {
+      "type": "2",
+      "bedrooms": "4+1",
+      "bathrooms": "5",
+      "parking_lots": "1",
+      "built_up_size": "3208 sqft",
+      "price": "RM 1,800,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4+1",
+    "bathrooms": "5",
+    "parking_lots": "1",
+    "built_up_size": "From 3132 sqft - 3272 sqft",
+    "price": "From RM 1,800,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/schubert"
+}

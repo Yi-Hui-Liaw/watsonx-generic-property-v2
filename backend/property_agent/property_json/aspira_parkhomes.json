@@ -1,0 +1,86 @@
+{
+  "property_name": "Aspira ParkHomes",
+  "location": "Aspira Park Homes - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Lot 1 Imperia, Jalan Laksamana 1, Puteri Harbour, 79000 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Open Daily 9.30 am – 5.00 pm",
+    "hotline": "07-277 9007"
+  },
+  "description": "Aspira ParkHomes capitalises on UEM Sunrise’s vision of building happy communities in this freehold gated and guarded development.  A warm cocoon of lush greenery in a healthy and sustainable environment. ‘Life’ here takes on a double entendre of firstly, being the lives of the residents of Aspira ParkHomes and secondly the term “for life” implies longevity and permanence. Rooted to an urban green living concept, Aspira ParkHomes are replete with urban farms, herb gardens, verdant parks and beautifully designed community facilities. This double-storey terrace house with modern contemporary concept starts with typical lot sizes 20’x70’ (Type A) & 22’x70′ (T0ype B) and built-ups ranging from 1,931 sqft & 2,154sqft.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Urban Farms",
+    "Herb Gardens",
+    "Community Facilities",
+    "Gated And Guarded With With Parameter CCTV",
+    "Children Playground",
+    "Multipurpose Open Space",
+    "Outdoor Gym"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Leisure Places",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Hospitals",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Education",
+      "distance": "0 KM"
+    },
+    {
+      "name": "University",
+      "distance": "7.4 KM"
+    },
+    {
+      "name": "Stadium",
+      "distance": "7.9 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "8.3 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "9.3 KM"
+    },
+    {
+      "name": "Golf Club",
+      "distance": "12.4 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "14.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1931 sqft",
+      "price": "RM 509,150"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4+1",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2154 sqft",
+      "price": "RM 657,050"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4+1",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 1931 sqft - 2154 sqft",
+    "price": "RM 593,000 - RM 757,050"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/aspira-parkhomes"
+}

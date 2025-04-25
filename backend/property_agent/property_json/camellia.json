@@ -1,0 +1,49 @@
+{
+  "property_name": "Camellia",
+  "location": "Camellia - Serene Heights, Selangor",
+  "showroom": {
+    "address": "Serene Heights Sales Gallery Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "A tropical urban paradise in Bangi, Serene Heights is surrounded by lush greenery and dedicated green zones that rekindle the fond memories of your childhood days.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Parkland Themed Playzones",
+    "Hopscotch Valley",
+    "Gasing Land",
+    "Congkak Place",
+    "Takraw Park",
+    "Recreational Park",
+    "Wellness Garden",
+    "Leisure Garden"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2174 sqft",
+      "price": "RM 635,800"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "None sqft",
+      "price": "RM 858,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 2174 sqft - 2790 sqft",
+    "price": "From RM 616,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/camellia"
+}

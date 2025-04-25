@@ -1,0 +1,43 @@
+{
+  "property_name": "Schumann 2",
+  "location": "Schumann 2  - Cyberjaya, Greater KL",
+  "showroom": {
+    "address": "Symphony Hills Sales Gallery Persiaran Simfoni, Cyber 9, 63000 Cyberjaya, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Retreat into the privacy of spacious rooms with ensuite bathrooms, or go out into the shared landscaped backyard through the garden deck on the lower ground. Running up all three levels is an open courtyard that fills the entire home with fresh air. Clusters of Schumann 2 homes are scattered around Symphony Hills, where nature and technology meld into modern day living.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Resort Style Clubhouse",
+    "Equipped With Smart Technology"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "4",
+      "bedrooms": "4+1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "4143 sqft",
+      "price": "RM 1,700,000"
+    },
+    {
+      "type": "4A & 4B",
+      "bedrooms": "4 + 1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "4430 sqft",
+      "price": "RM 1,700,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4+1",
+    "bathrooms": "5",
+    "parking_lots": "2",
+    "built_up_size": "From 4143 sqft - 4430 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/schumann-2"
+}

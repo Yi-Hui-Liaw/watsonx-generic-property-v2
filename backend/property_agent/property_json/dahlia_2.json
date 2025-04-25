@@ -1,0 +1,79 @@
+{
+  "property_name": "Dahlia 2",
+  "location": "Dahlia 2 - Serene Heights, Greater KL",
+  "showroom": {
+    "address": "Serene Heights Sales Gallery Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9:30am - 5:30pm Weekends & Public Holidays: 10am - 5pm"
+  },
+  "description": "Based on the design concept of Tropical Resort, Dahlia 2 has elements of wood, large openings and louvers inspired by the kampung house. With open-plan layouts and large openings for optimal views, natural lighting and ventilation, the homes at Dahlia 2 create a sense of even greater spaciousness. Give  your family the chance to enjoy the fun and excitement of living in large, sprawling spaces.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Themed Playzone",
+    "Multipurpose Hall",
+    "Street Of Blooms",
+    "Surau",
+    "Kindergarten",
+    "Tropika Boulevard"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2165 sqft",
+      "price": "RM 724,800"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2173 sqft",
+      "price": "RM 846,800"
+    },
+    {
+      "type": "C",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2460 sqft",
+      "price": "RM 957,800"
+    },
+    {
+      "type": "D",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2185 sqft",
+      "price": "RM 744,800"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2192 sqft",
+      "price": "RM 835,800"
+    },
+    {
+      "type": "F",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2480 sqft",
+      "price": "RM 963,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 2165 sqft - 2480 sqft",
+    "price": "RM 724,800 - RM 1,044,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/dahlia-2"
+}

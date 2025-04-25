@@ -1,0 +1,105 @@
+{
+  "property_name": "Radia Residences",
+  "location": "Radia Residences - Bukit Jelutong, Greater KL",
+  "showroom": {
+    "address": "A-09-08, Radia Office Block A, Persiaran Arked Bukit Jelutong, Seksyen U8 40150 Shah Alam Selangor, Malaysia",
+    "operating_hours": "By appointment only Call/WhatsApp: +6019 2535 883 (Shamsul)"
+  },
+  "description": "Radia Residences brings a new urban living experience to Bukit Jelutong, introducing great leisure and convenience. Its crescent-shaped facilities deck has everything you need to keep in shape and stay active with your family. Also, private guarded lift lobbies and multi-tiered security give you the peace of mind you deserve.",
+  "status": "Available Now",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Gymnasium",
+    "Barbecue Area",
+    "Garden",
+    "Lap Pool",
+    "Children’s Pool",
+    "Children’s Water Play",
+    "Reading Room",
+    "Jogging Track",
+    "Pergola Garden",
+    "Putting Green/Lawn",
+    "Children’s Playground",
+    "Tennis Court",
+    "Nursery Room",
+    "Koi Pond",
+    "Leisure Pool",
+    "Spa Pool",
+    "Sun Terrace",
+    "Lily Pond",
+    "Community Garden"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Golf Club",
+      "distance": "0.22 KM"
+    },
+    {
+      "name": "Toll",
+      "distance": "3.5 KM"
+    },
+    {
+      "name": "Aeon Mall Shah Alam",
+      "distance": "6 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "1A1",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "695 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "2A1",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "879 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "3A1",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1033 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "4C1",
+      "bedrooms": "3+1",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1253 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "5A1",
+      "bedrooms": "3+1",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1521 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "6A2",
+      "bedrooms": "3+1",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "2100 sqft",
+      "price": "RM 0"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3+1",
+    "bathrooms": "4",
+    "parking_lots": "3",
+    "built_up_size": "From 695 sqft - 2779 sqft",
+    "price": "From RM 566,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/radia-residences"
+}

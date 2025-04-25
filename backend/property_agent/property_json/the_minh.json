@@ -1,0 +1,88 @@
+{
+  "property_name": "THE MINH",
+  "location": "The Minh - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "21, Jalan Kiara, Mont' Kiara 50480 Kuala Lumpur Wilayah Persekutuan Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 10am to 5pm Weekends and Public Holidays: 10am to 5pm",
+    "hotline": "+60 16-2999 333"
+  },
+  "description": "The MINH is the first residence in The CLUB Edition under UEM Sunrise's Happy+ Product Series. Designed with the discerning modern resident in mind, homes in The CLUB Edition offer a range of high-end features in beautifully curated hospitality-inspired environments. With its stunning architecture and sophisticated amenities, The MINH is the perfect home for those seeking an elevated lifestyle.",
+  "status": "Available Now",
+  "tenure": "Freehold",
+  "property_type": "Condominium",
+  "features": [
+    "Resort Style Condominium With Indochine Influences",
+    "Indoor Scenic Spa Hut",
+    "Multi-generational Playground",
+    "Beautifully Designed Swimming Pool With Water Cascade",
+    "EV Charger Ready Via Power Point",
+    "Express Ramp To Multi-level Parking",
+    "Private Lift*",
+    "Automated Waste Collection System",
+    "Certified By GreenRE"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "School",
+      "distance": "0.24 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "1.1 KM"
+    },
+    {
+      "name": "Resort",
+      "distance": "4.2 KM"
+    },
+    {
+      "name": "Club House",
+      "distance": "4.5 KM"
+    },
+    {
+      "name": "Hypermarket",
+      "distance": "4.5 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1607 sqft",
+      "price": "RM 1,399,800"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "2076 sqft",
+      "price": "RM 1,774,800"
+    },
+    {
+      "type": "C",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "2733 sqft",
+      "price": "RM 2,393,800"
+    },
+    {
+      "type": "D",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "4",
+      "built_up_size": "3010 sqft",
+      "price": "RM 2,665,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "4",
+    "parking_lots": "4",
+    "built_up_size": "From 1607 sqft - 3010 sqft",
+    "price": "From RM 1,399,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/the-minh"
+}

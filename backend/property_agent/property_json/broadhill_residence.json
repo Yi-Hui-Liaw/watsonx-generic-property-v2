@@ -1,0 +1,62 @@
+{
+  "property_name": "Broadhill Residence",
+  "location": "Broadhill Residence - Forest Height, Seremban",
+  "showroom": {
+    "address": "Forest Heights Property Gallery 23 & 24-G, Jalan Forest Heights 8, Taman Tan Chee Hoe, 70450 Seremban, Negeri Sembilan",
+    "operating_hours": "Weekdays: 9am - 6am Saturday: 9am - 5pm Sunday: 10am - 5pm",
+    "hotline": "06-761 8133"
+  },
+  "description": "Where others are merely concerned with style and function, Broadhill considers the holistic aspects of elevated living up to 324 ft above sea level. Built to be a richly vital neighborhood, it features comforting elegance and award-winning landscape design with 2.78 acres of Hill Park. It features double storey premier-link homes and three storey super-link homes with up to 3,306 sqft of spacious built-up area.",
+  "status": "Bumi Lots Only",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Elevated Living, 324 Ft. Above Sea Level",
+    "Award-winning Landscape Design With 2.78 Acres Of Hill Park",
+    "Sweeping Panoramic Cityscape Views"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "School",
+      "distance": "0.85 KM"
+    },
+    {
+      "name": "Hypermarket",
+      "distance": "2.7 KM"
+    },
+    {
+      "name": "Petrol Station",
+      "distance": "4.3 KM"
+    },
+    {
+      "name": "Train Station",
+      "distance": "4.7 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "B - Corner unit",
+      "bedrooms": "4+1",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2650 sqft",
+      "price": "RM 898,000"
+    },
+    {
+      "type": "C",
+      "bedrooms": "7",
+      "bathrooms": "7",
+      "parking_lots": "2",
+      "built_up_size": "3306 sqft",
+      "price": "RM 942,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "7",
+    "bathrooms": "7",
+    "parking_lots": "2",
+    "built_up_size": "From 2650 sqft - 3306 sqft",
+    "price": "RM 898,000 - RM 975,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/malaysia-vision-valley/project/broadhill-residence"
+}

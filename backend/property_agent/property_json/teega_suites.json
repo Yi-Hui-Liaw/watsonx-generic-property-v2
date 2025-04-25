@@ -1,0 +1,77 @@
+{
+  "property_name": "Teega Suites",
+  "location": "Teega Suites - Puteri Harbour, Iskandar Puteri",
+  "showroom": {
+    "address": "UEM Sunrise Property Showcase Lot 1, No.1 Jalan Laksamana 1 Puteri Harbour 79250 Iskandar Puteri Johor Darul Ta'zim",
+    "operating_hours": "Weekdays: 9.00am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Arrive at your serene-inspired luxury address Teega Puteri Harbour boasts a modern contemporary and a holiday-resort like environment with a breath-taking home-coming experience where you can enjoy premium views of the private and public marinas as well as the adjacent linear park. It encompasses four components with the majority being condominium units known as Teega Residence, Teega Suites, office units in Teega Tower and retail outlets at Teega Walk standing tall in three 35-storey towers with 3-storey cabana units.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Children's Pool",
+    "Lap Pool",
+    "Yoga Deck",
+    "Tai Chi Deck",
+    "Tennis Court",
+    "Air Conditioned Gymnasium",
+    "Herb Garden",
+    "Barbeque Terrace",
+    "Children's Playground",
+    "Games Room",
+    "Multipurpose Function Hall",
+    "Leisure Lounge"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "S1-2",
+      "bedrooms": "studio",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "511 sqft",
+      "price": "RM 540,888"
+    },
+    {
+      "type": "S1-3",
+      "bedrooms": "studio",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "553 sqft",
+      "price": "RM 519,888"
+    },
+    {
+      "type": "S2",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "689 sqft",
+      "price": "RM 710,888"
+    },
+    {
+      "type": "S3",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "1217 sqft",
+      "price": "RM 1,003,888"
+    },
+    {
+      "type": "S4",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1621 sqft",
+      "price": "RM 1,465,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "studio",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 485 sqft - 1621 sqft",
+    "price": "RM 519,888 - RM 1,678,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/teega-suites"
+}

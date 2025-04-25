@@ -1,0 +1,64 @@
+{
+  "property_name": "Estuari Gardens",
+  "location": "Estuari Gardens - Puteri Harbour, Iskandar Puteri",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Estuari Gardens is the first phase exclusive residential development within the 394-acre Estuari, featuring a gated serene urban living surrounded by undiluted greenery and complete neighbourhood amenities. Traverse freely within the safely guarded environment of Estuari Gardens, complete with topnotch security features and perimeter fencing designed to provide the residents a peace of mind.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Exclusive Gated And Guarded Community",
+    "13-acre Designer Crafted Landscape Area With Transplanting Of Mature Trees",
+    "4.9-acre Of Lush Central Garden Area",
+    "Cul-de-sac Streets For Unparalleled Exclusivity",
+    "50ft Wide Road Reserve",
+    "Scenic Lake Next To Residence"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A1",
+      "bedrooms": "4",
+      "bathrooms": "5",
+      "parking_lots": "3",
+      "built_up_size": "2708 sqft",
+      "price": "RM 1,394,888"
+    },
+    {
+      "type": "A2",
+      "bedrooms": "4",
+      "bathrooms": "5",
+      "parking_lots": "3",
+      "built_up_size": "2754 sqft",
+      "price": "RM 1,500,888"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "5",
+      "parking_lots": "3",
+      "built_up_size": "3032 sqft",
+      "price": "RM 1,788,888"
+    },
+    {
+      "type": "C",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "3",
+      "built_up_size": "3550 sqft",
+      "price": "RM 1,991,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5",
+    "bathrooms": "5",
+    "parking_lots": "3",
+    "built_up_size": "From 2708 sqft - 3780 sqft",
+    "price": "From RM 1,400,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/estuari-gardens"
+}

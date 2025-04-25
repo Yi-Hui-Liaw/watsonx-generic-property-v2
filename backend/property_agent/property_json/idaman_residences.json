@@ -1,0 +1,87 @@
+{
+  "property_name": "Idaman Residences",
+  "location": "Idaman Residences - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Lot 1, No.1 Jalan Laksamana 1, Puteri Harbour, 79250 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.00pm Weekends and Public Holidays: 9.30am to 5.00pm"
+  },
+  "description": "High-rise living amidst a nature-infused surrounding can be had at Idaman Residences. The apartment comprises 2- to 4-bedroom units spanning 820 to 1,141 sq. ft., and is complete with recreational amenities, such as a swimming pool, gymnasium, and futsal court, as well as an indoor/outdoor function hall for events.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Children's Playground",
+    "Gymnasium",
+    "Swimming Pool",
+    "Indoor/outdoor Function Hall",
+    "Futsal Court"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Private Hospital",
+      "distance": "1 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "4.7 KM"
+    },
+    {
+      "name": "Golf Club",
+      "distance": "7.0 KM"
+    },
+    {
+      "name": "University",
+      "distance": "8.8 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "10.1 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "12.3 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "820 sqft",
+      "price": "RM 336,888"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "1141 sqft",
+      "price": "RM 483,554"
+    },
+    {
+      "type": "C",
+      "bedrooms": "4",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1385 sqft",
+      "price": "RM 497,888"
+    },
+    {
+      "type": "D",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "972 sqft",
+      "price": "RM 425,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "2",
+    "parking_lots": "2",
+    "built_up_size": "From 820 sqft - 1141 sqft",
+    "price": "RM 336,888 - RM 497,888"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/idaman-residences"
+}

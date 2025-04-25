@@ -1,0 +1,73 @@
+{
+  "property_name": "Eugenia",
+  "location": "Eugenia 1 - Serene Heights, Greater KL",
+  "showroom": {
+    "address": "Serene Heights Sales Gallery Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Discover Eugenia 1, an enclave of Serene Heights where ample open spaces invite you to roam and explore as a family – just like the good old days. Eugenia 1 is designed to offer spaciousness and comfortable living, complemented by serene surroundings of lush, calming greenery. For the privileged few, there are a limited number of homes that sit just beside the parkland's meandering waterway.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Parkland Themed Playzones",
+    "Hopscotch Valley",
+    "Gasing Land",
+    "Congkak Place",
+    "Takraw Park",
+    "Recreational Park",
+    "Wellness Garden",
+    "Leisure Garden"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A1",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2081 sqft",
+      "price": "RM 658,800"
+    },
+    {
+      "type": "A3",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2270 sqft",
+      "price": "RM 930,800"
+    },
+    {
+      "type": "B1",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2138 sqft",
+      "price": "RM 701,800"
+    },
+    {
+      "type": "B2",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2229 sqft",
+      "price": "RM 950,800"
+    },
+    {
+      "type": "B4",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2529 sqft",
+      "price": "RM 904,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 2081 sqft - 2858 sqft",
+    "price": "RM 658,800 - RM 1,059,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/eugenia-1"
+}

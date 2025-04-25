@@ -1,0 +1,57 @@
+{
+  "property_name": "The Maris Precinct 1",
+  "location": "The Maris Precinct 1 - Desaru Coast, Johor",
+  "showroom": {
+    "address": "The Maris Desaru Coast Show Village 82200 Bandar Penawar, Johor"
+  },
+  "description": "Coming home to resort-like living may no longer be a distant dream with The Maris Residences. Nestled in the premium Desaru Coast neighbourhood, The Maris Residences is a strategic partnership between UEM Sunrise Berhad and Desaru Coast, creating stunning resort-home style residences for those looking to live in a vacation-inspired setting.",
+  "status": "Sold Out",
+  "tenure": "Leasehold",
+  "property_type": "Semi-Detached",
+  "features": [
+    "Resort-home Style"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2059 sqft",
+      "price": "RM 630,000"
+    },
+    {
+      "type": "A1",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2131 sqft",
+      "price": "RM 765,000"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2305 sqft",
+      "price": "RM 703,800"
+    },
+    {
+      "type": "C",
+      "bedrooms": "4+1",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2666 sqft",
+      "price": "RM 950,300"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4+1",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 2666 sqft",
+    "price": "RM 982,600 - RM 1,206,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/desaru-coast/project/the-maris-precinct-1"
+}

@@ -1,0 +1,75 @@
+{
+  "property_name": "68° Avenue",
+  "location": "68° Avenue - Gelang Patah, Iskandar Puteri",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Introducing the hottest retail address in Gelang Patah, the long-awaited 68° Avenue. Its location is the envy of many with prominent dual-street frontage to Jalan Nusa Perintis, Jalan Skudai-Gelang Patah and Lebuh Kota Iskandar. Surrounded by 7 mature residential and commercial estates and enjoying high visibility, 68° Avenue is a recipe for success in Iskandar Puteri.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [
+    "High Visibility From The Connecting Junctions Between Skudai And Gelang Patah",
+    "66ft Wide Main Road Frontage",
+    "Spacious Unit Layout",
+    "Public Spaces & People Places"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Sultan Ibrahim Stadium",
+      "distance": "6 KM"
+    },
+    {
+      "name": "University",
+      "distance": "6 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "9 KM"
+    },
+    {
+      "name": "Columbia Asia Hospital",
+      "distance": "10 KM"
+    },
+    {
+      "name": "Puteri Harbour Ferry Terminal",
+      "distance": "11 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "3113 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "B",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "4909 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "E",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "8278 sqft",
+      "price": "N/A"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 3113 sqft - 11701 sqft",
+    "price": "From RM 880,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/680-avenue"
+}

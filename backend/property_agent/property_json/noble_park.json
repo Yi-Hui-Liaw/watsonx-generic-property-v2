@@ -1,0 +1,78 @@
+{
+  "property_name": "Noble Park",
+  "location": "Noble Park - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Lot 1, No.1 Jalan Laksamana 1, Puteri Harbour, 79250 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.00pm Weekends and Public Holidays: 9.30am to 5.00pm"
+  },
+  "description": "Only three villas are found on each acre in this low-density development of Noble Park, packed instead with greenery in the 25.81-acre neighbourhood. The homes have ample individual spaces with ensuite bathrooms, ranging from 5,155 sq. ft. to 5,330 sq. ft. With this much space, extended families can live in luxurious comfort, inside a modern contemporary layout. A private swimming pool with a poolside annex offer additional space for families to host poolside parties, barbecues, Sunday brunches or to lounge outdoors with friends and family.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Villa",
+  "features": [
+    "Private Swimming Pool & Garden",
+    "High-end Fittings",
+    "Panoramic View",
+    "Good Natural Ventilation"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Legoland",
+      "distance": "2.5 KM"
+    },
+    {
+      "name": "University",
+      "distance": "2.9 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "4.3 KM"
+    },
+    {
+      "name": "Hello Kitty Town",
+      "distance": "6.3 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "6.8 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "10.3 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "4",
+      "built_up_size": "5162 sqft",
+      "price": "RM 3,931,888"
+    },
+    {
+      "type": "B",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "4",
+      "built_up_size": "5155 sqft",
+      "price": "RM 3,953,888"
+    },
+    {
+      "type": "C",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "4",
+      "built_up_size": "5330 sqft",
+      "price": "RM 4,117,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5",
+    "bathrooms": "5",
+    "parking_lots": "4",
+    "built_up_size": "From 5515 sqft - 5330 sqft",
+    "price": "RM 3,921,888 - RM 4,192,888"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/noble-park"
+}

@@ -1,0 +1,45 @@
+{
+  "property_name": "Arcoris Suites",
+  "location": "Arcoris Business Suites - Office in Mont Kiara",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "In this most strategic of locations, Arcoris Suites presents a holistic work environment within an upmarket corporate office tower. Designed by internationally renowned architects, Arcoris Suites are a unique expression of space, where privacy is assured and natural light, views and external space are optimised.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [
+    "Swimming Pool",
+    "Gymnasium",
+    "Sauna",
+    "Launderette"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Hospital",
+      "distance": "0.9 KM"
+    },
+    {
+      "name": "School",
+      "distance": "1.1 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "2.6 KM"
+    },
+    {
+      "name": "Highway Access",
+      "distance": "6.1 KM"
+    }
+  ],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 666 sqft - 899 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/arcoris-business-suites"
+}

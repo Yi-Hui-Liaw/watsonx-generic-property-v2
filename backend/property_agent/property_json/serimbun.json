@@ -1,0 +1,39 @@
+{
+  "property_name": "Serimbun",
+  "location": "Serimbun - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "UEM Sunrise Property Showcase Lot 1, No.1 Jalan Laksamana 1 Puteri Harbour 79250 Iskandar Puteri Johor Darul Ta'zim Weekdays: 9.00am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Serimbun is a freehold low-density residential development in Iskandar Puteri. The 215 units of double-story linked houses are spread out to have only nine units occupy each acre. Residents who make their home here would enjoy a comfortable built-up space of 1,993 sq. ft. onwards, that includes four bedrooms. Within the exclusive neighbourhood, a central garden, pockets of greenery and meandering waterways are woven into the landscape, so families can enjoy nature and the outdoors in a carefree way. The Coastal Highway, Second Link Expressway and North-South Expressway can be easily accessed from Serimbun, making it a breeze to reach other important destinations, including the vibrant Bukit Indah township, supermarkets, schools, shopping malls, Johor Bahru City, Singapore and farther afield.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1993 sqft",
+      "price": "RM 535,500"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1993 sqft",
+      "price": "RM 566,100"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "N/A",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/serimbun"
+}

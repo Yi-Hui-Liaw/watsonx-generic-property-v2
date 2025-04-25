@@ -1,0 +1,89 @@
+{
+  "property_name": "Aspira Lakehomes Phase 1-3",
+  "location": "Aspira Lakehomes - Gerbang Nusajaya",
+  "showroom": {
+    "address": "Lot 1 Imperia, Jalan Laksamana 1, Puteri Harbour, 79000 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Open Daily 9.30 am – 5.00 pm",
+    "hotline": "WhatsApp at 019 758 3700"
+  },
+  "description": "In this freehold gated and guarded community, double-terrace houses—only eight units to an acre—are built around a 7-acre lake, with beautiful landscapes to enhance the natural environment. Water-sensitive designs protect wildlife habitat and create a place where residents and nature can co-habitate.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Pedestrian And Bicycle-friendly",
+    "Community Clubhouse With Recreational Facilities",
+    "Multipurpose Hall",
+    "Gym",
+    "Tennis Court",
+    "Nursery Space",
+    "Surau",
+    "Children’s Playground",
+    "Beautiful Outdoor Spaces",
+    "CCTV Surveillance"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Leisure Places",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Education",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Hospitals",
+      "distance": "0 KM"
+    },
+    {
+      "name": "University",
+      "distance": "6.5 KM"
+    },
+    {
+      "name": "Stadium",
+      "distance": "6.9 KM"
+    },
+    {
+      "name": "Legoland",
+      "distance": "7.4 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "8.4 KM"
+    },
+    {
+      "name": "Golf Club",
+      "distance": "11.4 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "13.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4+1",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2041 sqft",
+      "price": "RM 596,888"
+    },
+    {
+      "type": "B",
+      "bedrooms": "4+1",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2238 sqft",
+      "price": "RM 769,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4+1",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 2041 sqft - 2349 sqft",
+    "price": "From RM 806,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/aspira-lakehomes"
+}

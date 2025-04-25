@@ -1,0 +1,49 @@
+{
+  "property_name": "Begonia",
+  "location": "Begonia - Serene Heights, Greater KL",
+  "showroom": {
+    "address": "Serene Heights Sales Gallery Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "153 units with spacious built-up areas, starting from 2,204 to 2,821 sq. ft., across four bedrooms. These stylish homes have all the modern comforts for large families, such as a high-ceilinged family area.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Parkland Themed Playzones",
+    "Hopscotch Valley",
+    "Gasing Land",
+    "Congkak Place",
+    "Takraw Park",
+    "Recreational Park",
+    "Wellness Garden",
+    "Leisure Garden"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "2I",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "None sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "I",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "None sqft",
+      "price": "RM 670,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 2204 sqft - 2756 sqft",
+    "price": "From RM 825,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/begonia"
+}

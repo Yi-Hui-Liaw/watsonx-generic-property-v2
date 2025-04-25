@@ -1,0 +1,99 @@
+{
+  "property_name": "Aspira Gardens",
+  "location": "Aspira Gardens - Gerbang Nusajaya, Iskandar Puteri",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Welcome to the first residential enclave in Johor that is ready for solar panels and designed with solar-powered street lighting. Aspira Gardens is a premium development in Gerbang Nusajaya which built based on prioritising people and the planet.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Cluster Homes",
+  "features": [
+    "Homes Ready For Solar Panels",
+    "Solar Powered Street Lighting",
+    "CCTV Surveillance",
+    "Guardhouse With Card Access System",
+    "24/7 Residential Security Services",
+    "Jogging Track",
+    "Playground",
+    "Designed For Multi-Gen Living"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Hospitals",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Leisure Places",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Education",
+      "distance": "0 KM"
+    },
+    {
+      "name": "Stadium",
+      "distance": "6.3 KM"
+    },
+    {
+      "name": "University",
+      "distance": "6.7 KM"
+    },
+    {
+      "name": "Legoland",
+      "distance": "7.6 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "7.7 KM"
+    },
+    {
+      "name": "Golf Club",
+      "distance": "10.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "4+1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2608 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "B",
+      "bedrooms": "5+1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2608 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "C",
+      "bedrooms": "5+1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2684 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "C1",
+      "bedrooms": "5+1",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "3009 sqft",
+      "price": "RM 0"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5+1",
+    "bathrooms": "5",
+    "parking_lots": "2",
+    "built_up_size": "From 2608 sqft",
+    "price": "RM 858,000 - RM 974,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/aspira-gardens"
+}

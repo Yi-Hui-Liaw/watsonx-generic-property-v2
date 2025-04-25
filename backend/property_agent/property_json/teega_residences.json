@@ -1,0 +1,85 @@
+{
+  "property_name": "Teega Residences",
+  "location": "Teega Residences - Puteri Harbour, Iskandar Puteri",
+  "showroom": {
+    "address": "UEM Sunrise Showcase Lot 1, No 1 Jalan Laksamana 1, Puteri Harbour, 79250 Iskandar Puteri, Johor",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Live an elevated lifestyle at Teega Residences. The resort-like luxury condominium development rises 35 storeys up, next to the marina and linear park, in the award-winning Puteri Harbour development. Here is a place conducive for a vibrant international community to come together in a luxurious environment.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Award Winning Urban Waterfront Precinct",
+    "Waterfront Living",
+    "Coastal-inspired Lifestyle",
+    "Nature’s Tranquility",
+    "Spacious Balconies",
+    "Marina View",
+    "Lap Pool",
+    "Themed Gardens",
+    "Children’s Pool And Playground",
+    "Childcare Centre",
+    "Tai Chi And Yoga Decks",
+    "Sky Deck"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "C2",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "1167 sqft",
+      "price": "RM 1,032,888"
+    },
+    {
+      "type": "C3",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1320 sqft",
+      "price": "RM 1,160,888"
+    },
+    {
+      "type": "C4",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1380 sqft",
+      "price": "RM 1,318,888"
+    },
+    {
+      "type": "C5",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1582 sqft",
+      "price": "RM 1,356,888"
+    },
+    {
+      "type": "C6",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "1998 sqft",
+      "price": "RM 1,973,888"
+    },
+    {
+      "type": "Penthouse",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "3",
+      "built_up_size": "4457 sqft",
+      "price": "RM 5,367,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "3",
+    "built_up_size": "From 1167 sqft - 4457 sqft",
+    "price": "RM 1,112,888 - RM 5,367,888"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/teega-residences"
+}

@@ -1,0 +1,141 @@
+{
+  "property_name": "Residensi ZIG",
+  "location": "ZIG - Kiara Bay, Kuala Lumpur",
+  "showroom": {
+    "address": "Kepong Metropolitan Lake-garden 52100 Kuala Lumpur Wilayah Persekutuan Kuala Lumpur, Malaysia",
+    "operating_hours": "Monday – Friday: 9.30am – 5.30pm Weekend & Public Holiday: 10.00am – 5.00pm",
+    "hotline": "012-8181 259"
+  },
+  "description": "Residensi ZIG is the latest phase in the award-winning Kiara Bay township, ideally located next to the stunning 235-acre Kepong Metropolitan Park. This vibrant township is designed with a community-focused masterplan and an innovative urban liveability concept, seamlessly blending leisure, lifestyle, and convenience. Offering flexible living spaces with hackable walls that adapt to your unique preferences, Residensi ZIG is the perfect choice for modern living. Residents can enjoy a wide range of recreational and outdoor amenities, with up to 40 thoughtfully designed facilities spread across four zones. Whether you're looking to create cherished family moments or carve out some well-deserved \"me-time,\" Residensi ZIG caters to your every need. For your daily conveniences, The Beat is just steps away, offering grocery shopping, dining, and socializing all in one place. Ready to explore your future home? Register now for more info! Check out 360 Aerial View here",
+  "status": "New Launch",
+  "tenure": "Leasehold",
+  "property_type": "Service Apartment",
+  "features": [
+    "Move-in Ready ID Package",
+    "Adaptive And Compact Living",
+    "Wellness Lifestyle",
+    "Bike-friendly Project",
+    "Multi-generation Interaction",
+    "9 Levels Of Car Park"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Kepong Metropolitan Park",
+      "distance": "0.4 KM"
+    },
+    {
+      "name": "SMK Jinjang",
+      "distance": "1.1 KM"
+    },
+    {
+      "name": "MRT Kepong Baru Station",
+      "distance": "2.4 KM"
+    },
+    {
+      "name": "AEON Big Kepong",
+      "distance": "2.8 KM"
+    },
+    {
+      "name": "Selayang Hospital",
+      "distance": "4.6 KM"
+    },
+    {
+      "name": "Batu Caves",
+      "distance": "7.2 KM"
+    },
+    {
+      "name": "Mercure Hotel",
+      "distance": "7.2 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "450 sqft",
+      "price": "RM 355,900"
+    },
+    {
+      "type": "A1",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "450 sqft",
+      "price": "RM 355,900"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "898 sqft",
+      "price": "RM 617,900"
+    },
+    {
+      "type": "B1",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "898 sqft",
+      "price": "RM 620,900"
+    },
+    {
+      "type": "C",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "998 sqft",
+      "price": "RM 671,900"
+    },
+    {
+      "type": "C1",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1028 sqft",
+      "price": "RM 691,900"
+    },
+    {
+      "type": "C2",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "3",
+      "built_up_size": "980 sqft",
+      "price": "RM 768,900"
+    },
+    {
+      "type": "D",
+      "bedrooms": "4",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1135 sqft",
+      "price": "RM 748,900"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1198 sqft",
+      "price": "RM 788,900"
+    },
+    {
+      "type": "E1",
+      "bedrooms": "4",
+      "bathrooms": "3",
+      "parking_lots": "3",
+      "built_up_size": "1198 sqft",
+      "price": "RM 796,900"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "3",
+    "parking_lots": "3",
+    "built_up_size": "From 42 sqm - 111 sqm",
+    "price": "RM 355,900 - RM 889,900"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/residensi-zig"
+}

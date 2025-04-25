@@ -1,0 +1,67 @@
+{
+  "property_name": "Twin Villas",
+  "location": "Twin Villas - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Lot 1, No.1 Jalan Laksamana 1, Puteri Harbour, 79250 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.00pm Weekends and Public Holidays: 9.30am to 5.00pm"
+  },
+  "description": "Freehold homes are arranged seven units to an acre, creating a low-density neighbourhood for families to enjoy. The 4+1-bedroom layouts, with ensuite bathrooms, range from 3,178 to 3,304 sq. ft., and are integrated with nature: the design welcomes natural sunlight while cool, fresh breeze blows from the neighbouring SIREH Park.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Semi-Detached",
+  "features": [
+    "Lush Environment"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Private Hospital",
+      "distance": "1 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "3.5 KM"
+    },
+    {
+      "name": "College",
+      "distance": "7.3 KM"
+    },
+    {
+      "name": "University",
+      "distance": "8.6 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "9.5 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "10.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "3178 sqft",
+      "price": "RM 1,343,704"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2734 sqft",
+      "price": "RM 1,395,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5",
+    "bathrooms": "5",
+    "parking_lots": "2",
+    "built_up_size": "From 3178 sqft - 3304 sqft",
+    "price": "RM 1,342,000 - RM 1,584,888"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/twin-villas"
+}

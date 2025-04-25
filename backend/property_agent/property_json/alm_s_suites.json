@@ -1,0 +1,78 @@
+{
+  "property_name": "Almãs Suites",
+  "location": "Almãs Suites - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "The Suites in the integrated Almas development are largely of two layouts—520 sq. ft. one-bedroom unit or 896 sq. ft. duplex unit with double-volume ceiling—and spacious penthouse units spanning 2,221 sqft.",
+  "status": "Selling Fast",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "1.1-acre Eco-deck",
+    "Swimming And Wading Pools",
+    "Indoor And Outdoor Gymnasiums",
+    "Multipurpose/half Basketball Hall",
+    "Wellness Terrace",
+    "Multi-tiered Security Control",
+    "Entertainment Venue On 33rd Floor"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Ferry Terminal",
+      "distance": "1.2 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "3.5 KM"
+    },
+    {
+      "name": "Legoland",
+      "distance": "4.2 KM"
+    },
+    {
+      "name": "University",
+      "distance": "7.3 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "11.7 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "C1",
+      "bedrooms": "1",
+      "bathrooms": "1",
+      "parking_lots": "1",
+      "built_up_size": "520 sqft",
+      "price": "RM 415,888"
+    },
+    {
+      "type": "C2",
+      "bedrooms": "1",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "896 sqft",
+      "price": "RM 825,000"
+    },
+    {
+      "type": "C3",
+      "bedrooms": "3",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2221 sqft",
+      "price": "RM 2,513,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "5",
+    "parking_lots": "2",
+    "built_up_size": "From 520 sqft - 2221 sqft",
+    "price": "RM 473,888 - RM 2,718,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/almas-suites"
+}

@@ -1,0 +1,42 @@
+{
+  "property_name": "Verna Twin Villas",
+  "location": "Verna Twin Villas - Serene Heights, Selangor",
+  "showroom": {
+    "address": "Persiaran Serene Serene Heights 43500 Semenyih Selangor, Malaysia",
+    "operating_hours": "Weekdays: 9:30am - 5:30pm Weekends & Public Holidays: 10am - 5pm"
+  },
+  "description": "UEM Sunrise is happy to introduce our first semi-detached homes in Serene Heights - Verna Twin Villas! Verna Twin Villas offers a limited number of units with a standard lot size of 35’ x 80’ and 2,567 sq. ft built up area. Discover a new lifestyle horizon at Verna Twin Villas, where the joy of contemporary living is shared together. Come home to happiness, register now!",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Semi-Detached",
+  "features": [
+    "Refreshing Green Views"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "B",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2567 sqft",
+      "price": "RM 0"
+    },
+    {
+      "type": "C",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2567 sqft",
+      "price": "RM 0"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 2567 sqft",
+    "price": "From RM 1,119,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/verna-twin-villas"
+}

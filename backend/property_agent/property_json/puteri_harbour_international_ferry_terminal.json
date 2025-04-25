@@ -1,0 +1,45 @@
+{
+  "property_name": "Puteri Harbour International Ferry Terminal",
+  "location": "Puteri Harbour International Ferry Terminal",
+  "showroom": {
+    "address": "Puteri Harbour International Ferry Terminal Lebuh Bahtera, Kota Iskandar, 79100 Iskandar Puteri, Johor",
+    "operating_hours": "All Days: 7.00am to 8.30pm",
+    "hotline": "More information at www.puteriharbourferry.com"
+  },
+  "description": "Puteri Harbour International Ferry Terminal is strategically located in Iskandar Puteri, Johor and is owned & operated by UEM Sunrise Berhad. PHIFT is a two-storey building with a T-shaped jetty that can accommodate four ferries to berth at one time. The ferry terminal also provides offices to 7 Government Agencies; Jabatan Imigresen, Kastam DiRaja Malaysia (KDRM), Jabatan Kesihatan, Pejabat Kawalan Perjalanan (TCO), Polis DiRaja Malaysia (PDRM) and Jabatan Kuarantin (MAQIS).",
+  "status": "Available Now",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [],
+  "nearby_amenities": [
+    {
+      "name": "Hello Kitty Town",
+      "distance": "2.2 KM"
+    },
+    {
+      "name": "Hospital",
+      "distance": "3.4 KM"
+    },
+    {
+      "name": "Legoland",
+      "distance": "4.1 KM"
+    },
+    {
+      "name": "University",
+      "distance": "7.2 KM"
+    },
+    {
+      "name": "Shopping Mall",
+      "distance": "11.6 KM"
+    }
+  ],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "N/A",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/puteri-harbour-international-ferry-terminal"
+}

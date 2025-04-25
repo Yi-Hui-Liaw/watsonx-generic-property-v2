@@ -1,0 +1,89 @@
+{
+  "property_name": "Frischia",
+  "location": "Frischia - Serene Heights, Greater KL",
+  "showroom": {
+    "address": "Persiaran Serene, Serene Heights, 43500 Semenyih, Selangor Darul Ehsan, Malaysia",
+    "operating_hours": "Weekdays: 9:30am - 5:30pm Weekends & Public Holidays: 10am - 5pm"
+  },
+  "description": "Designed to create a seamless flow from the outdoors to indoors, little architectural details enhance the natural light and ventilation you can embrace at home. Immerse yourself in the gentle touches of nature and abundant green views that accompany your every waking moment. Living spaces are carefully crafted to exude artistry and elegance. The interior is sublimely modern in functionality. Sumptuous double storeys of 2,225 to 2,497 sq. ft. offer ample space for quality family time and rejuvenating me-time.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Terrace",
+  "features": [
+    "Waterway",
+    "Jogging Track",
+    "Bicycle Track",
+    "Themed Parks",
+    "Natural Landscapes",
+    "Enriching Community Spaces",
+    "Tropika Boulevard",
+    "Street Of Blooms"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "1A",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "1",
+      "built_up_size": "2258 sqft",
+      "price": "RM 762,800"
+    },
+    {
+      "type": "1B",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2292 sqft",
+      "price": "RM 745,800"
+    },
+    {
+      "type": "1C",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2474 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "2A",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2231 sqft",
+      "price": "RM 745,800"
+    },
+    {
+      "type": "2B",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2265 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "2C",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2401 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "2D",
+      "bedrooms": "5",
+      "bathrooms": "5",
+      "parking_lots": "2",
+      "built_up_size": "2497 sqft",
+      "price": "N/A"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "5",
+    "bathrooms": "5",
+    "parking_lots": "2",
+    "built_up_size": "From 2225 sqft - 2497 sqft",
+    "price": "RM 745,800 - RM 1,051,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/frischia"
+}

@@ -1,0 +1,121 @@
+{
+  "property_name": "KAIA Heights Equine",
+  "location": "KAIA Heights - Equine Park, Greater KL",
+  "showroom": {
+    "address": "Jalan Equine 9, 43300 Seri Kembangan Selangor, Malaysia",
+    "operating_hours": "Weekdays: 9:30am - 5:30pm Weekends & Public Holidays: 10am - 5pm",
+    "hotline": "019-339 9085"
+  },
+  "description": "UEM Sunrise proudly presents KAIA Heights in Equine Park. This 19.24-acre hilltop development is built around our “Recapture, Replenish, Restore” 3-generation living concept. A 6-acre nature reserve surrounds the development, making KAIA Heights truly unique. Combining hilltop and nature living, residents here reside at the peak of Equine Park while enjoying stunning views of greater Klang Valley in all directions. For the best views of nature and stars, register now!",
+  "status": "Available Now",
+  "tenure": "Leasehold",
+  "property_type": "Condominium",
+  "features": [
+    "Highest Peak Of Equine Park",
+    "8 Acres Of Landscape & Facilities",
+    "All Unit Enjoy Unobstructed View",
+    "Certified By GreenRE",
+    "Low Density Condominium",
+    "Multi-generation Facilities"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Alice Smith International School",
+      "distance": "1.3 KM"
+    },
+    {
+      "name": "AEON Equine Park Mall",
+      "distance": "1.4 KM"
+    },
+    {
+      "name": "MRT Equine Park",
+      "distance": "1.7 KM"
+    },
+    {
+      "name": "Farm In The City",
+      "distance": "3.7 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A1",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "972 sqft",
+      "price": "RM 567,800"
+    },
+    {
+      "type": "A2",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "999 sqft",
+      "price": "RM 583,800"
+    },
+    {
+      "type": "A3",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1098 sqft",
+      "price": "RM 649,800"
+    },
+    {
+      "type": "B1",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1241 sqft",
+      "price": "RM 718,800"
+    },
+    {
+      "type": "B2",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1333 sqft",
+      "price": "RM 756,800"
+    },
+    {
+      "type": "B3",
+      "bedrooms": "3+1",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1350 sqft",
+      "price": "RM 840,800"
+    },
+    {
+      "type": "C1",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1437 sqft",
+      "price": "RM 826,800"
+    },
+    {
+      "type": "C2",
+      "bedrooms": "3+1",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1508 sqft",
+      "price": "RM 879,800"
+    },
+    {
+      "type": "C3",
+      "bedrooms": "3+1",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1569 sqft",
+      "price": "RM 891,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3+1",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 972 sqft - 1569 sqft",
+    "price": "RM 567,800 - RM 949,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/kaia-heights-equine"
+}

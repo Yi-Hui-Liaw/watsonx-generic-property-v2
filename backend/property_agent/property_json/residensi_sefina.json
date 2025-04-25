@@ -1,0 +1,52 @@
+{
+  "property_name": "Residensi Sefina",
+  "location": "Residensi Sefina - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "Located in Mont’Kiara, Residensi Sefina is permanently “docked” in one of the trendiest, most affluent neighbourhoods in the Klang Valley. Well-designed accommodation comes with an abundance of facilities, set in a tropical beach theme. Mont’Kiara neighbourhood! In a world where everything is made public, it is great to be able to retreat to Allevia, the latest development by UEM Sunrise.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Flexible Layout",
+    "Sandy Island Mimics Beach Getaway",
+    "Cruise Ship Themed Star Deck"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1333 sqft",
+      "price": "RM 1,050,000"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1548 sqft",
+      "price": "RM 1,240,000"
+    },
+    {
+      "type": "C",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "1771 sqft",
+      "price": "RM 1,420,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "3",
+    "parking_lots": "2",
+    "built_up_size": "From 1333 sqft - 1771 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/residensi-sefina"
+}

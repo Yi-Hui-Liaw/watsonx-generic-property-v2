@@ -1,0 +1,70 @@
+{
+  "property_name": "Imperia Condominium",
+  "location": "Imperia Condominium - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "UEM Sunrise Property Showcase Lot 1, No.1 Jalan Laksamana 1 Puteri Harbour 79250 Iskandar Puteri Johor Darul Ta'zim",
+    "operating_hours": "Weekdays: 9.00am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "A prestigious waterfront lifestyle development sited on a freehold land, Imperia is the first completed premium luxurious condominium nestled within Puteri Harbour. Being the first GBI-certified development in Johor and designed by a famed architectural firm, the 35-storey high rise residence is bestowed with the panoramic view of the marina and sprawling lifestyle facilities.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Oasis Sky Garden",
+    "Dominion Roof Deck",
+    "Gymnasium",
+    "Swimming Pool",
+    "Barbeque Pits",
+    "Playground",
+    "Exercise / Fitness Area",
+    "Jogging Track",
+    "Badminton /Takraw Court",
+    "Exclusive Sky Clubhouse",
+    "Multipurpose Area",
+    "Study Room",
+    "Games Room"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "2A",
+      "bedrooms": "2",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1673 sqft",
+      "price": "RM 1,299,888"
+    },
+    {
+      "type": "3A",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "2508 sqft",
+      "price": "RM 2,121,888"
+    },
+    {
+      "type": "4A",
+      "bedrooms": "3",
+      "bathrooms": "3",
+      "parking_lots": "2",
+      "built_up_size": "3266 sqft",
+      "price": "RM 3,276,888"
+    },
+    {
+      "type": "4B",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "4336 sqft",
+      "price": "RM 4,317,888"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 813 sqft - 4336 sqft",
+    "price": "RM 685,888 - RM 4,317,888"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/imperia-condominium"
+}

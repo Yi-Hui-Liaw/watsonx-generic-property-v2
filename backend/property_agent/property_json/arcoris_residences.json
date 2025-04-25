@@ -1,0 +1,27 @@
+{
+  "property_name": "Arcoris Residences",
+  "location": "Arcoris Residences - Mont' Kiara, Greater KL",
+  "showroom": {
+    "address": "UEM Sunrise Showcase 21, Jalan Kiara, Mont’Kiara, 50480 Kuala Lumpur, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.30pm Weekends and Public Holidays: 10.00am to 5.00pm"
+  },
+  "description": "From studio-size to spacious 3-bedroom units with roof gardens, these individualistic spaces in Arcoris Residences are located within a larger integrated development. Just outside is the Arcoris Plaza, where dining, retail and health & beauty outlets cater to the rest of your lifestyle needs.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Multi-tiered Surveillance System",
+    "Integrated Lifestyle Services",
+    "Retail Accessibility"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 886 sqft - 2656 sqft",
+    "price": "N/A"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/arcoris-residences"
+}

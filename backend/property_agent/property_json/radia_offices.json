@@ -1,0 +1,103 @@
+{
+  "property_name": "Radia Offices",
+  "location": "Radia Offices - Bukit Jelutong, Greater KL",
+  "showroom": {
+    "address": "A-09-08, Radia Office Block A, Persiaran Arked Bukit Jelutong, Seksyen U8, 40150 Shah Alam Selangor, Malaysia",
+    "operating_hours": "By appointment only Call/WhatsApp: +6019 2535 883 (Shamsul)"
+  },
+  "description": "Radia Business Suites are part of a mixed development: two office blocks built atop retail floors, one on each end of a lush promenade. These flexible suites offer customisable spaces designed to accommodate all types of business needs and sizes.",
+  "status": "Available Now",
+  "tenure": "Freehold",
+  "property_type": "N/A",
+  "features": [
+    "Freehold Integrated Development",
+    "Flexible Layouts",
+    "24-hour Security",
+    "CCTV Surveillance",
+    "Access Card System"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Golf Club",
+      "distance": "0.22 KM"
+    },
+    {
+      "name": "Toll",
+      "distance": "3.5 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Level 1 A",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "825 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 1 B",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "1014 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 1 C",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "1518 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 10 A",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "864 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 10 B",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "1021 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 2-9 A",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "864 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 2-9 B",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "1021 sqft",
+      "price": "N/A"
+    },
+    {
+      "type": "Level 2-9 C",
+      "bedrooms": null,
+      "bathrooms": null,
+      "parking_lots": null,
+      "built_up_size": "1946 sqft",
+      "price": "N/A"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "N/A",
+    "bathrooms": "N/A",
+    "parking_lots": "N/A",
+    "built_up_size": "From 825 sqft - 2001 sqft",
+    "price": "From RM 627,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/radia-offices"
+}

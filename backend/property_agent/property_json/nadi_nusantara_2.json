@@ -1,0 +1,53 @@
+{
+  "property_name": "Nadi Nusantara 2",
+  "location": "Nadi Nusantara 2",
+  "showroom": {
+    "address": "Persiaran Sentral, Gerbang Nusajaya 79200 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Daily Operating Hours (including Public Holiday) Monday to Sunday​ 10am – 6pm",
+    "hotline": "07- 2773788 / 07- 2773766"
+  },
+  "description": "Located in Senadi Hills, Nadi Nusantara 2 is designed for you and your family and encourages community life. Enjoy easy access to major highways and other amenities. Only 2-5 km from Legoland®, Hospital Gleneagles, Kota Iskandar and educational institutions such as SK Medini, SMK Medini dan EduCity.",
+  "status": "New Launch",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Children Playground",
+    "Multipurpose Hall"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Kota Iskandar",
+      "distance": "6.4 KM"
+    },
+    {
+      "name": "Legoland®",
+      "distance": "6.7 KM"
+    },
+    {
+      "name": "Gleneagles Hospital",
+      "distance": "7.7 KM"
+    },
+    {
+      "name": "Mydin Mall",
+      "distance": "11.8 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "Type",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "1",
+      "built_up_size": "1000 sqft",
+      "price": "RM 150,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "2",
+    "parking_lots": "1",
+    "built_up_size": "From 1000 sqft",
+    "price": "From RM 150,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/nadi-nusantara-2"
+}

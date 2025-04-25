@@ -1,0 +1,108 @@
+{
+  "property_name": "Residensi Ledang",
+  "location": "Residensi Ledang - Iskandar Puteri, Johor",
+  "showroom": {
+    "address": "Lot 1, No.1 Jalan Laksamana 1, Puteri Harbour, 79250 Iskandar Puteri Johor, Malaysia",
+    "operating_hours": "Weekdays: 9.30am to 5.00pm Weekends and Public Holidays: 9.30am to 5.00pm"
+  },
+  "description": "Come home every day to a resort-like environment at Residensi Ledang. This low-rise low-density condominium development, comprising only 117 units on 6.6 acres of prime land, is ideal for young families. The homes are of various layout designs, both single-floor and duplex units starting from 2,475 sq. ft., which offer ample space for families.",
+  "status": "Sold Out",
+  "tenure": "Freehold",
+  "property_type": "Apartment",
+  "features": [
+    "Low Density",
+    "Resort Style Living",
+    "Spacious Living",
+    "Smart Card Access",
+    "24 Hour CCTV",
+    "Patrol Service"
+  ],
+  "nearby_amenities": [
+    {
+      "name": "Legoland®",
+      "distance": "2.1 KM"
+    },
+    {
+      "name": "University",
+      "distance": "3.0 KM"
+    },
+    {
+      "name": "Private Hospital",
+      "distance": "3 KM"
+    },
+    {
+      "name": "Ferry Terminal",
+      "distance": "5.2 KM"
+    },
+    {
+      "name": "Marlborough College",
+      "distance": "7 KM"
+    },
+    {
+      "name": "Raffles American School",
+      "distance": "7 KM"
+    },
+    {
+      "name": "CIQ Sultan Abu Bakar",
+      "distance": "9 KM"
+    }
+  ],
+  "unit_types": [
+    {
+      "type": "A1",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2669 sqft",
+      "price": "RM 1,000,000"
+    },
+    {
+      "type": "A2",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2734 sqft",
+      "price": "RM 1,000,000"
+    },
+    {
+      "type": "B1",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2561 sqft",
+      "price": "RM 1,000,000"
+    },
+    {
+      "type": "B2",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2615 sqft",
+      "price": "RM 1,000,000"
+    },
+    {
+      "type": "C1",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2475 sqft",
+      "price": "RM 1,000,000"
+    },
+    {
+      "type": "C2",
+      "bedrooms": "3",
+      "bathrooms": "4",
+      "parking_lots": "2",
+      "built_up_size": "2540 sqft",
+      "price": "RM 1,000,000"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "3",
+    "bathrooms": "4",
+    "parking_lots": "2",
+    "built_up_size": "From 2475 sqft - 2734 sqft",
+    "price": "From RM 1,000,000"
+  },
+  "url": "https://www.uemsunrise.com/property/region/iskandar-puteri/project/residensi-ledang"
+}

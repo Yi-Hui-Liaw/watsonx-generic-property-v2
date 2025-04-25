@@ -1,0 +1,92 @@
+{
+  "property_name": "Residensi AVA",
+  "location": "Residensi AVA - Kiara Bay, Greater KL",
+  "showroom": {
+    "address": "Kiara Bay Sales Gallery Kepong Metropolitan Lake-garden, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur"
+  },
+  "description": "Located at The Walk, the buzzing and active Central Business District of KIARA BAY, Residensi AVA offers elevated urban eco-living for all ages and life stages like never before. AVA’s design is inspired by the idea of symmetry and balance, much like the wings of a butterfly. AVA’s two towers offer a much-needed balance between living and leisure-encouraging its residents to LIVE LIFE FULL.",
+  "status": "Available Now",
+  "tenure": "Leasehold",
+  "property_type": "Apartment",
+  "features": [
+    "50m Infinity Edge Lap Pool",
+    "BBQ Area",
+    "Multipurpose Hall Cum Badminton Courts",
+    "Half Basketball Court",
+    "Dining Pavilion",
+    "Yoga And Tai Chi Deck",
+    "Kid’s Game Room",
+    "CCTV System",
+    "Sauna",
+    "Meditation Cove",
+    "Indoor Gymnasium",
+    "Sky Deck"
+  ],
+  "nearby_amenities": [],
+  "unit_types": [
+    {
+      "type": "A",
+      "bedrooms": "2+1",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "813 sqft",
+      "price": "RM 567,800"
+    },
+    {
+      "type": "B",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "950 sqft",
+      "price": "RM 659,800"
+    },
+    {
+      "type": "C",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1125 sqft",
+      "price": "RM 781,800"
+    },
+    {
+      "type": "D",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1125 sqft",
+      "price": "RM 771,800"
+    },
+    {
+      "type": "D1",
+      "bedrooms": "3",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1125 sqft",
+      "price": "RM 771,800"
+    },
+    {
+      "type": "E",
+      "bedrooms": "4",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1285 sqft",
+      "price": "RM 880,800"
+    },
+    {
+      "type": "E1",
+      "bedrooms": "4",
+      "bathrooms": "2",
+      "parking_lots": "2",
+      "built_up_size": "1285 sqft",
+      "price": "RM 880,800"
+    }
+  ],
+  "property_offering_details": {
+    "bedrooms": "4",
+    "bathrooms": "2",
+    "parking_lots": "2",
+    "built_up_size": "From 813 sqft - 1285 sqft",
+    "price": "RM 567,800 - RM 946,800"
+  },
+  "url": "https://www.uemsunrise.com/property/region/greater-kuala-lumpur/project/residensi-ava"
+}
