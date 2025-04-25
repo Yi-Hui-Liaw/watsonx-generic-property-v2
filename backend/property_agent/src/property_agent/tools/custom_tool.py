@@ -54,20 +54,22 @@ class DataFields(BaseModel):
 #         except Exception as e:
 #             return e
 def load_properties(data_fields):
-    # prop_dir = "./knowledge/json"
-    # files = os.listdir(prop_dir)
-    # match_prop = []
-    # for f in files:
-    #     print(f"loading {f}")
-    #     with open(os.path.join(prop_dir, f), 'r') as jf:
-    #         properties = json.load(jf)
-    #         temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
-    #         match_prop.append(temp_prop)
-    #         print(f"Match properties - {len(match_prop)}") 
-    tool = ScrapeWebsiteTool(website_url='https://www.uemsunrise.com')
-    property_data = tool.run()
-    print(property_data)
-    return property_data
+    prop_dir = "./property_json"
+    files = os.listdir(prop_dir)
+    match_prop = []
+    for f in files:
+        print(f"loading {f}")
+        with open(os.path.join(prop_dir, f), 'r') as jf:
+            properties = json.load(jf)
+            properties = {"project": properties}
+            temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
+            match_prop.append(temp_prop)
+            print(f"Match properties - {len(match_prop)}")
+    return match_prop
+    # tool = ScrapeWebsiteTool(website_url='https://www.uemsunrise.com')
+    # property_data = tool.run()
+    # print(property_data)
+    # return property_data
 
 
 class RetrievePropertyData(BaseTool):
@@ -83,7 +85,7 @@ class RetrievePropertyData(BaseTool):
         print(f"Exracting {len(data_fields)} data fields")
         print(data_fields)
         # Implementation goes here
-        data_fields = data_fields + ['project_name','concept'] # name and concept is a must for model to make a better decision
+        data_fields = data_fields + ['property_name','description'] # name and description is a must for model to make a better decision
         
         try:
             properties = load_properties(data_fields)
@@ -99,7 +101,7 @@ class RecommendProperty(BaseTool):
     def _run(self, requirements: str) -> str:
         preferences = json.loads(requirements)
 
-        property_data = self.load_multiple_property_data("knowledge/json")
+        property_data = self.load_multiple_property_data("property_json")
 
         prompt = self.create_prompt(preferences, property_data)
 
@@ -140,7 +142,7 @@ class RecommendProperty(BaseTool):
 
         llm = LLM(
             model="watsonx/meta-llama/llama-3-3-70b-instruct",
-            base_url="https://jp-tok.ml.cloud.ibm.com",
+            base_url="https://us-south.ml.cloud.ibm.com",
             params=parameters,
             project_id=os.getenv("WATSONX_PROJECT_ID", None),
             apikey=os.getenv("WATSONX_API_KEY", None),

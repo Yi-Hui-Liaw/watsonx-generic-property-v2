@@ -13,7 +13,7 @@ load_dotenv(find_dotenv())
 parameters = {"decoding_method": "greedy", "max_new_tokens": 500}
 llm = LLM(
     model="watsonx/meta-llama/llama-3-3-70b-instruct",
-    base_url="https://jp-tok.ml.cloud.ibm.com",
+    base_url="https://us-south.ml.cloud.ibm.com",
     params=parameters,
     project_id=os.getenv("WATSONX_PROJECT_ID", None),
     apikey=os.getenv("WATSONX_API_KEY", None),
@@ -52,7 +52,7 @@ class ManagerCrew:
         ),
         # summarize=True,
     )
-    facts_tool.add(data_type="directory", source="knowledge/rag")
+    facts_tool.add(data_type="directory", source="property_json")
 
     # csv_tool = RagTool(
     #     description="Use this tool to extract stocks or unit related information from .csv files",

@@ -208,22 +208,22 @@ match_data_field:
     ------------------
     Based on the latest query in the provided conversation, your task is to identify what data are required to provide recommendation. The list of data fields available is as follow:
     [ 
-      'location', 
-      'proximity', 
-      'target_audience', 
-      'development_features', 
+      'property_name',
+      'description',
+      'location',
       'showroom', 
-      'property_offering_details', 
-      'property_features', 
-      'facilities_and_amenities', 
-      'facilities_plan', 
+      'status', 
+      'tenure', 
+      'property_type', 
+      'features',
       'nearby_amenities', 
-      'unit_types', 
-      'property_contact_information'
+      'unit_types',
+      'property_offering_details'
     ]
-    You may identify more than one. Include 'unit_types' only when you really need detail information of configurations, price and built up size for recommendation.
+    You may identify more than one. Include 'property_name' and 'description' which are a must. 
+    Include 'unit_types' only when you really need detail information of configurations, price and built up size for recommendation.
   expected_output: >
-    Return only data fields based on the provided data in list format without any extra text or explaination. For example ['project_name','location']
+    Return only data fields based on the provided data in list format without any extra text or explaination. For example ['property_name','location']
   agent: search_agent
 
 # retrieve_data:
@@ -245,6 +245,7 @@ recommend_property:
     ------------------
     Based on the latest query in the provided conversation and property data, your task is to choose the best property based on user query's in the conversation. 
     Do not mention about data that is not provided. If asked, let user you do not posses the information.
+    Exclude "Sold Out" status unless specifically requested by user.
   expected_output: >
     Return in list dictionary format with 2 keys 'property_name' and 'text'. 'property_name' key is the project name and 'text' key is your reason why you recommend it and how it's related to user's requirement.
 
