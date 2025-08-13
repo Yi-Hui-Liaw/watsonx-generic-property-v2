@@ -6,6 +6,9 @@ from pydantic import BaseModel, Field
 from typing import List
 from crewai import LLM
 from crewai_tools import ScrapeWebsiteTool
+from elasticsearch import Elasticsearch
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 # class Appointment(BaseModel):
 #     """Input schema for UpdateCSV."""
@@ -14,7 +17,7 @@ from crewai_tools import ScrapeWebsiteTool
 
 
 class Query(BaseModel):
-    requirements: str = Field(
+    query: str = Field(
         ..., description="JSON string of user preferences like bedrooms, max_price"
     )
 
@@ -53,19 +56,19 @@ class DataFields(BaseModel):
 #             return "Appointment csv has been updated."
 #         except Exception as e:
 #             return e
-def load_properties(data_fields):
-    prop_dir = "./property_json"
-    files = os.listdir(prop_dir)
-    match_prop = []
-    for f in files:
-        print(f"loading {f}")
-        with open(os.path.join(prop_dir, f), 'r') as jf:
-            properties = json.load(jf)
-            properties = {"project": properties}
-            temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
-            match_prop.append(temp_prop)
-            print(f"Match properties - {len(match_prop)}")
-    return match_prop
+# def load_properties(data_fields):
+#     prop_dir = "./property_json"
+#     files = os.listdir(prop_dir)
+#     match_prop = []
+#     for f in files:
+#         print(f"loading {f}")
+#         with open(os.path.join(prop_dir, f), 'r') as jf:
+#             properties = json.load(jf)
+#             properties = {"project": properties}
+#             temp_prop = {k:v for k,v in properties['project'].items() if k in data_fields}
+#             match_prop.append(temp_prop)
+#             print(f"Match properties - {len(match_prop)}")
+#     return match_prop
     # tool = ScrapeWebsiteTool(website_url='https://www.uemsunrise.com')
     # property_data = tool.run()
     # print(property_data)
@@ -79,8 +82,6 @@ class RetrievePropertyData(BaseTool):
     )
     args_schema: Type[BaseModel] = DataFields
 
-
-
     def _run(self, data_fields: list[str]) -> List[dict]:
         print(f"Exracting {len(data_fields)} data fields")
         print(data_fields)
@@ -93,6 +94,60 @@ class RetrievePropertyData(BaseTool):
         except Exception as e:
             return e
 
+class QueryProperty(BaseTool):
+    name: str = "query_property"
+    description: str = "Retrieves property data based on semantic search and filters"
+    args_schema: Type[BaseModel] = Query
+
+    def _run(self, query: str) -> list:
+        es_url = os.getenv("ES_URL")
+        es = Elasticsearch(
+            hosts=es_url,
+            basic_auth=(os.getenv("ES_USERNAME"), os.getenv("ES_PASSWORD")),
+            verify_certs=False,
+            ssl_show_warn=False,
+            request_timeout=600,
+        )
+
+        model_name = ".elser_model_2"
+        index_name = "property_data"
+
+        response = es.search(
+            index=index_name,
+            body={
+                "query": {
+                    "bool": {
+                        "must": [
+                            {
+                                "sparse_vector": {
+                                    "field": "text_embedding",
+                                    "inference_id": model_name,
+                                    "query": query
+                                }
+                            }
+                        ],
+                        "must_not": [
+                            { "term": { "status.keyword": "Sold Out" } },
+                            { "term": { "status.keyword": "Coming Soon" } }
+                        ]
+                    }
+                },
+                "size": 5
+            }
+        )
+
+        hits = response.body['hits']['hits']
+        return [
+            {
+                "property_name": hit['_source'].get("property_name", "Unknown"),
+                "page_url": hit['_source'].get("page_url"),
+                "status": hit['_source'].get("status"),
+                "description": hit['_source'].get("description"),
+                "unit_types": hit['_source'].get("unit_types")
+            }
+            for hit in hits
+        ]
+    
 class RecommendProperty(BaseTool):
     name: str = "recommend_property"
     description: str = "This tool recommends properties based on user preferences (e.g., number of bedrooms, price, size)."
@@ -101,7 +156,7 @@ class RecommendProperty(BaseTool):
     def _run(self, requirements: str) -> str:
         preferences = json.loads(requirements)
 
-        property_data = self.load_multiple_property_data("property_json")
+        property_data = self.load_multiple_property_data("property_json_sub")
 
         prompt = self.create_prompt(preferences, property_data)
 

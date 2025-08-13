@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+import os
+os.environ["OTEL_SDK_DISABLED"] = "true"
+
 from flows.flow import RouterFlow
 
 def kickoff():
@@ -11,7 +14,7 @@ def plot():
 
 if __name__ == "__main__":
     inputs = [
-    {"u": "I only have budget of 500k for investment please recommend some properties with unit type details."}
+    {"u": "I like to play golf. Recommend property."}
     ]
     q = ""
     flow = RouterFlow()

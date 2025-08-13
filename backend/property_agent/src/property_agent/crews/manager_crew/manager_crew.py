@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
-from src.property_agent.tools.custom_tool import RetrievePropertyData
+from src.property_agent.tools.custom_tool import QueryProperty, Query
 from crewai_tools import (
     RagTool,
 )
@@ -25,34 +25,30 @@ class ManagerCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
     # update_csv = UpdateCSV()
-    RetrievePropertyTool = RetrievePropertyData()
+    #RetrievePropertyTool = RetrievePropertyData()
+    QueryPropertyTool = QueryProperty()
 
-    facts_tool = RagTool(
-        description="Use this tool to extract facts related to the ABC Residence, Lumenh or The Nexus One property from .json files.",
-        config=dict(
-            llm=dict(
-                provider="ollama",  # or google, openai, anthropic, llama2, ...
-                config=dict(
-                    model="llama3",
-                    base_url="http://0.0.0.0:11434",
-                    # temperature=0.5,
-                    # top_p=1,
-                    # stream=true,
-                ),
-            ),
-            embedder=dict(
-                provider="ollama",  # or openai, ollama, ...
-                config=dict(
-                    model="mxbai-embed-large",
-                    # task_type="retrieval_document",
-                    # title="Embeddings",
-                ),
-            ),
-            vectordb=dict(provider="chroma", config=dict(dir=f"rag-db")),
-        ),
-        # summarize=True,
-    )
-    facts_tool.add(data_type="directory", source="property_json")
+#     facts_tool = RagTool(
+#     description="Use this tool to extract property facts.",
+#     config=dict(
+#         llm=dict(
+#             provider="huggingface",
+#             config=dict(
+#                 model="meta-llama/Llama-3.3-70B-Instruct",  # or another
+#                 api_key="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"
+#             ),
+#         ),
+#         embedder=dict(
+#             provider="huggingface",
+#             config=dict(
+#                 model="sentence-transformers/all-MiniLM-L6-v2",
+#                 api_key="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"
+#             ),
+#         ),
+#         vectordb=dict(provider="chroma", config=dict(dir="rag-db")),
+#     )
+# )
+#     facts_tool.add(data_type="directory", source="property_json_sub")
 
     # csv_tool = RagTool(
     #     description="Use this tool to extract stocks or unit related information from .csv files",
@@ -95,8 +91,10 @@ class ManagerCrew:
         return Agent(
             config=self.agents_config["search_agent"],
             llm=llm,
+            tools=[QueryProperty()], 
+            args_schema=Query,
             allow_delegation=False,
-            max_iter=1,
+            max_iter=2,
             verbose=True,
         )
 
@@ -124,6 +122,10 @@ class ManagerCrew:
     @task
     def search_property_database(self) -> Task:
         return Task(config=self.tasks_config["search_property_database"])
+    
+    @task
+    def query_property_candidates(self) -> Task:
+        return Task(config=self.tasks_config["query_property_candidates"])
 
     @task
     def recommend_property(self) -> Task:
@@ -174,14 +176,21 @@ class ManagerCrew:
                 process=Process.sequential,
                 verbose=True,
             )
+        elif mode == "retrieve_es_properties":
+            return Crew(
+                agents=[self.search_agent()],
+                tasks=[self.query_property_candidates()],
+                process=Process.sequential,
+                verbose=True,
+            )
         elif mode == "recommend_property":
             return Crew(
-                agents=[self.recommend_agent(),],
+                agents=[self.recommend_agent()],
                 tasks=[self.recommend_property()],
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == "retrieve_data":
+        elif mode == "retrieve_data_field":
             return Crew(
                 agents=[self.search_agent()],
                 tasks=[self.match_data_field()],

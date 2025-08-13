@@ -1,0 +1,29 @@
+**/.venv/
+**/knowledge
+**/property_json_sub
+**/.DS_Store
+
+# macOS system files
+.DS_Store
+
+# Python cache and test data
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Secrets (be careful!)
+.env
+
+# Test scripts
+**/testing.py
+**/testing2.py
+
+# Optional build tools
+uv.lock
+README.md
+
+# Git
+.git/
+.gitignore

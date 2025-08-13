@@ -19,43 +19,43 @@ LIMIT_WINDOW = 15
 # async def page_main():
 #     return FileResponse('static/main.html')
 
-@router.get("/csv/appointment", response_class=HTMLResponse)
-async def read_appointment():
-    df = pd.read_csv("knowledge/csv/appointment.csv")
-    return df.to_html()
+# @router.get("/csv/appointment", response_class=HTMLResponse)
+# async def read_appointment():
+#     df = pd.read_csv("knowledge/csv/appointment.csv")
+#     return df.to_html()
 
-@router.get("/csv/lumenh", response_class=HTMLResponse)
-async def read_minh():
-    df = pd.read_csv("knowledge/csv/lumenh.csv")
-    return df.to_html()
+# @router.get("/csv/lumenh", response_class=HTMLResponse)
+# async def read_minh():
+#     df = pd.read_csv("knowledge/csv/lumenh.csv")
+#     return df.to_html()
 
-@router.get("/csv/abc-residence", response_class=HTMLResponse)
-async def read_abc():
-    df = pd.read_csv("knowledge/csv/abc-residence.csv")
-    return df.to_html()
+# @router.get("/csv/abc-residence", response_class=HTMLResponse)
+# async def read_abc():
+#     df = pd.read_csv("knowledge/csv/abc-residence.csv")
+#     return df.to_html()
 
-@router.get("/csv/nexus-one", response_class=HTMLResponse)
-async def read_nexus():
-    df = pd.read_csv("knowledge/csv/nexus-one.csv")
-    return df.to_html()
+# @router.get("/csv/nexus-one", response_class=HTMLResponse)
+# async def read_nexus():
+#     df = pd.read_csv("knowledge/csv/nexus-one.csv")
+#     return df.to_html()
 
-@router.get("/csv/refresh")
-async def refresh():
-    try:
-        appt = pd.read_csv("knowledge/csv_archive/appointment.csv")
-        appt.to_csv("knowledge/csv/appointment.csv", index=False)
+# @router.get("/csv/refresh")
+# async def refresh():
+#     try:
+#         appt = pd.read_csv("knowledge/csv_archive/appointment.csv")
+#         appt.to_csv("knowledge/csv/appointment.csv", index=False)
 
-        return "CSV refreshed succcessfully"
-    except Exception as e:
-        return f"Refresh failed {e}"
+#         return "CSV refreshed succcessfully"
+#     except Exception as e:
+#         return f"Refresh failed {e}"
     
-@router.get("/ingest")
-async def refresh():
-    try:
-        ingest()
-        return "CSV loaded to sql lite"
-    except Exception as e:
-        return f"Ingestion failed {e}"
+# @router.get("/ingest")
+# async def refresh():
+#     try:
+#         ingest()
+#         return "CSV loaded to sql lite"
+#     except Exception as e:
+#         return f"Ingestion failed {e}"
 
 @router.post("/api/agent_flow")
 def flow(request: AgentRequest) -> AgentResponse:
@@ -63,5 +63,6 @@ def flow(request: AgentRequest) -> AgentResponse:
 
     flow = RouterFlow()
     result = flow.kickoff(inputs={"inputs": history})
+    print(result)
     
     return {"response":result}

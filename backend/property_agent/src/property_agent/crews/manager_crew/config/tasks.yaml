@@ -220,10 +220,10 @@ match_data_field:
       'unit_types',
       'property_offering_details'
     ]
-    You may identify more than one. Include 'property_name' and 'description' which are a must. 
-    Include 'unit_types' only when you really need detail information of configurations, price and built up size for recommendation.
+    You may identify more than one. Include 'property_name', 'description', 'status' which are a must. 
+    Include 'unit_types' only if the user's query involves specific requirements about unit size, pricing, or configurations.
   expected_output: >
-    Return only data fields based on the provided data in list format without any extra text or explaination. For example ['property_name','location']
+    Return **only** the required data fields as a Python list. Do not include any explanation, text, or prefix. Example: ['property_name', 'location', 'tenure']
   agent: search_agent
 
 # retrieve_data:
@@ -232,6 +232,19 @@ match_data_field:
 #   expected_output: >
 #     Return the tool output which is a list[dict] format.
 #   agent: search_agent
+
+query_property_candidates:
+  description: >
+    conversation:
+    ------------------
+    {conversation}
+    ------------------
+    Based on the user's query, use the provided tool to retrieve semantically matching properties.
+    Your goal is to shortlist candidate properties relevant to the user's search intent.
+    Only use the tool output, do not generate recommendations yourself.
+  expected_output: >
+    Return a list of property dictionaries from the tool output.
+  agent: search_agent
 
 recommend_property:
   description: >
@@ -243,12 +256,13 @@ recommend_property:
     ------------------
     {properties}
     ------------------
-    Based on the latest query in the provided conversation and property data, your task is to choose the best property based on user query's in the conversation. 
+    Based on the latest query in the provided conversation and property data, your task is to choose the best property based on user query's in the conversation.
+    Include more than one properties if available and at most 5 properties
     Do not mention about data that is not provided. If asked, let user you do not posses the information.
-    Exclude "Sold Out" status unless specifically requested by user.
+    Exclude property with "Sold Out" status unless specifically requested by user.
+    If the property list is empty, respond with an empty list.
   expected_output: >
     Return in list dictionary format with 2 keys 'property_name' and 'text'. 'property_name' key is the project name and 'text' key is your reason why you recommend it and how it's related to user's requirement.
-
   agent: recommend_agent
 
 converse:
@@ -266,7 +280,9 @@ converse:
     ------------------
     {conversation}
     ------------------
-    your task is to generate a friendly reply to the conversation based on provided information and context. Make sure to include currency when mentioning price.
+    your task is to generate a friendly reply to the conversation based on provided information and context. 
+    Make sure to include currency when mentioning price.
+    If the "information" is not found, simply inform the user that no suitable property could be found.
   expected_output: >
     A brief reply return in text without any quotes. Use the language that the user is using.
   agent: customer_service_agent

@@ -2,8 +2,8 @@ from pydantic import BaseModel
 from typing import Any, Mapping, List
 from crewai.flow import Flow, listen, start
 from src.property_agent.crews.manager_crew.manager_crew import ManagerCrew
-from src.property_agent.tools.custom_tool import load_properties
 import ast, json
+from src.property_agent.tools.custom_tool import QueryProperty, Query
 
 class CollectState(BaseModel):
     route: str | None = None
@@ -58,16 +58,23 @@ class RouterFlow(Flow[CollectState]):
         if self.state.route != 'property_recommender':
             return
 
-        data_fields = (
-            ManagerCrew().crew(mode='retrieve_data').kickoff(inputs={"conversation": self.state.inputs})
-        )
-        print(f"Extracted data field - {data_fields.raw}")
-        property_data = load_properties(ast.literal_eval(data_fields.raw))
+        # data_fields = (
+        #     ManagerCrew().crew(mode='search_agent').kickoff(inputs={"conversation": self.state.inputs})
+        # )
+        # print(f"Extracted data field - {data_fields.raw}")
+        #property_data = load_properties(ast.literal_eval(data_fields.raw))
+        tool = QueryProperty()
+        # search_result = (
+        #     ManagerCrew().crew(mode='retrieve_es_properties').kickoff(inputs={
+        #         "conversation": self.state.inputs
+        #     })
+        # )
+        properties = tool._run(self.state.inputs)
 
         recommendation = (
             ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
                 "conversation": self.state.inputs,
-                "properties": property_data
+                "properties": properties
                 })
         )
 
