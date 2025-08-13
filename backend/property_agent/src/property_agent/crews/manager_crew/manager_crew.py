@@ -28,54 +28,6 @@ class ManagerCrew:
     #RetrievePropertyTool = RetrievePropertyData()
     QueryPropertyTool = QueryProperty()
 
-#     facts_tool = RagTool(
-#     description="Use this tool to extract property facts.",
-#     config=dict(
-#         llm=dict(
-#             provider="huggingface",
-#             config=dict(
-#                 model="meta-llama/Llama-3.3-70B-Instruct",  # or another
-#                 api_key="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"
-#             ),
-#         ),
-#         embedder=dict(
-#             provider="huggingface",
-#             config=dict(
-#                 model="sentence-transformers/all-MiniLM-L6-v2",
-#                 api_key="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"
-#             ),
-#         ),
-#         vectordb=dict(provider="chroma", config=dict(dir="rag-db")),
-#     )
-# )
-#     facts_tool.add(data_type="directory", source="property_json_sub")
-
-    # csv_tool = RagTool(
-    #     description="Use this tool to extract stocks or unit related information from .csv files",
-    #     config=dict(
-    #         llm=dict(
-    #             provider="ollama",  # or google, openai, anthropic, llama2, ...
-    #             config=dict(
-    #                 model="llama3",
-    #                 base_url="http://0.0.0.0:11434",
-    #                 # temperature=0.5,
-    #                 # top_p=1,
-    #                 # stream=true,
-    #             ),
-    #         ),
-    #         embedder=dict(
-    #             provider="ollama",  # or openai, ollama, ...
-    #             config=dict(
-    #                 model="mxbai-embed-large",
-    #                 # task_type="retrieval_document",
-    #                 # title="Embeddings",
-    #             ),
-    #         ),
-    #         vectordb=dict(provider="chroma", config=dict(dir=f"csv-db")),
-    #     ),
-    # )
-    # csv_tool.add(data_type="directory", source="knowledge/csv")
-
     @agent
     def customer_service_agent(self) -> Agent:
         return Agent(
