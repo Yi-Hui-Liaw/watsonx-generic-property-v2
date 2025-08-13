@@ -113,7 +113,7 @@ class ManagerCrew:
             )
         elif mode == "facts":
             return Crew(
-                agents=[self.search_agent(), self.customer_service_agent()],
+                agents=[self.search_agent()],
                 tasks=[self.search_property_facts()],
                 process=Process.sequential,
                 verbose=True,

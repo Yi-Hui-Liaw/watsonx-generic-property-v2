@@ -52,40 +52,77 @@ class RouterFlow(Flow[CollectState]):
     #     result = 'property_book_converse' if result == 'false' else 'property_book_update'
     #     self.state.route = result 
 
+    # @listen(route_task)
+    # def property_facts_task(self):
+    #     print(f"Running property facts task - '{self.state.route}'")
+    #     if self.state.route != 'property_facts':
+    #         return
+
+    #     result = (
+    #         ManagerCrew().crew(mode='facts').kickoff(inputs={
+    #             "conversation": self.state.inputs
+    #         })
+    #     )
+
+    #     response = (
+    #         ManagerCrew().crew(mode='converse').kickoff(inputs={
+    #             "conversation": self.state.inputs,
+    #             "information": result.raw,
+    #             "context": "You are providing factual information about the property based on the user's query. Only mention facts such as tenure, property type, land title, or special features. If no facts are found, inform the user respectfully."
+    #         })
+    #     )
+
+    #     return str(response.raw).strip()
+
     @listen(route_task)
     def recommend_property_task(self):
         print(f"Update property recommendation task - '{self.state.route}'")
-        if self.state.route != 'property_recommender':
-            return
+        if self.state.route == 'property_recommender':
+            # data_fields = (
+            #     ManagerCrew().crew(mode='search_agent').kickoff(inputs={"conversation": self.state.inputs})
+            # )
+            # print(f"Extracted data field - {data_fields.raw}")
+            #property_data = load_properties(ast.literal_eval(data_fields.raw))
+            tool = QueryProperty()
+            # search_result = (
+            #     ManagerCrew().crew(mode='retrieve_es_properties').kickoff(inputs={
+            #         "conversation": self.state.inputs
+            #     })
+            # )
+            properties = tool._run(self.state.inputs)
 
-        # data_fields = (
-        #     ManagerCrew().crew(mode='search_agent').kickoff(inputs={"conversation": self.state.inputs})
-        # )
-        # print(f"Extracted data field - {data_fields.raw}")
-        #property_data = load_properties(ast.literal_eval(data_fields.raw))
-        tool = QueryProperty()
-        # search_result = (
-        #     ManagerCrew().crew(mode='retrieve_es_properties').kickoff(inputs={
-        #         "conversation": self.state.inputs
-        #     })
-        # )
-        properties = tool._run(self.state.inputs)
+            recommendation = (
+                ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
+                    "conversation": self.state.inputs,
+                    "properties": properties
+                    })
+            )
 
-        recommendation = (
-            ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
-                "conversation": self.state.inputs,
-                "properties": properties
+            result = (
+                ManagerCrew().crew(mode='converse').kickoff(inputs={
+                    "conversation": self.state.inputs,
+                    "information": recommendation.raw,
+                    "context": "the information provided is the recommended properties. You are generating a reply to recommend to the user. You must not suggest or offer any service. You are merely recommending the right property. Make sure to mention the name of the recommended properties."
+                    })
+            )
+            result = str(result.raw).strip()
+
+        elif self.state.route == 'property_facts':
+            result = (
+                ManagerCrew().crew(mode='facts').kickoff(inputs={
+                    "conversation": self.state.inputs
                 })
-        )
+            )
 
-        result = (
-            ManagerCrew().crew(mode='converse').kickoff(inputs={
-                "conversation": self.state.inputs,
-                "information": recommendation.raw,
-                "context": "the information provided is the recommended properties. You are generating a reply to recommend to the user. You must not suggest or offer any service. You are merely recommending the right property. Make sure to mention the name of the recommended properties."
+            response = (
+                ManagerCrew().crew(mode='converse').kickoff(inputs={
+                    "conversation": self.state.inputs,
+                    "information": result.raw,
+                    "context": "You are providing factual information about the property based on the user's query. Only mention facts such as tenure, property type, land title, or special features. If no facts are found, inform the user respectfully."
                 })
-        )
-        result = str(result.raw).strip()
+            )
+
+            result = str(response.raw).strip()
         return result
 
     # @listen(book_route_task)
