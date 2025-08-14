@@ -76,12 +76,12 @@ class RouterFlow(Flow[CollectState]):
 
     @listen(route_task)
     def recommend_property_task(self):
-        print(f"Update property recommendation task - '{self.state.route}'")
+        print(f"Running task - '{self.state.route}'")
         if self.state.route == 'property_recommender':
-            # data_fields = (
-            #     ManagerCrew().crew(mode='search_agent').kickoff(inputs={"conversation": self.state.inputs})
-            # )
-            # print(f"Extracted data field - {data_fields.raw}")
+            data_fields = ast.literal_eval((
+                ManagerCrew().crew(mode='retrieve_data_field').kickoff(inputs={"conversation": self.state.inputs})
+            ).raw)
+            print(f"Extracted data field - {data_fields}")
             #property_data = load_properties(ast.literal_eval(data_fields.raw))
             tool = QueryProperty()
             # search_result = (
@@ -89,7 +89,7 @@ class RouterFlow(Flow[CollectState]):
             #         "conversation": self.state.inputs
             #     })
             # )
-            properties = tool._run(self.state.inputs)
+            properties = tool._run(self.state.inputs, data_fields)
 
             recommendation = (
                 ManagerCrew().crew(mode='recommend_property').kickoff(inputs={

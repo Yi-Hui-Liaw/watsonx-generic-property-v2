@@ -20,6 +20,7 @@ class Query(BaseModel):
     query: str = Field(
         ..., description="JSON string of user preferences like bedrooms, max_price"
     )
+    data_fields: List[str] = Field(..., description="List of data fields to extract")
 
 class DataFields(BaseModel):
     data_fields: List[str] = Field(
@@ -88,21 +89,20 @@ class RetrievePropertyData(BaseTool):
         # Implementation goes here
         data_fields = data_fields + ['property_name','description'] # name and description is a must for model to make a better decision
         
-        try:
-            properties = load_properties(data_fields)
-            return properties
-        except Exception as e:
-            return e
+        # try:
+        #     properties = load_properties(data_fields)
+        #     return properties
+        # except Exception as e:
+        #     return e
 
 class QueryProperty(BaseTool):
     name: str = "query_property"
     description: str = "Retrieves property data based on semantic search and filters"
     args_schema: Type[BaseModel] = Query
 
-    def _run(self, query: str) -> list:
-        es_url = os.getenv("ES_URL")
+    def _run(self, query: str, data_fields: list[str]) -> list:
         es = Elasticsearch(
-            hosts=es_url,
+            hosts=os.getenv("ES_URL"),
             basic_auth=(os.getenv("ES_USERNAME"), os.getenv("ES_PASSWORD")),
             verify_certs=False,
             ssl_show_warn=False,
@@ -137,16 +137,13 @@ class QueryProperty(BaseTool):
         )
 
         hits = response.body['hits']['hits']
-        return [
-            {
-                "property_name": hit['_source'].get("property_name", "Unknown"),
-                "page_url": hit['_source'].get("page_url"),
-                "status": hit['_source'].get("status"),
-                "description": hit['_source'].get("description"),
-                "unit_types": hit['_source'].get("unit_types")
-            }
-            for hit in hits
-        ]
+        results = []
+        print(type(data_fields))
+        for hit in hits:
+            source = hit['_source']
+            filtered_result = {field: source.get(field, "N/A") for field in data_fields}
+            results.append(filtered_result)
+        return results
     
 class RecommendProperty(BaseTool):
     name: str = "recommend_property"

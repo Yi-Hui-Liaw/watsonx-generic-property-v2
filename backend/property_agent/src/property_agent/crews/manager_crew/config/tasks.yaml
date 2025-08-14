@@ -175,12 +175,28 @@ search_property_facts:
     ------------------
     {conversation}
     ------------------
-    Based on the latest query in the provided conversation, use the provided tool to search for relevant property facts in the json file.
-    The tool should return only factual information about the property, such as tenure (freehold/leasehold), development features, property type, or legal aspects (e.g., land title).
-    If the requested information does not exist in the documents, inform the user that no relevant information could be found. 
-    Additionally, remind the user that the system handles properties related to the Lumenh, the Nexus One, and ABC Residence.
+    Based on the latest query in the conversation, search for and extract only factual property details from the provided data source (e.g., JSON or document search). Do not add or assume any details beyond what's given in the data.
+
+    The factual information may include (but is not limited to):
+    - Tenure (e.g., freehold or leasehold)
+    - Property type (e.g., serviced residence, terrace)
+    - Unit types and configurations (bedrooms, bathrooms, parking, built-up size, price)
+    - Development features and facilities
+    - Project status (e.g., completed, sold out)
+    - Showroom address and operating hours
+    - Legal or land-related info (e.g., land title)
+    - Location and address
+    - Nearby amenities (if explicitly listed)
+
+    Format the information clearly using bullet points or short sections for readability.
+
+    Important:
+    - Do not fabricate or assume any data not present in the search output.
+    - If prices or sizes are 0, missing, or placeholder values (e.g., "RM 0" or "None sqft"), indicate that the information is currently unavailable.
+    - If no relevant data is found, respond with: "We couldn’t find relevant information in the documents. Please note we only handle properties related to The Lumenh, The Nexus One, and ABC Residence."
+
   expected_output: >
-    Return the relevant property facts in text format extracted from the JSON data.
+    Return the extracted property facts in clear text format only. No markdown, HTML, or extra quotes.
   agent: search_agent
 
 search_property_database:
@@ -221,10 +237,9 @@ match_data_field:
       'property_offering_details'
     ]
     You may identify more than one. Include 'property_name', 'description', 'status' which are a must. 
-    Include 'unit_types' only if the user's query involves specific requirements about unit size, pricing, or configurations.
   expected_output: >
     Return **only** the required data fields as a Python list. Do not include any explanation, text, or prefix. Example: ['property_name', 'location', 'tenure']
-  agent: search_agent
+  agent: customer_service_agent
 
 # retrieve_data:
 #   description: >
@@ -233,18 +248,18 @@ match_data_field:
 #     Return the tool output which is a list[dict] format.
 #   agent: search_agent
 
-query_property_candidates:
-  description: >
-    conversation:
-    ------------------
-    {conversation}
-    ------------------
-    Based on the user's query, use the provided tool to retrieve semantically matching properties.
-    Your goal is to shortlist candidate properties relevant to the user's search intent.
-    Only use the tool output, do not generate recommendations yourself.
-  expected_output: >
-    Return a list of property dictionaries from the tool output.
-  agent: search_agent
+# query_property_candidates:
+#   description: >
+#     conversation:
+#     ------------------
+#     {conversation}
+#     ------------------
+#     Based on the user's query, use the provided tool to retrieve semantically matching properties.
+#     Your goal is to shortlist candidate properties relevant to the user's search intent.
+#     Only use the tool output, do not generate recommendations yourself.
+#   expected_output: >
+#     Return a list of property dictionaries from the tool output.
+#   agent: search_agent
 
 recommend_property:
   description: >
@@ -262,7 +277,7 @@ recommend_property:
     Exclude property with "Sold Out" status unless specifically requested by user.
     If the property list is empty, respond with an empty list.
   expected_output: >
-    Return in list dictionary format with 2 keys 'property_name' and 'text'. 'property_name' key is the project name and 'text' key is your reason why you recommend it and how it's related to user's requirement.
+    Return in list dictionary format with additonal key 'text'. 'text' key is your reason why you recommend it and how it's related to user's requirement.
   agent: recommend_agent
 
 converse:
@@ -280,9 +295,20 @@ converse:
     ------------------
     {conversation}
     ------------------
-    your task is to generate a friendly reply to the conversation based on provided information and context. 
-    Make sure to include currency when mentioning price.
-    If the "information" is not found, simply inform the user that no suitable property could be found.
+    Your task is to generate a friendly, confident, and concise reply to the user based on the provided property information and context.
+
+    If "information" contains a list of properties, present each with clear and readable formatting using bullet points or numbering. For example: 
+    - Property name 
+    - Price group by unit types (with currency, e.g., RM) 
+    - Location 
+    - Status (if relevant) 
+    - Key features (e.g., unit size, amenities)
+
+    Do **not** include phrases such as "please note", "may change", or "check availability". Be confident in tone, and helpful in your response.
+
+    If no suitable property is found, simply inform the user politely that no matches were found.
+
+    Keep the message brief, polite, and use the same language the user is using.
   expected_output: >
-    A brief reply return in text without any quotes. Use the language that the user is using.
+    A friendly and brief reply in plain text. Do not include any quotes around the output.
   agent: customer_service_agent

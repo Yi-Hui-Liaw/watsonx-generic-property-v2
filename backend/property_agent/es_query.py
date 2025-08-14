@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 def connect_es(es_url, es_credentials):
-    es_url = os.getenv()
     es = Elasticsearch(hosts=es_url, basic_auth=es_credentials, verify_certs=False, ssl_show_warn=False, request_timeout=600)
     print(es.info())
     return es

@@ -26,7 +26,6 @@ class ManagerCrew:
     tasks_config = "config/tasks.yaml"
     # update_csv = UpdateCSV()
     #RetrievePropertyTool = RetrievePropertyData()
-    QueryPropertyTool = QueryProperty()
 
     @agent
     def customer_service_agent(self) -> Agent:
@@ -75,9 +74,9 @@ class ManagerCrew:
     def search_property_database(self) -> Task:
         return Task(config=self.tasks_config["search_property_database"])
     
-    @task
-    def query_property_candidates(self) -> Task:
-        return Task(config=self.tasks_config["query_property_candidates"])
+    # @task
+    # def query_property_candidates(self) -> Task:
+    #     return Task(config=self.tasks_config["query_property_candidates"])
 
     @task
     def recommend_property(self) -> Task:
@@ -128,13 +127,13 @@ class ManagerCrew:
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == "retrieve_es_properties":
-            return Crew(
-                agents=[self.search_agent()],
-                tasks=[self.query_property_candidates()],
-                process=Process.sequential,
-                verbose=True,
-            )
+        # elif mode == "retrieve_es_properties":
+        #     return Crew(
+        #         agents=[self.search_agent()],
+        #         tasks=[self.query_property_candidates()],
+        #         process=Process.sequential,
+        #         verbose=True,
+        #     )
         elif mode == "recommend_property":
             return Crew(
                 agents=[self.recommend_agent()],
@@ -144,7 +143,7 @@ class ManagerCrew:
             )
         elif mode == "retrieve_data_field":
             return Crew(
-                agents=[self.search_agent()],
+                agents=[self.customer_service_agent()],
                 tasks=[self.match_data_field()],
                 process=Process.sequential,
                 verbose=True,

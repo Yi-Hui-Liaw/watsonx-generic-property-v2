@@ -15,7 +15,6 @@ from elasticsearch.helpers import BulkIndexError
 load_dotenv(override=True)
 
 def connect_es(es_url, es_credentials):
-    es_url = os.getenv()
     es = Elasticsearch(hosts=es_url, basic_auth=es_credentials, verify_certs=False, ssl_show_warn=False, request_timeout=600)
     print(es.info())
     return es
@@ -171,11 +170,10 @@ if __name__ == "__main__":
     model_name = ".elser_model_2"
 
     es = connect_es(ES_URL, ES_CREDENTIALS)
-    #create_hybrid_pipeline(PIPELINE_ID, es)
-    #create_hybrid_index(INDEX_NAME, PIPELINE_ID, es)
+    create_hybrid_pipeline(PIPELINE_ID, es)
+    create_hybrid_index(INDEX_NAME, PIPELINE_ID, es)
     
     chunks_folder = './property_json'
-    # file_names = os.listdir(chunks_folder)
 
     # t_start_all = time.time()
     all_chunks = preprocess_data(chunks_folder)
