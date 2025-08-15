@@ -21,6 +21,7 @@ class Query(BaseModel):
         ..., description="JSON string of user preferences like bedrooms, max_price"
     )
     data_fields: List[str] = Field(..., description="List of data fields to extract")
+    # filter_by_status: bool = False
 
 class DataFields(BaseModel):
     data_fields: List[str] = Field(
@@ -100,7 +101,7 @@ class QueryProperty(BaseTool):
     description: str = "Retrieves property data based on semantic search and filters"
     args_schema: Type[BaseModel] = Query
 
-    def _run(self, query: str, data_fields: list[str]) -> list:
+    def _run(self, query: str, data_fields: list[str]= [], filter_by_status: bool = False) -> list:
         es = Elasticsearch(
             hosts=os.getenv("ES_URL"),
             basic_auth=(os.getenv("ES_USERNAME"), os.getenv("ES_PASSWORD")),
@@ -112,25 +113,28 @@ class QueryProperty(BaseTool):
         model_name = ".elser_model_2"
         index_name = "property_data"
 
+        bool_query = {
+            "must": [
+                {
+                    "sparse_vector": {
+                        "field": "text_embedding",
+                        "inference_id": model_name,
+                        "query": query
+                    }
+                }
+            ]
+        }
+
+        if filter_by_status:
+            bool_query["must_not"] = [
+                {"term": {"status.keyword": "Sold Out"}}
+            ]
+
         response = es.search(
             index=index_name,
             body={
                 "query": {
-                    "bool": {
-                        "must": [
-                            {
-                                "sparse_vector": {
-                                    "field": "text_embedding",
-                                    "inference_id": model_name,
-                                    "query": query
-                                }
-                            }
-                        ],
-                        "must_not": [
-                            { "term": { "status.keyword": "Sold Out" } },
-                            { "term": { "status.keyword": "Coming Soon" } }
-                        ]
-                    }
+                    "bool": bool_query
                 },
                 "size": 5
             }
@@ -138,11 +142,9 @@ class QueryProperty(BaseTool):
 
         hits = response.body['hits']['hits']
         results = []
-        print(type(data_fields))
         for hit in hits:
-            source = hit['_source']
-            filtered_result = {field: source.get(field, "N/A") for field in data_fields}
-            results.append(filtered_result)
+            extracted_data = {field: hit['_source'].get(field, "N/A") for field in data_fields}
+            results.append(extracted_data)
         return results
     
 class RecommendProperty(BaseTool):

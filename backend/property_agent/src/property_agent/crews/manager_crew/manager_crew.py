@@ -10,7 +10,7 @@ import os
 load_dotenv(find_dotenv())
 
 # Parameters
-parameters = {"decoding_method": "greedy", "max_new_tokens": 500}
+parameters = {"decoding_method": "greedy", "max_new_tokens": 50000}
 llm = LLM(
     model="watsonx/meta-llama/llama-3-3-70b-instruct",
     base_url="https://us-south.ml.cloud.ibm.com",
@@ -110,10 +110,10 @@ class ManagerCrew:
                 process=Process.sequential,
                 verbose=True,
             )
-        elif mode == "facts":
+        elif mode == "search_facts":
             return Crew(
                 agents=[self.search_agent()],
-                tasks=[self.search_property_facts()],
+                tasks=[self.match_data_field(), self.search_property_facts()],
                 process=Process.sequential,
                 verbose=True,
             )

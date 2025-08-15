@@ -89,7 +89,7 @@ class RouterFlow(Flow[CollectState]):
             #         "conversation": self.state.inputs
             #     })
             # )
-            properties = tool._run(self.state.inputs, data_fields)
+            properties = tool._run(self.state.inputs, data_fields, True)
 
             recommendation = (
                 ManagerCrew().crew(mode='recommend_property').kickoff(inputs={
@@ -109,7 +109,7 @@ class RouterFlow(Flow[CollectState]):
 
         elif self.state.route == 'property_facts':
             result = (
-                ManagerCrew().crew(mode='facts').kickoff(inputs={
+                ManagerCrew().crew(mode='search_facts').kickoff(inputs={
                     "conversation": self.state.inputs
                 })
             )
@@ -118,7 +118,7 @@ class RouterFlow(Flow[CollectState]):
                 ManagerCrew().crew(mode='converse').kickoff(inputs={
                     "conversation": self.state.inputs,
                     "information": result.raw,
-                    "context": "You are providing factual information about the property based on the user's query. Only mention facts such as tenure, property type, land title, or special features. If no facts are found, inform the user respectfully."
+                    "context": "You are providing information about the property based on the user's query. Only mention facts such as tenure, property type, land title, or special features. If no facts are found, inform the user respectfully."
                 })
             )
 
