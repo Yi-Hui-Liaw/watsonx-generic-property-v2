@@ -20,7 +20,7 @@ class Query(BaseModel):
     query: str = Field(
         ..., description="JSON string of user preferences like bedrooms, max_price"
     )
-    data_fields: List[str] = Field(..., description="List of data fields to extract")
+    data_fields: List[str] = Field(..., description="List of data fields to extract. 'property_name' is a must")
     # filter_by_status: bool = False
 
 class DataFields(BaseModel):

@@ -144,13 +144,13 @@ route_task:
     {conversation}
     ------------------
     Based on the latest query by user, decide the right task to execute. 
-    The tasks are - ['property_facts', 'property_database', 'property_recommender']
+    The tasks are - ['property_facts', 'property_recommender']
     The guidelines for tasks are listed as below:
     property_facts - Return this when the user's latest query is related to property facts. For example, query about property features, location, address, contact.
     property_database - Return this when the latest user query is related to property stock units. For example, "how many units are still available?"
     property_recommender - Return this when the user's latest query is related to finding the right property. For example, "I am looking for a house for a family of 5."
   expected_output: >
-    Return either 'property_facts', 'property_database', or 'property_recommender' without any quotes.
+    Return either 'property_facts' or 'property_recommender' without any quotes.
   agent: customer_service_agent
 
 search_converse:
@@ -273,7 +273,13 @@ recommend_property:
     {properties}
     ------------------
     Based on the latest query in the provided conversation and property data, your task is to choose the best property based on user query's in the conversation.
-    Include more than one properties if available and at most 5 properties
+
+    Strictly follow the user’s requirements stated in the conversation.
+    Only recommend properties that fully match all stated criteria.
+    If no property satisfies even one of the requirements (e.g. location, budget, property type), respond with:
+    "Sorry, we couldn’t find any properties that match your request."
+
+    Include at most 5 properties if available
     Do not mention about data that is not provided. If asked, let user you do not posses the information.
     If the property list is empty, respond with an empty list.
   expected_output: >
@@ -299,7 +305,7 @@ converse:
 
     If "information" contains a list of properties, present each with clear and readable formatting using numbering and bullet points.
     For each property, include all the details as available. Do not assume or fabricate any values.
-    
+
     Only include the fields that are available in the data. Format the information clearly using:
     - Numbering for each property (1., 2., etc.)
     - Bullet points for each field

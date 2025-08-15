@@ -14,7 +14,7 @@ def plot():
 
 if __name__ == "__main__":
     inputs = [
-    {"u": "Description of Allegro"}
+    {"u": "I have a budget of 500k Recommend me properties in kuala lumpur"}
     ]
     q = ""
     flow = RouterFlow()
