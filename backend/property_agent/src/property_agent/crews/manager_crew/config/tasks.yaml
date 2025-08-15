@@ -298,8 +298,8 @@ converse:
     Your task is to generate a friendly, confident, and concise reply to the user based on the provided property information and context.
 
     If "information" contains a list of properties, present each with clear and readable formatting using numbering and bullet points.
-    For each property, include all the details as are available. Do not assume or fabricate any values. The possible fields you might include are:
-
+    For each property, include all the details as available. Do not assume or fabricate any values.
+    
     Only include the fields that are available in the data. Format the information clearly using:
     - Numbering for each property (1., 2., etc.)
     - Bullet points for each field
